@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	var a = 1000;// a->1000
+	function fe() {
+		// 变量提升 a = undefined
+	  var a = b = 20; //赋值从等号右边往左赋值；把20赋值给b （引用的话报错，赋值是给window加一个b的属性）
+		// 当找到顶层作用域window时，会先查看有没有变量b,如果没有再看一下window有没有b这个属性，如果有取这个属性。
+		console.log(a);//20;
+	}
+	fe();
+	console.log(window.b);//20
+	console.log(a);//1000;
+</script>
+</body>
+</html>

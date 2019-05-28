@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	var a = 100;
+	function text() {
+	  var b = 2 * a;// undefined *2 -> NaN;当进行数学运算（* / - % ++ -- ...）时，发现运算符两侧有非数字的值，
+	  // 会自动转成number值，再运算。注意 + ，只有加号两侧都是数字时，才是求和，+ 、+= 另一个作用就是字符串拼接。
+	  var a = 200;
+	  var c = a / 2;
+	  console.log(b);//NaN;
+	  console.log(a);//200;
+	  console.log(c);//100;
+	}
+	text();
+
+</script>
+</body>
+</html>
