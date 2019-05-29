@@ -34,3 +34,4 @@ var age = 10;
 function getName(){
     console.log('your name')
 }
+

@@ -9,12 +9,12 @@
 	var a = 12;
 
 	function fn() {
-		console.log(a);
+		console.log(a);//fn里的var a 的值 默认是undefined；
 		var a = 20;
 		console.log(a);
 	}
 
-	fn()
+	fn();
 	console.log(a);
 	// undefined 20 12
 </script>

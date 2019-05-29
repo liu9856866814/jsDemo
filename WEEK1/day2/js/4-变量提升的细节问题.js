@@ -7,7 +7,7 @@
 * */
 //1.等号右侧不会进行变量提升，即使是函数也不行
 console.log(fn);
-// sum();// Uncaught ReferenceError:sum is not defined [未能捕获的引用错误：sum 没有定义； 引发错误的原因是用了一个没有
+ sum();// Uncaught ReferenceError:sum is not defined [未能捕获的引用错误：sum 没有定义； 引发错误的原因是用了一个没有
 // 声明过的变量]
 var fn = function sum(a,b) {
     return a + b;
@@ -62,4 +62,4 @@ function bar(){
     }
 }
 bar();//Uncaught ReferenceError:getObj is not undefined
-//要想执行后面的内容：bar()();
+//要想执行后面的内容：bar()(); 且要去掉getObj();

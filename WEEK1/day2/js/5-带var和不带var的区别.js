@@ -39,6 +39,6 @@ if ('name' in obj){
 // 3. 带var和不带var ：带var的是变量，会变量提升，不带var的不是变量。带var的在赋值之前使用不会报错，只不过值是undefined；
 // 不带var不能在赋值之前使用，使用就会报错。
 // console.log(MY_INDEX);如果引用一个没var过的变量，会报错。
-MY_INDEX = `54321`;//如果没有var 直接赋值不会报错，为window增加了一个属性。`123`模板字符串ES6的语法
+//MY_INDEX =`54321`;//如果没有var 直接赋值不会报错，为window增加了一个属性。`123`模板字符串ES6的语法
 console.log(window.MY_INDEX);
 //

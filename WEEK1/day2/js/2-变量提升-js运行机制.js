@@ -59,5 +59,5 @@ fe();
 function count(){  //count 函数不执行，变量n不提升
     var n = 12;
 }
-console.log(n);
+console.log(n);// 引用错误 n is not defined
 
