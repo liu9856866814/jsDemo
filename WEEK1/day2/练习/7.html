@@ -7,11 +7,11 @@
 <body>
 
 <script>
-	function fn(n) {
-	  n = n;
-	  return function(a) {
+	function fn(n) { //n = 10;
+	  n = n;// n=10;
+	  return function(a) {//a = 1; 2;
 	    a++;
-	    console.log((n += a));
+	    console.log((n += a));//12
 	  };
 	}
 	var f = fn(10);

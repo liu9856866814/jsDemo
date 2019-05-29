@@ -8,17 +8,32 @@
 
 <script>
 	var num = 20;
-	var obj = {
+	var obj = {//对象的花括号不是作用域，对象的属性不是变量。
 		num: 30,
-		fn: (function (num) {
-			num += 5;
+		fn: (function (num) {//自执行函数在给obj赋值的过程中就会执行
+			// 形参赋值：num = 20 // 25
+			// 变量提升：无
+			num += 5;//
 			return function () {
-				console.log(num);
+				//形参赋值：无（这个小函数没有形参，即便传了实参也没人接收）
+				//变量提升：无
+				console.log(num);//25;
 			};
 		})(num)
 	};
 
-	obj.fn(num);//;
+	obj.fn(num);//25;
+
+	function sum(a,b){//声明函数时的形参是在声明变量
+		return a+b;
+	}
+	sum(1,2);
+	sum(1);
+	sum(3);
+	sum(12,13,15);
+//	var a = 1;
+//	var b = 2;
+	sum(a,b);// Uncaught ReferenceError: a is not defined;函数执行时实参传变量，实际是传递实参代表的值
 </script>
 </body>
 </html>

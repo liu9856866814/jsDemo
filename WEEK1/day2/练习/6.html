@@ -6,16 +6,17 @@
 </head>
 <body>
 <script>
-	function fn(n) {
-	  return function(a) {
+	function fn(n) { // n = 10 12 15
+	  return function(a) {//a=1  2   2 3
 	    a++;
-	    n += a;
-	    console.log(n);
+	    n += a; // n=12
+	    console.log(n);//12 15
 	  };
 	}
 	var f = fn(10);
-	f(1);
-	f(2);
+	f(1);//12
+	f(2);//15
+
 </script>
 </body>
 </html>
