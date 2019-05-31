@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+  // 题一
+  function fn(n) { // fn(10) n=10; 12;
+    return function(a) { // f(1) a = 1 2  f(2) a = 2  3
+      a++;
+      n += a;//n = 12; 15;
+      console.log(n);
+    };
+  }
+
+  var f = fn(10);
+  f(1);// 12;
+  f(2);// 15;
+
+  // 题二
+  function fn(n) { //n=10;9
+    var n = 9;
+    return function (a) { // f(1) a = 1 ; 2
+      a++;
+      console.log(n += a);
+    };
+  }
+
+  var f = fn(10);
+  f(1);//11;
+
+  // 题三
+  var num = 20;
+  var obj = {
+    num: 30,
+    fn: (function (num) { // 自执行函数中return函数（引用数据类型）被obj的fn属性占用，所以自执行函数的作用域不能销毁
+      // 私有 num = 20; 25; NaN
+      num += 5;//25;
+      return function (x) { // x 是undefined
+        num += x;
+        console.log(num);// NaN
+      };
+    })(num)
+  };
+  obj.fn();// NaN
+
+  // 题四
+  function fun(n, o) {
+    // fun(0) n = 0;
+    // fun(0) o = undefined;
+
+    // a.fun(1) -> fun(1,0) n = 1;
+    // a.fun(1) -> fun(1,0) o = 0;//执行完成就释放
+
+    // a.fun(2) -> fun(2,0) n = 2;
+    // a.fun(2) -> fun(2,0) o = 0;//执行完成就释放
+
+    // a.fun(3) -> fun(3,0) n = 3;
+    // a.fun(3) -> fun(3,0) o = 0;//执行完成就释放
+
+    console.log(o);
+    return {
+      fun: function (m) {
+        // a.fun(1) m = 1;
+        // a.fun(2) m = 2;
+        // a.fun(3) m = 3;
+        return fun(m, n);
+        // return fun(1,0);
+        // return fun(2,0);
+        // return fun(3,0);
+      }
+    };
+  }
+  var a = fun(0);// undefined;
+  // a = {fun: functiong (m)...}
+  a.fun(1);// fun(1,0); o -> 0;
+  a.fun(2);// 0;
+  a.fun(3);// 0;
+
+  var b = fun(0).fun(1).fun(2).fun(3);// undefined; 0 1 2;
+
+  var c = fun(0).fun(1); // undefined 0;
+  c.fun(2); // 1;
+  c.fun(3); // 1;
+  console.log(a); //{fun: f}
+  console.log(b); //{fun: f}
+  console.log(c); //{ fun : f}
+
+  // 题五
+  function foo(a) { // a=10;
+    var fn = 12;
+    fn();//12(); 只能是函数才能执行，其他类型都不能执行，报错：类型错误
+    function fn(num) {
+      console.log(num += a);
+    }
+  }
+  foo(10);// 因为函数和变量名重名且变量已赋值，所以类型错误；
+
+
+
+
+</script>
+</body>
+</html>

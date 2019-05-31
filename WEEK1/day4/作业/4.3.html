@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 题四
+    function fun(n, o) {
+        // fun(0) n= 0
+        // fun(0) o= undefined
+
+        // fun(0).fun(1) ->fun(1,0) n= 1;
+        // fun(0).fun(1) ->fun(1,0) o= 0; //此作用域被c占用；
+
+        // c.fun(2) ->fun(2,1) n= 2;
+        // c.fun(2) ->fun(2,1) o= 1; //执行完成销毁该作用域
+
+        // c.fun(3) ->fun(3,1) n= 3;
+        // c.fun(3) ->fun(3,1) o= 1;  //执行完成销毁该作用域
+        console.log(o);
+        return {
+            fun: function (m) {
+                // fun(0).fun(1) m = 1;
+                // c.fun(2) m =2;
+                // c.fun(3) m =3;
+                return fun(m, n);
+                // return fun(1,0)
+                // return fun(2,1)
+                // return fun(3,1)
+            }
+        };
+    }
+
+    var c = fun(0).fun(1); // undefined 0;
+    // c = {fun: function(m){...}}
+    c.fun(2); // 1;
+    c.fun(3); // 1;
+    console.log(c); //{ fun : f}
+</script>
+</body>
+</html>
