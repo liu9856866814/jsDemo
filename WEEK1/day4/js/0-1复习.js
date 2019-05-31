@@ -53,11 +53,11 @@ if(true){
 console.log(num2);// 100
 console.log(foo2);// 函数，因为条件为true时，执行过foo2的赋值。
 
-// console.log(bar); 报错
-if(function bar() {}){ // 将function转换成了布尔值
+// console.log(bar); 报错:引用错误
+if(function bar() {}){ // 写在这里的函数不参与变量提升
     console.log(1);
 }
-// console.log(bar); 报错
+// console.log(bar); 报错：引用错误
 
 /*
 * js作用域（scope）、运行机制：
