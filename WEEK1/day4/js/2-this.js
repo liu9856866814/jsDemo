@@ -4,13 +4,13 @@
 *   2. this在运行时不能被修改
 * */
 
-// this 是一个js的关键字，代表当前代码【执行】的环境对象。一般在函数中使用，在函数执行时确定，根据函数执行方式的不同，代表的值不同。
-// 目前有以下几种情况：
+// this 是一个js的关键字，代表当前代码【执行】的环境对象。一般在函数中使用，在函数执行时确定，根据函数执行方式的不同，
+// 代表的值不同。目前有以下几种情况：
 //   1. 事件函数（赋值给DOM元素对象的事件属性、onclick/onmouseover/onmouseout/ondbclick...的函数）中的this，是绑定当前事件的元素。
 
 var btn = document.getElementById('btn');
 btn.onclick = function () {
-    console.log(this);
+    console.log(this);// btn这个标签元素
 };
 
 // 2. 自执行函数中的this是window
@@ -64,11 +64,11 @@ let sum1 = (a,b) => a + b;
 let getObj = (a,b) => ({a: a,b: b});// (如果要返回一个对象，需要用小括号包起来)
 
 // 箭头函数的this 指向的是箭头函数声明时所在作用域中的this。
-var num = 16;
+var num2 = 16;
 let obj2 = {
-    num : 17,
+    num2 : 17,
     fn : () =>{
-        console.log(this.num);
+        console.log(this.num2);
     }
 };
 obj2.fn();
