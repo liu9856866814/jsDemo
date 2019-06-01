@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8837b952-47e1-4b07-b646-bad6347bbdf7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day4/js/2-this.js" beforeDir="false" afterPath="$PROJECT_DIR$/day4/js/2-this.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/js/0-复习.js" beforeDir="false" afterPath="$PROJECT_DIR$/day5/js/0-复习.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/js/2-构造函数模式.js" beforeDir="false" afterPath="$PROJECT_DIR$/day5/js/2-构造函数模式.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/js/3-创建数据的两种方式.js" beforeDir="false" afterPath="$PROJECT_DIR$/day5/js/3-创建数据的两种方式.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/js/4-new调用和普通调用的区别.js" beforeDir="false" afterPath="$PROJECT_DIR$/day5/js/4-new调用和普通调用的区别.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/js/5-构造函数显式设置返回值.js" beforeDir="false" afterPath="$PROJECT_DIR$/day5/js/5-构造函数显式设置返回值.js" afterDir="false" />
-    </list>
+    <list default="true" id="8837b952-47e1-4b07-b646-bad6347bbdf7" name="Default" comment="" />
     <ignored path="WEEK1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day5/js/5-构造函数显式设置返回值.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
+            <state relative-caret-position="-154">
               <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
@@ -73,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day5/js/6-原型模式.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-160">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="500">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -85,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day5/js/7-原型链.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="110">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#Teacher#0" />
@@ -97,10 +88,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week1/day5/js/5-构造函数显式设置返回值.js">
+        <entry file="file://$PROJECT_DIR$/day1/1-git.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="346">
+              <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -237,6 +231,17 @@
             <path>
               <item name="WEEK1" type="b2602c69:ProjectViewProjectNode" />
               <item name="WEEK1" type="462c0819:PsiDirectoryNode" />
+              <item name="day2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEEK1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEEK1" type="462c0819:PsiDirectoryNode" />
+              <item name="day2" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEEK1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEEK1" type="462c0819:PsiDirectoryNode" />
               <item name="day4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -341,15 +346,16 @@
       <updated>1559042367728</updated>
       <workItem from="1559127323053" duration="10204000" />
       <workItem from="1559219555612" duration="13967000" />
-      <workItem from="1559287843338" duration="42825000" />
+      <workItem from="1559287843338" duration="43399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66996000" />
+    <option name="totallyTimeSpent" value="67570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="8" width="1366" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22364458" />
@@ -383,15 +389,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day2/js/5-带var和不带var的区别.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day2/js/0-fuxi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -773,17 +770,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day1/1-git.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day5/js/5-构造函数显式设置返回值.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state relative-caret-position="-154">
           <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day5/js/6-原型模式.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="500">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -792,8 +799,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day5/js/7-原型链.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="110">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#Teacher#0" />
