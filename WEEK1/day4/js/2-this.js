@@ -71,7 +71,7 @@ let obj2 = {
         console.log(this.num2);
     }
 };
-obj2.fn();
+obj2.fn();//16;
 
 // 6. 全局作用域中的this是window
 console.log(this);

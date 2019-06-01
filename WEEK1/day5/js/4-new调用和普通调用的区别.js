@@ -1,7 +1,7 @@
 /*
 * 目标：
-*   1.
-*   2.
+*   1. 理解new调用是函数的执行过程
+*   2. 掌握普通调用和new调用的区别
 * */
 // 工厂函数
 function teacher(name,age,subject,from = '珠峰') {
@@ -37,7 +37,7 @@ console.log(t3);// undefined
 function fn() {
     console.log(12);
 }
-var f = new fn;
+var f = new fn;// 12;
 console.log(f);// fn {}
 
 // new fn; new 操作符可以让函数执行,通过new调用，这个函数就会被当做构造函数对待，返回一个实例对象；
