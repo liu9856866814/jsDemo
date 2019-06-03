@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .clearfix:after{
+            display: block;
+            height: 0;
+            content:'';
+            clear: both;
+            visibility: hidden;
+        }
+        .wrapper{
+            margin: 20px auto;
+            width: 602px;
+            height: 400px;
+            border: 1px solid #000;
+        }
+        .wrapper .header li{
+            float: left;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor:pointer;
+            -webkit-user-select: none;
+            border-bottom: 1px solid #000;
+        }
+        .header li:nth-child(2){
+            border-right: 1px solid #000;
+            border-left: 1px solid #000;
+        }
+        li.active{
+            background-color: yellow;
+        }
+        .wrapper div{
+            display: none;
+            height: 357px;
+            line-height: 357px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .wrapper div.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="tab1" class="wrapper1 wrapper">
+    <ul class="header clearfix">
+        <li class="active">视频</li>
+        <li>综艺</li>
+        <li>秒拍</li>
+    </ul>
+    <div class="active">
+        震惊，校长表白毕业生
+    </div>
+    <div>
+        预防头发变白
+    </div>
+    <div>
+        张柏芝遭大张伟追问
+    </div>
+</div>
+<div id="tab2" class="wrapper2 wrapper">
+    <ul class="header clearfix">
+        <li class="active">视频2</li>
+        <li>综艺2</li>
+        <li>秒拍2</li>
+    </ul>
+    <div class="active">
+        震惊，校长表白毕业生2
+    </div>
+    <div>
+        预防头发变白2
+    </div>
+    <div>
+        张柏芝遭大张伟追问2
+    </div>
+</div>
+<div id="tab3" class="wrapper2 wrapper">
+    <ul class="header clearfix">
+        <li class="active">视频3</li>
+        <li>综艺3</li>
+        <li>秒拍3</li>
+        <li>秒拍33</li>
+    </ul>
+    <div class="active">
+        震惊，校长表白毕业生23
+    </div>
+    <div>
+        预防头发变白23
+    </div>
+    <div>
+        张柏芝遭大张伟追问23
+    </div>
+    <div>
+        张柏芝遭大张伟追问23333
+    </div>
+</div>
+<script src="js/5-选项卡插件.js"></script>
+</body>
+</html>

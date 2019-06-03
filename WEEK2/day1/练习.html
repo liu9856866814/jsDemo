@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    // 1
+     function Foo() {
+       this.add = function (x, y) {
+         return x + y;
+       }
+     }
+
+     Foo.prototype.add = function (x, y) {
+       return x + y + 10;
+     };
+     Object.prototype.minus = function (x, y) {
+       return x - y;
+     };
+
+     var f = new Foo();
+     console.log(f);//{ add: function(x,y).. }
+     console.log(f.add(1, 2));// 3; 因为f私有属性中有add属性，所以使用私有属性add,不用去原型上面找
+     console.log(f.minus(1, 2)); // -1; f -> Foo.prototype -> Object.prototype 所以使用Object.prototype上的minus
+
+
+    // 3
+        function A() {
+          console.log('AAA')
+        }
+        function B(a) {
+          this.a = a;
+        }
+        function C(a) {
+          if (a) {
+            this.a = a;
+          }
+        }
+        A.prototype.a = 1;
+        B.prototype.a = 1;
+        C.prototype.a = 1;
+        A.prototype.say = function() {
+          console.log('say');
+          this.a = 15
+        };
+
+        A.fe = function () {
+          console.log('fe');
+          this.a = 12;
+        };
+
+        console.log(new A().a);// AAA 1;
+        console.log(new B().a);// undefined;
+        console.log(new C(2).a);// 2;
+
+        const n = new A.prototype.say; // say  n的a是15
+        const m = new A().say; // AAA
+        console.log(n instanceof A); // false;
+        console.log(n instanceof A.prototype.say); // true
+
+        const a1 = new A; // AAA
+        const a2 = new A.fe; // fe a2的
+        console.log(a1 instanceof A); // true
+        console.log(a2 instanceof A.fe); // true
+
+
+
+    // 4
+        function Fn() {
+          this.x = 100;
+          this.y = 200;
+          this.getX = function () {
+            console.log(this.x);
+          }
+        }
+        Fn.prototype.getX = function () {
+          console.log(this.x);
+        };
+        Fn.prototype.getY = function () {
+          console.log(this.y);
+        };
+
+        var f1 = new Fn;
+        var f2 = new Fn;
+
+        console.log(f1.getX === f2.getX);// false
+        console.log(f1.getY === f2.getY);// true
+        console.log(f1.__proto__.getY === Fn.prototype.getY);// true
+        console.log(f1.__proto__.getX === f2.getX);// false
+        console.log(f1.__proto__.getX === Fn.prototype.getX);// true
+        console.log(f1.constructor);// FN函数
+
+        console.log(Fn.prototype.__proto__.constructor);// Object
+        f1.getX();// 100;
+        f1.__proto__.getX();// undefined
+        f2.getY(); // 200
+        Fn.prototype.getY();// undefined
+
+
+    // 5
+    var n = 10,// 12;33; 66; 87;
+    obj = {
+      n: 20 // 107
+    };
+    let fn = obj.fn = (function () {  // fn = function (m) {  n += 10 + (++m);//n= 33;  this.n += n; console.log(n);}
+      this.n++;
+      n++;
+      return function (m) {
+        n += 10 + (++m);
+        this.n += n;
+        console.log(n);
+      }
+    })(obj.n);
+    fn(10);// 66
+    obj.fn(10);// 87
+    console.log(n, obj.n); // 87  107
+
+
+    // 6
+    var name = 'window';
+    var Tom = {
+        name: "Tom",
+        show: function () {
+            console.log(this.name);
+        },
+        wait: function () {
+            var fun = this.show;
+            fun();
+        }
+    };
+    Tom.wait();// window;
+
+    // 7
+    var fullName = 'language';
+    var obj = {
+        fullName: 'javascript',
+        prop: {
+            getFullName: function () {
+                return this.fullName;
+            }
+        }
+    };
+    console.log(obj.prop.getFullName());// javascript
+    var test = obj.prop.getFullName;
+    console.log(test());//language
+
+    // 8.
+    function Foo() {
+        getName = function () {
+            console.log(1);
+        };
+        return this;
+    }
+
+    Foo.getName = function () {
+        console.log(2);
+    };
+    Foo.prototype.getName = function () {
+        console.log(3);
+    };
+    var getName = function () {
+        console.log(4);
+    };
+
+    function getName() {
+        console.log(5);
+    }
+
+    Foo.getName();// 2
+    getName(); // 4
+    Foo().getName(); // 1
+    getName();// 1
+    var f = new Foo();
+    f.getName(); // 3
+</script>
+</body>
+
+</html>

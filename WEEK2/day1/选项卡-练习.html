@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡插件</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{ list-style: none;}
+        .clearfix:after{
+            clear:both;
+            visibility: hidden;
+            height: 0;
+            display: block;
+            content:'';
+        }
+        .wrapper{
+            width: 602px;
+            margin: 20px auto;
+            border: 1px solid #000;
+        }
+        .wrapper .headerList li{
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            width: 200px;
+            border-bottom: 1px solid #000;
+        }
+        .wrapper div{
+            width: 100%;
+            height: 350px;
+            line-height: 350px;
+            text-align: center;
+            display: none;
+            font-size: 30px;
+
+        }
+        .wrapper .headerList li:nth-child(2){
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+        li.active{
+            background-color: yellow;
+        }
+        div.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper" id="tab">
+    <ul class="headerList clearfix">
+        <li class="active">按钮1</li>
+        <li>按钮2</li>
+        <li>按钮3</li>
+    </ul>
+    <div class="active">内容1</div>
+    <div>内容2</div>
+    <div>内容3</div>
+</div>
+<script src="js/8-practiceTab.js"></script>
+</body>
+</html>
