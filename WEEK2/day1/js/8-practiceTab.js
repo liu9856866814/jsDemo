@@ -1,4 +1,4 @@
-
+// 选项卡封装插件
 function Tab(options) {
     if(!options || !options.el){
         console.log('缺少options或者option.el');
@@ -41,8 +41,6 @@ Tab.prototype.init = function(){
     this.getEle();
     this.bindEvent();
 };
-
-
 
 let t1 = new Tab({
     el: '#tab'
