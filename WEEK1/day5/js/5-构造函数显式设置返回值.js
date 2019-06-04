@@ -20,7 +20,7 @@ function Teacher(name,age,subject,from) {
 
 let mrJiang = new Teacher('姜文',19,'架构');
 console.log(mrJiang);
-console.log(mrJiang instanceof Teacher);//false
+console.log(mrJiang instanceof Teacher);// true
 
 // 1. return 基本数据类型：构造函数不受影响，仍然正常返回实例。
 // 2. return 引用数据类型：构造函数隐式返回的实例就会被return的这个引用数据类型的值所覆盖，并且返回值也不再是该类型的实例了。

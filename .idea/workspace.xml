@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4e5f389-33e7-4374-951f-dbe01282e924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/js/1-面向对象.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/js/2-深入原型链.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/js/3-面向过程tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡-2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/js/5-选项卡插件.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/js/6-多参数传参处理.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/js/7-练习Tab面向对象插件写法.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/js/8-practiceTab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/选项卡-练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEEK2/day1/选项卡.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEEK1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEEK1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WEEK2/day2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WEEK2/day2/js/1-Function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEEK1/day5/js/5-构造函数显式设置返回值.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEEK1/day5/js/5-构造函数显式设置返回值.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEEK2/day2/js/0-面向对象.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEEK2/day2/js/0-面向对象.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,12 +19,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+            <state relative-caret-position="238">
+              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#Tab#0" />
@@ -44,62 +36,83 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡-2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+            <state relative-caret-position="258">
+              <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+              <folding>
+                <element signature="e#587#977#0" />
+                <element signature="e#1029#1553#0" />
+                <element signature="e#1607#1934#0" />
+                <element signature="e#1991#2121#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/5-选项卡插件.js">
+        <entry file="file://$PROJECT_DIR$/WEEK2/day2/js/1-Function.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="946">
-              <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/6-多参数传参处理.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/7-练习Tab面向对象插件写法.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-226">
-              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state relative-caret-position="440">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WEEK1/day5/js/5-构造函数显式设置返回值.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEEK2/day2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/8-practiceTab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+            <state relative-caret-position="440">
+              <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEEK2/day1/index.html">
+        <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/3-面向过程tab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="368">
+              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEEK2/day1/练习.html">
+        <entry file="file://$PROJECT_DIR$/WEEK2/day2/js/0-面向对象.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="121" column="37" lean-forward="true" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+            <state relative-caret-position="412">
+              <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#707#715#0" />
+                <element signature="e#759#767#0" />
+                <element signature="e#817#825#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEEK2/day1/选项卡-练习.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+            <state relative-caret-position="1364">
+              <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -116,7 +129,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEEK2/day1/选项卡.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1694">
+            <state relative-caret-position="2156">
               <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
               <folding>
                 <element signature="n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -133,8 +146,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -149,24 +162,18 @@
         <option value="$PROJECT_DIR$/WEEK2/day1/js/6-多参数传参处理.js" />
         <option value="$PROJECT_DIR$/WEEK2/day1/js/3-面向过程tab.js" />
         <option value="$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡.js" />
-        <option value="$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡-2.js" />
         <option value="$PROJECT_DIR$/WEEK2/day1/选项卡.html" />
         <option value="$PROJECT_DIR$/WEEK2/day1/js/2-深入原型链.js" />
         <option value="$PROJECT_DIR$/WEEK2/day1/练习.html" />
         <option value="$PROJECT_DIR$/WEEK2/day1/js/5-选项卡插件.js" />
         <option value="$PROJECT_DIR$/WEEK2/day1/js/7-练习Tab面向对象插件写法.js" />
         <option value="$PROJECT_DIR$/WEEK2/day1/选项卡-练习.html" />
+        <option value="$PROJECT_DIR$/WEEK2/day2/js/0-面向对象.js" />
         <option value="$PROJECT_DIR$/WEEK2/day1/js/8-practiceTab.js" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/jsDemo.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡-2.js" />
+        <option value="$PROJECT_DIR$/WEEK2/day2/index.html" />
+        <option value="$PROJECT_DIR$/WEEK2/day2/js/1-Function.js" />
+        <option value="$PROJECT_DIR$/WEEK1/day5/js/5-构造函数显式设置返回值.js" />
       </list>
     </option>
   </component>
@@ -211,20 +218,19 @@
             <path>
               <item name="jsDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="jsDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="WEEK1" type="462c0819:PsiDirectoryNode" />
+              <item name="day5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsDemo" type="462c0819:PsiDirectoryNode" />
               <item name="WEEK2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="jsDemo" type="462c0819:PsiDirectoryNode" />
               <item name="WEEK2" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jsDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="WEEK2" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="day2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,8 +241,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/WEEK2/day1/js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -268,16 +281,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559525764770</updated>
-      <workItem from="1559525766562" duration="35823000" />
+      <workItem from="1559525766562" duration="36083000" />
+      <workItem from="1559611335939" duration="5890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35823000" />
+    <option name="totallyTimeSpent" value="41973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="8" width="1366" height="728" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
@@ -380,44 +393,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/3-面向过程tab.js">
+    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/5-选项卡插件.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#Tab#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡-2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+        <state relative-caret-position="1056">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/6-多参数传参处理.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/7-练习Tab面向对象插件写法.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK2/day1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK2/day1/练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2662">
+          <caret line="121" column="37" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK2/day1/选项卡-练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEEK2/day1/选项卡.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1694">
+        <state relative-caret-position="2156">
           <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
           <folding>
             <element signature="n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -428,45 +448,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEEK2/day1/练习.html">
+    <entry file="file://$PROJECT_DIR$/WEEK2/day2/js/0-面向对象.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="121" column="37" lean-forward="true" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEEK2/day1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/5-选项卡插件.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEEK2/day1/选项卡-练习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/7-练习Tab面向对象插件写法.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226">
-          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state relative-caret-position="412">
+          <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#707#715#0" />
+            <element signature="e#759#767#0" />
+            <element signature="e#817#825#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/8-practiceTab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+        <state relative-caret-position="440">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/3-面向过程tab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#Tab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK2/day1/js/4-面向对象选项卡-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+          <folding>
+            <element signature="e#587#977#0" />
+            <element signature="e#1029#1553#0" />
+            <element signature="e#1607#1934#0" />
+            <element signature="e#1991#2121#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK2/day2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK2/day2/js/1-Function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEEK1/day5/js/5-构造函数显式设置返回值.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

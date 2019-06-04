@@ -28,7 +28,12 @@ function Tab(options) {
     // 3. 绑定事件
     this.bindEvent();
 }
-
+/*
+* 粒度：功能拆分的详细程度
+* 细粒度：把功能点尽可能的拆分成函数，当需要修改某一个功能时，只需要修改一个函数即可，其他的地方不会受到影响；
+* 
+*
+* */
 // 1. 获取元素对象方法
 Tab.prototype.queryEle = function (){
     // this 当前Tab的实例,实例的options保存着配置对象
