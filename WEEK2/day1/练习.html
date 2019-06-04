@@ -33,8 +33,10 @@
     // 3
         function A() {
           console.log('AAA')
+            // 构造函数只有通过this.xxx = xxx 这种方式才能给实例添加私有属性
         }
         function B(a) {
+            // 给实例添加私有属性a
           this.a = a;
         }
         function C(a) {
@@ -53,23 +55,24 @@
         A.fe = function () {
           console.log('fe');
           this.a = 12;
-        };
+        }; // A的实例能够使用的属性或者方法要么是私有，要么是A的原型上公有的属性和方法，A.fe 既不
+    // 在实例中，也不在原型中。这个时候把A当做一个对象,为它添加了一个fe的方法，这个方法只能A自己调用
 
-        console.log(new A().a);// AAA 1;
-        console.log(new B().a);// undefined;
-        console.log(new C(2).a);// 2;
+        console.log(new A().a);// AAA 1; new A() 输出AAA 属性a的值是1
+        console.log(new B().a);// undefined; {a: undefined}
+        console.log(new C(2).a);// 2; { a：2}；
 
-        const n = new A.prototype.say; // say  n的a是15
-        const m = new A().say; // AAA
+        // new 函数；函数就会执行，如果不需要传参，就可以不写函数后面的小括号
+        const n = new A.prototype.say; // say  n的a是15 say函数被new;输出say 得到一个对象{a: 15};
+        const m = new A().say; // AAA ; m 是一个函数
         console.log(n instanceof A); // false;
         console.log(n instanceof A.prototype.say); // true
 
-        const a1 = new A; // AAA
-        const a2 = new A.fe; // fe a2的
+        const a1 = new A; // AAA a1 = {};
+        const a2 = new A.fe; // fe a2 是A.fe的实例
         console.log(a1 instanceof A); // true
         console.log(a2 instanceof A.fe); // true
-
-
+        // 函数只要被new调用时就是构造函数，new谁，最后得到的对象就是谁的实例
 
     // 4
         function Fn() {
@@ -80,25 +83,24 @@
           }
         }
         Fn.prototype.getX = function () {
-          console.log(this.x);
+          console.log(this.x); // Fn.prototype.x
         };
         Fn.prototype.getY = function () {
           console.log(this.y);
         };
-
-        var f1 = new Fn;
-        var f2 = new Fn;
-
-        console.log(f1.getX === f2.getX);// false
-        console.log(f1.getY === f2.getY);// true
+        var f1 = new Fn; //{ x: 100, y: 200, getX: fun...}
+        var f2 = new Fn; //{ x: 100, y: 200, getX: fun...}
+        console.log(f1.getX === f2.getX);// false f1和f2是两个不同的实例，所以两个实例的getX方法没有关系
+        console.log(f1.getY === f2.getY);// true // f1和f2的getY都是Fn原型上的getY方法，所以相等
         console.log(f1.__proto__.getY === Fn.prototype.getY);// true
-        console.log(f1.__proto__.getX === f2.getX);// false
+        console.log(f1.__proto__.getX === f2.getX);// false f2有私有getX,所以和Fn.prototype.getX没有关系
         console.log(f1.__proto__.getX === Fn.prototype.getX);// true
-        console.log(f1.constructor);// FN函数
-
-        console.log(Fn.prototype.__proto__.constructor);// Object
+        console.log(f1.constructor);// Fn函数 f1 本身没有私有属性constructor，所以去f1所属类Fn的原型上查找constructor属性
+    // ，在原型上有天生自带的constructor的属性，值就是当前构造函数本身
+        console.log(Fn.prototype.__proto__.constructor);// Object  Fn.prototype是一个对象，__proto__是找实例所属类原型，
+    // 对象是Object的实例，__proto__找的就是Object的原型，Object的prototype中的constructor指向Object
         f1.getX();// 100;
-        f1.__proto__.getX();// undefined
+        f1.__proto__.getX();// undefined  Fn.prototype.getX()
         f2.getY(); // 200
         Fn.prototype.getY();// undefined
 
@@ -109,29 +111,33 @@
       n: 20 // 107
     };
     let fn = obj.fn = (function () {  // fn = function (m) {  n += 10 + (++m);//n= 33;  this.n += n; console.log(n);}
-      this.n++;
-      n++;
-      return function (m) {
-        n += 10 + (++m);
-        this.n += n;
-        console.log(n);
-      }
+        // 无形参赋值：因为自执行函数没有设置形参
+        // 无变量提升
+        this.n++; // 自执行函数中this是window
+        n++;
+        return function (m) {
+          n += 10 + (++m); // +=的优先级小于 +
+          this.n += n;
+          console.log(n);
+        }
     })(obj.n);
+    /*obj.fn = (function..)(..)
+    let fn = obj.fn */ //这两行赋值写法和上面的，连续赋值是等价的
     fn(10);// 66
     obj.fn(10);// 87
     console.log(n, obj.n); // 87  107
 
 
     // 6
-    var name = 'window';
+    var name = 'window'; // window.name
     var Tom = {
         name: "Tom",
         show: function () {
-            console.log(this.name);
+            console.log(this.name); // window.name
         },
         wait: function () {
             var fun = this.show;
-            fun();
+            fun();//前面没. this指向全局
         }
     };
     Tom.wait();// window;
@@ -142,29 +148,32 @@
         fullName: 'javascript',
         prop: {
             getFullName: function () {
-                return this.fullName;
+                // obj.prop.getFullName this -> obj,prop
+                return this.fullName;  // return的补充：不写return 或者return后无参数，返回undefined;
             }
         }
     };
-    console.log(obj.prop.getFullName());// javascript
+    console.log(obj.prop.getFullName());// undefined  方法执行时看方法名前有没有点，就看方法名前面的一个点，这个点前面是
+    // 一个整体，方法名中的this就是这个整体
     var test = obj.prop.getFullName;
-    console.log(test());//language
+    console.log(test());// 'language'
 
     // 8.
     function Foo() {
-        getName = function () {
+        getName = function () { //执行过这一行，全局变量getName就被修改成log(1)的函数
             console.log(1);
         };
+        console.log(this);
         return this;
     }
 
-    Foo.getName = function () {
+    Foo.getName = function () { // Foo.getName 把Foo当成一个对象，给它添加一个getName的属性，这个属性和实例和原型都没关系；
         console.log(2);
     };
     Foo.prototype.getName = function () {
         console.log(3);
     };
-    var getName = function () {
+    var getName = function () { // 在这一行之前，getName 代表的log(5)的函数
         console.log(4);
     };
 
@@ -174,8 +183,8 @@
 
     Foo.getName();// 2
     getName(); // 4
-    Foo().getName(); // 1
-    getName();// 1
+    Foo().getName(); // 1 Foo() 前面没点，Foo里面的this就是window,Foo()在执行时把全局变量getName修改成了log1的函数
+    getName();// 1 全局变量getName 被修改了
     var f = new Foo();
     f.getName(); // 3
 </script>

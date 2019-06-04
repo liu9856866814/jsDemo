@@ -36,7 +36,18 @@ console.log(typeof Function); // function
 console.dir(Function.prototype.__proto__ === Object.prototype); // true 说明Function.protoype的__proto__ 属性指向Object
 // 的原型（prototype）;
 
+// Object和Function的关系
+// 1、Object是Function的实例，所以Object.__proto__ 指向Function.prototype
+console.log(Object.__proto__ === Function.prototype); // true
+// 2. Function 是一个类，但是Function.prototype是一个对象，所以，Function.prototype也有一个__proto__的属性，它的值指向
+// Object.prototype.
+console.log(Function.prototype.__proto__ === Object.prototype); //true;
+// __proto__ 是实例用来找原型的，Object是构造函数，Object.__proto__ 找原型，Object是谁的实例呢，是Function的实例，
+// Object.__proto__找的就是Function的原型prototype;
 
-
-
+// Function.prototype 是对象，所以Function.prototype.__proto__是在prototype的原型，就是在找对象的所属类的原型，
+// 对象所属类是Object,所以找到Object.prototype;
+// Function 是一个类，也是一个函数，所以Function是自己的实例
+console.log(Function.__proto__ === Function.prototype); // true
+console.log(Function instanceof Function);// true
 
