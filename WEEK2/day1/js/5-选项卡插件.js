@@ -17,7 +17,7 @@
 function Tab(options) {
 
     // 校验这个方法是否是被new调用的：如果用new调用this就是Tab的实例，如果不用new调用，this就不是Tab的实例
-    if(!this instanceof Tab){
+    if(!(this instanceof Tab)){
         console.error('Tab is a constructor which should be called by new.');
         return;
     }
@@ -46,8 +46,8 @@ Tab.prototype.queryEle = function (){
 
     // 获取选项卡卡片,并且保存到实例上
     this.cardList = wrapper.querySelectorAll('div');
-    console.log(this.headerList);
-    console.log(this.cardList);
+    // console.log(this.headerList);
+    // console.log(this.cardList);
 };
 // 2. 绑定事件方法
 Tab.prototype.bindEvent = function (){
@@ -96,13 +96,12 @@ Tab.prototype.init = function () {
     this.bindEvent();
 };
 
-new Tab({
-    el: '#tab1'
-});
+// new Tab({
+//     el: '#tab1'
+// });
 
-new Tab({
-    el: '#tab2'
-});
+new Tab();
+
 
 
 

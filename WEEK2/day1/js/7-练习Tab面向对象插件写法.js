@@ -1,5 +1,5 @@
 function Tab(options) {
-    if(!this instanceof Tab){
+    if(!(this instanceof Tab)){
         console.error('Tab is a constructor which should be called by new');
     }
     if(!options || !options.el){
