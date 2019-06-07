@@ -40,7 +40,7 @@
       // 私有 num = 20; 25; NaN
       num += 5;//25;
       return function (x) { // x 是undefined
-        num += x;
+        num += x; // 25 + undefined
         console.log(num);// NaN
       };
     })(num)
