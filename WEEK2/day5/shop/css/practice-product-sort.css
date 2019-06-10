@@ -1,0 +1,64 @@
+body{
+    background-color: #f4f4f4;
+    font-size: 14px;
+    width: 100%;
+    overflow-x:hidden;
+}
+.container{
+    margin: 20px auto;
+}
+/*排序链接*/
+.container .header{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 50px;
+    padding: 0 20px;
+}
+.container .header span{
+    float: left;
+    line-height: 50px;
+}
+.container .header a{
+    display: inline-block;
+    float: left;
+    margin: 0 20px;
+    line-height: 50px;
+    color: #999;
+}
+.container .header a:hover{
+    color:#E01D20;
+}
+/*商品列表*/
+.container .list{
+    margin:20px auto 0 auto;
+    width: 1205px;
+}
+.container .list li{
+    margin: 0 10px 10px 0;
+    float: left;
+}
+.list li a{
+    display: inline-block;
+    width: 193px;
+    height: 359px;
+    border:3px solid #fff;
+    padding: 0 16px;
+    background-color: #fff;
+}
+.list li a:hover{
+    border:3px solid red;
+}
+.list li a img{
+    width: 193px;
+    height: 193px;
+}
+.list li a p,span{
+    font-size: 14px;
+    color: black;
+    display: block;
+    line-height: 28px;
+}
+.list li a p{
+    color:#999;
+}
