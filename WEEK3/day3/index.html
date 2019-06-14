@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        button{
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        .info{
+            width: 220px;
+            height: 50px;
+            color: #00b38a;
+            border: 1px solid burlywood ;
+            font-size: 20px;
+            margin-top: 15px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .container{
+            margin: 30px auto;
+            width: 400px;
+        }
+    </style>
+    <script src="js/1-正则高级应用.js"></script>
+</head>
+<body>
+<div class="container">
+    <div>
+        <input type="text" name="" id="input">
+        <button id="btn">查询</button>
+    </div>
+    <div id="info" class="info">请输入身份证号</div>
+</div>
+
+<script>
+    // 根据身份证号,展示这个身份证号籍贯(省+市)
+    let provinceDatabase ={
+        '13': {
+            title: '河北省',
+            cities: {
+                '06': '保定',
+                '01': '石家庄',
+                '02': '唐山',
+            }
+        },
+        '41': {
+            title: '河南省',
+            cities: {
+                '04': '许昌',
+                '27': '周口',
+            }
+        },
+        '37': {
+            title: '山东省',
+            cities: {
+                '01': '济南',
+                '02': '青岛',
+                '07': '潍坊',
+            }
+        },
+        '36': {
+            title: '江西省',
+            cities: {
+                '01': '南昌',
+                '02': '景德镇',
+            }
+        },
+        '44': {
+            title: '广东省',
+            cities: {
+                '01': '广州',
+                '02': '韶关'
+            }
+        },
+        '42': {
+            title: '湖北省',
+            cities: {
+                '01': '武汉',
+                '08': '荆门'
+            }
+        }
+    };
+    // 点击时才有触发行为,所以需要绑定点击事件
+    let btn = document.getElementById('btn');
+    let input = document.getElementById('input');
+    let info = document.getElementById('info');
+    let reg = /^(\d{2})(\d{2})\d{13}(?:\d|X)$/; // 捕获信息的正则
+    btn.onclick = function () {
+        // 点击事件触发时，执行这里面的代码
+        // 1. 要获取input中输入的内容: 通过input元素对象的value属性
+        let val = input.value;
+        // console.log(val);
+        // 2. 要从输入的身份证号中，把代表省的两位数字获取到，两位代表地级市的数字获取到
+        let result = reg.exec(val); // result就是捕获到的内容,第二项和第三项是我们需要的省市代码;
+        // console.log(result);
+        let [,provinceCode,cityCode] = result; // 通过解构赋值把省市代码拿到
+        // console.log(provinceCode, cityCode);
+        // 3. 拿到数字，去数据中把数字对应的省市取出来
+        let target = provinceDatabase[provinceCode];
+        let province = target.title; // 从数据中把省获取到
+        let city = target.cities[cityCode]; // 从数据中获取省,再获取市
+        console.log(province, city);
+        // 4. 把得到的省市汉字插入到页面div#info中
+        info.innerHTML = `${province} ${city}`;
+    }
+</script>
+</body>
+</html>

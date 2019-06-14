@@ -49,7 +49,7 @@ listBox.innerHTML = str;
 // 时又给全局变量乘了一个-1,所以此时flag变成-1,再乘给(aInn - bInn) 时就变成bInn - aInn,即降序;为了解决这个问题,我们让每个a标签
 // 都拥有自己的flag,在点击时把自己的乘等于-1;
 let sortList = function(index, flag){ // 用let声明的变量必须在声明后才能使用
-    // index 形参代表的是被点击a标签的索引,用来判断按照哪个维度排序;如果索引为0表示按照上架时间排序,1 表示价格,2 表示热度
+    // index.html 形参代表的是被点击a标签的索引,用来判断按照哪个维度排序;如果索引为0表示按照上架时间排序,1 表示价格,2 表示热度
     // 1. 我们需要给页面中li进行排序,即给productList集合排序.但是productList是一个类数组集合,如果想用sort方法排序,需要先
     // 将其转换成数组;
     let productAry = utils.arrLiketoAry(productList);

@@ -30,8 +30,8 @@ let reg4 = /[2?]/; // 此时方括号中的? 不代表出现0到1次,表示普�
 // console.log(reg4.test('?34')); // true
 
 let reg5 = /[3+]/; // 此时方括号中的+ 不代表出现1到多次,表示普通的 +
-// console.log(reg5.test('3'));
-// console.log(reg5.test('+'));
+// console.log(reg5.test('3')); // true
+// console.log(reg5.test('+')); // true
 
 // let reg6 = /[abc]+/;
 

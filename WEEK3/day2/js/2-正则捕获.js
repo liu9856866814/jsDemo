@@ -19,7 +19,7 @@ let result = reg.exec(str);
 // 字符串中有符合这个规则,正则捕获到的是一个数组,如果没有符合的规则,返回一个null;
 /*
 * ["zhufeng2018", 正则捕获的内容
-*  index: 10, 符合正则规则的第一个字符的索引位置
+*  index.html: 10, 符合正则规则的第一个字符的索引位置
 *  input: "hello2019 zhufeng2018 zhufeng2019", 原始字符串
 *  groups: undefined
 * ]
