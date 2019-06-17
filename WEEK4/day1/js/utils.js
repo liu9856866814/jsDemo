@@ -65,7 +65,6 @@ window.utils = (function () {
             top
         }
     }
-
     /**
      * @desc 获取元素的计算生效的样式值
      * @param ele 元素对象
@@ -80,12 +79,61 @@ window.utils = (function () {
         }else{
             value = ele.currentStyle[attr];
         }
-        // 把单位去掉: 把数字且带单位的，把单位去掉
         var reg = /^-?\d+(\.\d+)?(px|rem|em|pt)$/g;
         if (reg.test(value)){
             value = parseFloat(value);
         }
         return value;
+    }
+
+    /**
+     * @desc 设置元素的css样式
+     * @param ele 元素对象
+     * @param attr css属性
+     * @param val 属性值
+     */
+    function setCss(ele,attr,val) {
+        let reg =/(fontSize|width|height|(margin|padding)?(top|right|bottom|left)?)/i;
+        if( reg.test(attr)){
+            if(!isNaN(val)) val += 'px';
+        }
+        ele.style[attr] = val;
+    }
+
+    /**
+     * @desc 批量设置元素的css样式
+     * @param ele 元素对象
+     * @param cssBatch
+     */
+    function setBatchCss(ele,cssBatch) {
+        if (typeof cssBatch !== 'object'){
+            throw TypeError('cssBatch is not a object');
+        }
+        for(let key in cssBatch){
+            if(cssBatch.hasOwnProperty(key)){
+                setCss(ele,key,cssBatch[key]);
+            }
+        }
+    }
+
+    /**
+     * @desc 封装一个css的方法,根据参数不同有不同的功能
+     * @param ele 元素
+     * @param param css样式或者css样式对象
+     * @param val css样式值
+     * @returns {*} 获取时是css样式值
+     */
+    function css(ele,param,val) {
+        if(typeof param === "string" && typeof val === 'undefined'){
+            return getCss(ele,param);
+        }
+        if(typeof param === 'string' && typeof val !== 'undefined'){
+            setCss(ele,param,val);
+            return;
+        }
+        if (typeof param === 'object'){
+            setBatchCss(ele,param);
+        }
     }
    return {
        arrLikeToAry: arrLikeToAry,
@@ -93,7 +141,10 @@ window.utils = (function () {
        toJSON,
        win,
        offset,
-       getCss
+       getCss,
+       setCss,
+       setBatchCss,
+       css
    }
 })();
 

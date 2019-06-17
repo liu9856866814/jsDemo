@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="44f3cd8a-1f87-47fa-82b2-b9a1528be768" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day1/shop/js/4-练习shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day1/shop/js/zq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/1-gofooter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/js/0-1变量和对象属性名.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/js/0-复习.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/js/2-获取页面元素样式.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/js/3-封装getCss并处理兼容.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/图片懒加载/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/图片懒加载/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/图片懒加载/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/图片懒加载/img/default.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/图片懒加载/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/图片懒加载/js/1-lazy-load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/图片懒加载/js/2-lazy-load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/图片懒加载/js/3-多张图片延时加载.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/图片懒加载/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/跑马灯/1-跑马灯.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/跑马灯/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/跑马灯/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/跑马灯/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/跑马灯/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day4/跑马灯/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/css/index2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/css/reset.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/img/default.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/js/1-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/js/1-需求文档.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/js/2-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/js/3-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/json/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/json/mocData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/flow/懒加载计算规则.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEEK3/day5/js/0-复习.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/1-严格模式.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/2-解构赋值.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/3-正则.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/4-JS盒子模型.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/5-获取计算生效的样式.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/6-设置css样式.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/7-批量设置css样式.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/8-整合处理css的方法.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/9-class类名操作.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/js/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/WEEK1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK3/day1/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK3/day1/shop/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK3/day1/shop/js/3-商品排序.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK3/day1/shop/js/3-商品排序.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEEK3/day1/shop/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK3/day1/shop/js/utils.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../WEEK3/day5/flow/js/utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="82" column="51" lean-forward="true" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/js/4-JS盒子模型.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/js/5-获取计算生效的样式.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/js/6-设置css样式.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/js/7-批量设置css样式.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day1/js/utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/js/9-class类名操作.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/js/8-整合处理css的方法.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/js/3-正则.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1936">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/day1/js/1-js.js" />
+        <option value="$PROJECT_DIR$/day1/js/2-解构赋值.js" />
+        <option value="$PROJECT_DIR$/day1/js/3-正则.js" />
+        <option value="$PROJECT_DIR$/day1/js/4-JS盒子模型.js" />
+        <option value="$PROJECT_DIR$/day1/js/5-获取计算生效的样式.js" />
+        <option value="$PROJECT_DIR$/day1/js/6-设置css样式.js" />
+        <option value="$PROJECT_DIR$/day1/js/7-批量设置css样式.js" />
+        <option value="$PROJECT_DIR$/day1/js/utils.js" />
+        <option value="$PROJECT_DIR$/day1/js/8-整合处理css的方法.js" />
+        <option value="$PROJECT_DIR$/day1/js/9-class.js" />
+        <option value="$PROJECT_DIR$/day1/index.html" />
+        <option value="$PROJECT_DIR$/day1/js/9-class类名操作.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/WEEK4.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="8" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WEEK4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEEK4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEEK4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEEK4" type="462c0819:PsiDirectoryNode" />
+              <item name="day1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WEEK4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEEK4" type="462c0819:PsiDirectoryNode" />
+              <item name="day1" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WEEK3/day1" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK4\day1\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44f3cd8a-1f87-47fa-82b2-b9a1528be768" name="Default Changelist" comment="" />
+      <created>1560735783522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560735783522</updated>
+      <workItem from="1560735785156" duration="21837000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21837000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/day1/js/1-严格模式.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../201905js/201905js/formal/week3/day1/shop/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WEEK3/day1/shop/js/3-商品排序.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WEEK3/day5/flow/js/2-index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WEEK3/day2/js/7-正则的简单应用.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-826">
+          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WEEK3/day3/js/1-正则高级应用.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2388">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/2-解构赋值.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="e#1170#1398#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WEEK3/day2/js/6-正向预查和负向预查.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/3-正则.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1936">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WEEK3/day5/flow/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="82" column="51" lean-forward="true" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/4-JS盒子模型.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/5-获取计算生效的样式.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/6-设置css样式.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/7-批量设置css样式.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/8-整合处理css的方法.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/9-class类名操作.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -2,13 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9d107d0-7972-4e63-97aa-bc2f747881a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day3/2-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/3-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/js/0-复习.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/js/1-正则高级应用.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/js/3-js盒子模型属性.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/js/4-offsetLeft&amp;Top.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/shop/js/4-练习shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/shop/js/zq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/1-gofooter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/js/0-1变量和对象属性名.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/js/0-复习.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/js/2-获取页面元素样式.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/js/3-封装getCss并处理兼容.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/图片懒加载/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/图片懒加载/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/图片懒加载/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/图片懒加载/img/default.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/图片懒加载/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/图片懒加载/js/1-lazy-load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/图片懒加载/js/2-lazy-load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/图片懒加载/js/3-多张图片延时加载.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/图片懒加载/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/跑马灯/1-跑马灯.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/跑马灯/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/跑马灯/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/跑马灯/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/跑马灯/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/跑马灯/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/css/index2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/css/reset.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/img/default.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/js/1-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/js/1-需求文档.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/js/2-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/js/3-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/json/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/json/mocData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/flow/懒加载计算规则.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/js/0-复习.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/WEEK1.iml" beforeDir="false" />
@@ -18,11 +63,10 @@
       <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEEK1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day1/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day1/shop/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day1/shop/js/3-商品排序.js" beforeDir="false" afterPath="$PROJECT_DIR$/day1/shop/js/3-商品排序.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2/js/1-正则中括号细节.js" beforeDir="false" afterPath="$PROJECT_DIR$/day2/js/1-正则中括号细节.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2/js/2-正则捕获.js" beforeDir="false" afterPath="$PROJECT_DIR$/day2/js/2-正则捕获.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2/js/3-分组捕获.js" beforeDir="false" afterPath="$PROJECT_DIR$/day2/js/3-分组捕获.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1/shop/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/day1/shop/js/utils.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,49 +80,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day3/js/0-复习.js">
+        <entry file="file://$PROJECT_DIR$/day1/shop/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1562">
-              <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../WEEK2/day5/shop/js/practice-product-sort.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="384">
+              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day3/js/4-offsetLeft&amp;Top.js">
+        <entry file="file://$PROJECT_DIR$/day1/shop/js/4-练习shop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="396">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week2/day1/练习.html">
+        <entry file="file://$PROJECT_DIR$/day1/shop/js/zq.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="38" selection-start-line="34" selection-end-line="74" selection-end-column="36" />
+            <state relative-caret-position="460">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day2/js/0-复习.js">
+        <entry file="file://$PROJECT_DIR$/day1/shop/js/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3014">
-              <caret line="139" column="32" selection-start-line="139" selection-start-column="32" selection-end-line="139" selection-end-column="32" />
+            <state relative-caret-position="22">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -87,15 +119,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day3/js/1-正则高级应用.js">
+        <entry file="file://$PROJECT_DIR$/day1/shop/js/3-商品排序.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1166">
-              <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+            <state relative-caret-position="1496">
+              <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+              <folding>
+                <element signature="e#2975#3038#0" />
+                <element signature="e#3082#3281#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day5/flow/js/2-index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1452">
+              <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/shop/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/shop/js/2-点击价格升降序.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day5/flow/js/3-index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1/shop/js/1-动态获取元素.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -103,8 +175,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -138,90 +210,86 @@
         <option value="$PROJECT_DIR$/day3/js/0-复习.js" />
         <option value="$PROJECT_DIR$/day3/js/1-正则高级应用.js" />
         <option value="$PROJECT_DIR$/day3/2-index.html" />
-        <option value="$PROJECT_DIR$/day3/js/3-js盒子模型属性.js" />
         <option value="$PROJECT_DIR$/day3/index.html" />
         <option value="$PROJECT_DIR$/day3/3-index.html" />
         <option value="$PROJECT_DIR$/day3/js/4-offsetLeft&amp;Top.js" />
         <option value="$PROJECT_DIR$/../../../../201905js/formal/week2/day1/练习.html" />
+        <option value="$PROJECT_DIR$/day4/js/0-1变量和对象属性名.js" />
+        <option value="$PROJECT_DIR$/day3/js/3-js盒子模型属性.js" />
+        <option value="$PROJECT_DIR$/day4/js/0-复习.js" />
+        <option value="$PROJECT_DIR$/day4/跑马灯/index.html" />
+        <option value="$PROJECT_DIR$/day4/1-godown.html" />
+        <option value="$PROJECT_DIR$/day4/1-gofooter.html" />
+        <option value="$PROJECT_DIR$/day4/index.html" />
+        <option value="$PROJECT_DIR$/day4/js/3-封装getCss并处理兼容.js" />
+        <option value="$PROJECT_DIR$/day4/js/2-获取页面元素样式.js" />
+        <option value="$PROJECT_DIR$/day4/图片懒加载/js/2-lazy-load.js" />
+        <option value="$PROJECT_DIR$/day4/图片懒加载/js/1-lazy-load.js" />
+        <option value="$PROJECT_DIR$/day4/图片懒加载/js/3-多张图片延时加载.js" />
+        <option value="$PROJECT_DIR$/day4/图片懒加载/index.html" />
+        <option value="$PROJECT_DIR$/day5/index.html" />
+        <option value="$PROJECT_DIR$/day4/跑马灯/1-跑马灯.js" />
+        <option value="$PROJECT_DIR$/day5/js/0-复习.js" />
+        <option value="$PROJECT_DIR$/day5/flow/js/1-需求文档.js" />
+        <option value="$PROJECT_DIR$/day5/flow/css/index.css" />
+        <option value="$PROJECT_DIR$/day5/flow/js/utils.js" />
+        <option value="$PROJECT_DIR$/day4/图片懒加载/js/utils.js" />
+        <option value="$PROJECT_DIR$/day1/shop/js/utils.js" />
+        <option value="$PROJECT_DIR$/day5/flow/js/1-index.js" />
+        <option value="$PROJECT_DIR$/day5/flow/index.html" />
+        <option value="$PROJECT_DIR$/day5/flow/js/2-index.js" />
+        <option value="$PROJECT_DIR$/day1/shop/js/3-商品排序.js" />
+        <option value="$PROJECT_DIR$/day1/shop/js/4-练习shop.js" />
+        <option value="$PROJECT_DIR$/day1/shop/index.html" />
+        <option value="$PROJECT_DIR$/day1/shop/js/zq.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/WEEK3.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/WEEK3.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="8" />
     <option name="width" value="1366" />
     <option name="height" value="728" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="WEEK3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WEEK3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK3" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WEEK3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK3" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WEEK3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK3" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WEEK3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK3" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WEEK3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK3" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WEEK2/day5/shop/js/practice-product-sort.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WEEK4" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK3\day5" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK3\day5\flow\js" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK3\day5" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK3\day4\图片懒加载\js" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK3\day4\图片懒加载" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK3\day4\跑马灯\img" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -247,18 +315,39 @@
       <updated>1560216630193</updated>
       <workItem from="1560216632152" duration="27252000" />
       <workItem from="1560303170197" duration="31834000" />
-      <workItem from="1560475783435" duration="334000" />
+      <workItem from="1560475783435" duration="32714000" />
+      <workItem from="1560562333391" duration="25491000" />
+      <workItem from="1560692720913" duration="5237000" />
+      <workItem from="1560734929915" duration="853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59420000" />
+    <option name="totallyTimeSpent" value="123381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="8" width="1366" height="728" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2470238" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32996634" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -275,243 +364,320 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day2/js/5-正则-贪婪性.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day2/js/6-正向预查和负向预查.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day2/js/3-分组捕获.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day2/js/7-正则的简单应用.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week3/day2/js/6-正则的简单应用.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day2/js/1-正则中括号细节.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day2/js/4-小括号的细节.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week3/day3/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week3/day3/2-index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week3/day2/week3-day2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="4400">
-            <caret line="200" column="45" selection-start-line="200" selection-start-column="45" selection-end-line="200" selection-end-column="45" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week3/test.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="198">
-            <caret line="79" column="8" lean-forward="true" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week3/day3/3-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day2/js/2-正则捕获.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day3/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="122" column="7" lean-forward="true" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day3/2-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day3/3-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day3/js/3-js盒子模型属性.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week3/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week1/day2/js/0-复习.js">
+    <entry file="file://$PROJECT_DIR$/../../../../201905js/201905js/formal/week3/day4/图片懒加载/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="21" column="9" lean-forward="true" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../201905js/201905js/formal/week3/day4/图片懒加载/js/3-多张图片延时加载.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/js/2-获取页面元素样式.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../WEEK1/day2/js/0-fuxi.js">
+    <entry file="file://$PROJECT_DIR$/day4/js/3-封装getCss并处理兼容.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../WEEK1/day1/1-git.js">
+    <entry file="file://$PROJECT_DIR$/day4/图片懒加载/js/1-lazy-load.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        <state relative-caret-position="1254">
+          <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week1/day1/1.git.js">
+    <entry file="file://$PROJECT_DIR$/day4/图片懒加载/js/2-lazy-load.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/js/0-1变量和对象属性名.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/图片懒加载/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/js/0-复习.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/懒加载计算规则.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/1-gofooter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="106" column="7" lean-forward="true" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/跑马灯/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/跑马灯/1-跑马灯.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/图片懒加载/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="91" column="14" lean-forward="true" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/6.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/7.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/8.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/9.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/10.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/11.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/12.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/13.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/img/default.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/json/mocData.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/json/data.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/js/1-index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="123" column="50" selection-start-line="123" selection-start-column="50" selection-end-line="123" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/js/0-复习.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/图片懒加载/js/3-多张图片延时加载.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/985686814/FileRecv/flow/flow/js/2-index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1892">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/js/1-需求文档.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day3/js/0-复习.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1562">
-          <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../201905js/formal/week2/day1/练习.html">
+    <entry file="file://$PROJECT_DIR$/day5/flow/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="38" selection-start-line="34" selection-end-line="74" selection-end-column="36" />
+        <state relative-caret-position="242">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day2/js/0-复习.js">
+    <entry file="file://$PROJECT_DIR$/day5/flow/js/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3014">
-          <caret line="139" column="32" selection-start-line="139" selection-start-column="32" selection-end-line="139" selection-end-column="32" />
+        <state relative-caret-position="2090">
+          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/shop/js/3-商品排序.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding>
+            <element signature="e#2975#3038#0" />
+            <element signature="e#3082#3281#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/shop/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/shop/js/2-点击价格升降序.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/js/3-index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day3/js/1-正则高级应用.js">
+    <entry file="file://$PROJECT_DIR$/day1/shop/js/1-动态获取元素.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/flow/js/2-index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        <state relative-caret-position="1452">
+          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/shop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/shop/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../WEEK2/day5/shop/js/practice-product-sort.js">
+    <entry file="file://$PROJECT_DIR$/day1/shop/js/zq.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="460">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day3/js/4-offsetLeft&amp;Top.js">
+    <entry file="file://$PROJECT_DIR$/day1/shop/js/4-练习shop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="396">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>

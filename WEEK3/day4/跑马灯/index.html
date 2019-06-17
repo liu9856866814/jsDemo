@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 40px auto;
+            width: 800px;
+            height: 200px;
+            border: 1px dashed #00b38a;
+            overflow: hidden;
+        }
+        .box ul{
+            height: 200px;
+            list-style: none;
+        }
+        .box ul li{
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+        .box ul li img{ /*一般设置图片尺寸时，都是给图片包一个块元素，设置块元素的宽高，让里面的图片宽高都是100%*/
+            width: 100%;
+            height: 100%;
+        }
+        .clear:after{
+            display: block;
+            height: 0;
+            content:'';
+            visibility: hidden;
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box" class="box">
+        <ul class="ulBox" id="ulBox">
+            <li><img src="img/1.jpg"/></li>
+            <li><img src="img/2.jpg""/></li>
+            <li><img src="img/3.jpg"/></li>
+            <li><img src="img/4.jpg"/></li>
+        </ul>
+    </div>
+    <script src="1-跑马灯.js"></script>
+</body>
+</html>

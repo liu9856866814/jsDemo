@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            margin: 30px auto;
+            width: 600px;
+        }
+        .container .box{
+            width: 300px;
+            height: 300px;
+            margin: 10px auto;
+            overflow-y: scroll;
+            boreder: 1px solid #000;
+        }
+        .btn-wrapper{
+            width: 300px;
+            margin: 30px auto;
+        }
+        .btn-wrapper button{
+            width: 70px;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .btn-wrapper button.cancel:hover{
+            background-color: #00b38a;
+            color:#fff;
+            cursor: pointer;
+        }
+        .btn-wrapper button:focus{
+            outline: none;
+            border: none;
+            background-color: #019a31;
+            color:#fff;
+        }
+        button:disabled{
+            cursor:not-allowed;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="box">
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+        神奇的百度翻译_搞笑__hao123上网导航
+        神奇的百度翻译 来源:有图有真相 3 2 上一条 下一条 爆笑热图 珍惜最后时光任性一下 只有学习能走进我的心 大爷你到底买不买啊 听说新建了一座庙。。 ...
+        Hao123 - 百度快照
+    </div>
+    <div class="btn-wrapper">
+        <button class="cancel">取消</button>
+        <button id="confirm" class="confirm" disabled>确定</button>
+    </div>
+</div>
+<script>
+    let box = document.getElementById('box');
+    let confirm = document.getElementById('confirm');
+    confirm.onclick = function () {
+        alert('aaa');
+    };
+    // 当用户协议滚动到底时，确认探针才可以点击
+    // 如何确定滚动到底了？监听box的滚动事件(onscroll),当滚动时就会触发事件函数，在事件函数中计算是否滚动到底了。是否滚动
+    // 到底的关键在于确定可以滚动的最大值是多少？
+    // 可以滚动的最大值就是溢出的部分,而 scrollHeight = clientHeight + 溢出部分；所以溢出部分 = scrollHeight - clientHeight
+    let maxTop = box.scrollHeight - box.clientHeight;
+    box.onscroll = () =>{
+        // console.log('gun');
+        // 判断当前滚动条卷去的高度和最大值的关系，如果大于等于最大值说明已经滚动到底了
+        if(box.scrollTop >= maxTop){
+            // 条件成立，说明滚动到底了；
+            confirm.disabled = false; // 解除按钮的禁用
+        } else{
+            confirm.disabled = true;
+        }
+    }
+</script>
+</body>
+</html>

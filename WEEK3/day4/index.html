@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            margin: 30px auto;
+            padding: 10px 11px 13px 14px;
+            width: 300px;
+            height: 400px;
+            border: 10px dashed lightblue;
+            background: #aaa;
+            opacity: 0.5; /* 0-1 的数字 IE 低版本不能用*/
+            filter: alpha(opacity=50)
+        }
+        .box:before{
+            content:'hello world';
+            font-size: 20px;
+            color: #ffffff;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="big"></div>
+<div class="box" id="box" style="height: 300px;"></div>
+<script src="js/3-封装getCss并处理兼容.js"></script>
+</body>
+</html>

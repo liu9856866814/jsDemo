@@ -65,7 +65,6 @@ window.utils = (function () {
             top
         }
     }
-
     /**
      * @desc 获取元素的计算生效的样式值
      * @param ele 元素对象

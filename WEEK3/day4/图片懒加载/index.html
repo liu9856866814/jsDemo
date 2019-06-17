@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .top {
+            width: 500px;
+            margin: 0 auto;
+            height: 1000px;
+            border: 10px solid #00b38a;
+        }
+        .img-wrapper {
+            width: 500px;
+            min-height: 200px;
+            border: 1px solid #000;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+<div id="top" class="top">
+    这个盒子就是用来占位的，我是一个很长很长的盒子
+</div>
+<div class="img-wrapper">
+    <img data-src="img/1.jpg" alt="" id="first">
+</div>
+<div class="img-wrapper">
+    <img data-src="img/2.jpg" alt="">
+</div>
+<div class="img-wrapper">
+    <img data-src="img/3.jpg" alt="">
+</div>
+
+<script src="js/utils.js"></script>
+<!--<script src="js/3-多张图片延时加载.js"></script>-->
+<script>
+     console.log(utils.win('scrollTop',200));
+</script>
+</body>
+</html>

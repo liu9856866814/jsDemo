@@ -52,7 +52,7 @@ let sortList = function(index, flag){ // 用let声明的变量必须在声明后
     // index.html 形参代表的是被点击a标签的索引,用来判断按照哪个维度排序;如果索引为0表示按照上架时间排序,1 表示价格,2 表示热度
     // 1. 我们需要给页面中li进行排序,即给productList集合排序.但是productList是一个类数组集合,如果想用sort方法排序,需要先
     // 将其转换成数组;
-    let productAry = utils.arrLiketoAry(productList);
+    let productAry = utils.arrLikeToAry(productList);
     // 2. 处理排序(按照价格排序)
     productAry.sort((a,b) =>{
         let aInn,bInn;
