@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #box{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            /*margin-top: 10px;*/
+            /*border: 1px solid deepskyblue;*/
+            background-color: #00b38a;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<button id="btn" class="btn one two three">确认</button>
+<div id="box" class="box"></div>
+<!--<ul class="list" id = 'list'>-->
+<!--    <li>1</li>-->
+<!--</ul>-->
+
+<script src="js/new-utils.js"></script>
+<!--<script src="js/2-指定时长的动画.js"></script>-->
+<script>
+    const { hasClass, addClass, removeClass } = window.utils;
+    // console.log(hasClass(btn, 'two'));
+    console.log(addClass(btn, 'four'));
+    console.log(removeClass(btn, 'four'));
+    console.log(hasClass(btn, 'four'));
+    // console.log(removeClass(btn, 'four'));
+    // console.log(hasClass(btn, 'four'));
+</script>
+</body>
+</html>

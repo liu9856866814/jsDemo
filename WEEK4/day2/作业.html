@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div.main{
+            margin: 50px auto;
+            width: 500px;
+            height: 300px;
+            border: 1px deepskyblue dashed;
+        }
+        div.box{
+            width: 50px;
+            height: 30px;
+            border: 1px solid #000;
+            margin: 50px auto;
+        }
+        .buttons{
+            margin: 10px auto;
+            width: 500px;
+        }
+        button{
+            border-radius: 5px;
+            background: #00b38a;
+            padding:5px;
+            color: #fff;
+        }
+        button:focus{
+            border: none;
+            background: #ffff00;
+            color: #000;
+        }
+        div.btnW{
+            width:100px;
+        }
+        div.btnH{
+            height: 200px;
+        }
+        div.btnB {
+            background: #00b38a;
+        }
+        p{
+            margin: 30px auto;
+            padding: 5px;
+            border: dashed 1px #00b38a;
+            width: 400px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="buttons">
+    <button id="btnW">宽度100</button>
+    <button id="btnH">高度200</button>
+    <button id="btnB">背景色#00b38a</button>
+    <button id="reset">还原</button>
+</div>
+<div class="main">
+    <div id="box" class="box"></div>
+</div>
+<p>
+    需求:
+    1. 点击前四个按钮,把div设置成按钮上对应的样式
+    2. 点击还原,把元素div恢复成原来的样式;
+</p>
+
+<script src="js/new-utils.js"></script>
+<!--<script src="js/作业-设置宽高背景色1.js"></script>-->
+<script src="js/作业-设置宽高2.js"></script>
+</body>
+</html>

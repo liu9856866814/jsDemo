@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 5000px;
+            background: -webkit-linear-gradient(top left, yellowgreen, lightblue, greenyellow,deeppink);
+        }
+        .btn{
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            border-radius: 50%;
+            line-height: 80px;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            background: #999999;
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+<div id="box" class="box"></div>
+<div class="btn" id="btn">回到顶部</div>
+<!--<a href="#box" class="btn" id="btn">回到顶部</a>-->
+<!--锚点定位:把a标签的href设置成元素的id #元素id-->
+<script src="js/utils.js"></script>
+<script src="js/4-回到顶部.js"></script>
+
+</body>
+</html>
