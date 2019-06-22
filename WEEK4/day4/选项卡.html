@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰-选项卡</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul, li {
+            list-style: none;
+        }
+
+        .tabBox {
+            margin: 30px auto;
+            width: 604px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .header {
+            border-bottom: 1px solid #000;
+        }
+        .header li {
+            float: left;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .header li:nth-child(2) {
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+        .clearfix:after {
+            display: block;
+            content: '';
+            visibility: hidden;
+            clear: both;
+        }
+        li.active {
+            background: yellow;
+        }
+        .tabBox div {
+            height: 360px;
+            display: none;
+            text-align: center;
+            line-height: 360px;
+            font-size: 25px;
+        }
+        div.active {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+<!--div.tabBox#tabBox 按tab 就会出现html-->
+
+<div class="tabBox" id="tabBox">
+    <ul class="header clearfix" id="header">
+        <li class="active">视频</li>
+        <li>秒拍</li>
+        <li>综艺</li>
+    </ul>
+    <div class="active">
+        程序员遭亲妈拍卖
+    </div>
+    <div>
+        预防脱发
+    </div>
+    <div>
+        蔡徐坤-我们很爷们儿
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/7-jq选项卡.js"></script>
+</body>
+</html>

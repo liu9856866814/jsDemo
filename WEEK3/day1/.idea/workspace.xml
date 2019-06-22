@@ -1,85 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4833890e-b37b-47f1-bf51-34bc5b7b7cb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shop/js/4-练习shop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/js/5-练习shop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/js/zq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/1-gofooter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/js/0-1变量和对象属性名.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/js/0-复习.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/js/2-获取页面元素样式.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/js/3-封装getCss并处理兼容.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/图片懒加载/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/图片懒加载/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/图片懒加载/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/图片懒加载/img/default.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/图片懒加载/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/图片懒加载/js/1-lazy-load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/图片懒加载/js/2-lazy-load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/图片懒加载/js/3-多张图片延时加载.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/图片懒加载/js/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/跑马灯/1-跑马灯.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/跑马灯/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/跑马灯/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/跑马灯/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/跑马灯/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/跑马灯/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/css/index2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/css/reset.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/img/default.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/js/1-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/js/1-需求文档.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/js/2-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/js/3-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/js/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/json/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/json/mocData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/flow/懒加载计算规则.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day5/js/0-复习.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/1-严格模式.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/2-解构赋值.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/3-正则.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/4-JS盒子模型.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/5-获取计算生效的样式.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/6-设置css样式.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/7-批量设置css样式.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/8-整合处理css的方法.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/9-class类名操作.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK4/day1/js/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK1/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK1/.idea/WEEK1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK1/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK1/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK1/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/js/3-商品排序.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop/js/3-商品排序.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop/js/utils.js" afterDir="false" />
-    </list>
+    <list default="true" id="4833890e-b37b-47f1-bf51-34bc5b7b7cb3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -94,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shop/js/1-动态获取元素.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="-2156">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -139,40 +61,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="day1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WEEK4" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -200,11 +96,12 @@
       <updated>1560770355079</updated>
       <workItem from="1560770356183" duration="597000" />
       <workItem from="1560775402017" duration="2132000" />
+      <workItem from="1560821798115" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2729000" />
+    <option name="totallyTimeSpent" value="2771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -271,8 +168,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shop/js/1-动态获取元素.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="-2156">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
         </state>
       </provider>
     </entry>
