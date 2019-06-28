@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index: 100;
+            width: 200px;
+            height: 200px;
+            background-color: #333;
+        }
+        .block{
+            position: absolute;
+            top: 400px;
+            left: 500px;
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+        }
+    </style>
 </head>
 <body>
-$END$
+<!--当box碰到block时 block的背景色变红 移天恢复-->
+<div id="box" class="box" style="left: 100px; top: 100px;width: 200px;height: 200px; "></div>
+<div id="block" class="block" style="background: deepskyblue;"></div>
+<script src="js/2-拖拽鼠标丢失问题.js"></script>
 </body>
 </html>

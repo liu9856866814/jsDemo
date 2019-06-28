@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        ul{
+            margin: 30px auto;
+            width: 500px;
+        }
+        ul li{
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: #00b38a;
+            color: #fff;
+        }
+        ul li:nth-child(odd){
+            background-color: deepskyblue;
+        }
+    </style>
+    <script src="js/7-事件委托.js"></script>
+
 </head>
 <body>
-$END$
+<ul id="list">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+    <li>item5</li>
+    <li>item6</li>
+    <li>item7</li>
+    <li>item8</li>
+    <li>item9</li>
+    <li>item10</li>
+</ul>
 </body>
 </html>

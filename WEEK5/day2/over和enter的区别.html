@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .outer{
+            position: relative;
+            margin: 20px auto;
+            width: 500px;
+            height: 500px;
+            background-color:deepskyblue;
+        }
+        .inner{
+            /*inner 在 outer 里面水平垂直居中,position: absolute; 四边写0, margin: auto;*/
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            background: #00b38a;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="outer" class="outer">
+    <div class="inner" id="inner"></div>
+</div>
+<script src="js/5-enter和over的区别.js"></script>
 </body>
 </html>

@@ -100,8 +100,6 @@ let flowRender = (function () {
 			lazyLoad();
 		}
 	}*/
-
-
 	// 10. 处理滚动
 	let timer = null;
 	function handleScroll() {
@@ -120,9 +118,6 @@ let flowRender = (function () {
 			}
 		}
 	}
-
-
-
 	return {
 		init () {
 			queryData();

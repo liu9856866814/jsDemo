@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul, li {
+            list-style: none;
+        }
+        .wrapper {
+            width: 400px;
+            margin: 30px auto;
+        }
+        .fileBox {
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            border: 1px dashed #00b38a;
+            text-align: center;
+        }
+        .fileBox:before {
+            content: '+';
+            font-size: 40px;
+            line-height: 300px;
+        }
+        .fileList li {
+            padding-left: 30px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="wrapper">
+    <ul class="fileList" id="fileList">
+        <li>
+            1. class.txt
+        </li>
+        <li>
+            2. 一曲相思
+        </li>
+    </ul>
+    <div class="fileBox" id="fileBox"></div>
+</div>
 </body>
 </html>

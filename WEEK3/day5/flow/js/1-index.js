@@ -95,7 +95,7 @@ window.onscroll = function () { // 只要页面中滚动条滚动就会触发ons
 		// 照这样下去，如果一直滑就会一直满足条件。而满足条件就会请求数据，带来多次请求的问题；
 		if(timer) clearTimeout(timer);
 		timer = setTimeout(() =>{
-			console.log(123);
+			// console.log(123);
 			queryData(); // 获取数据
 			bindHTML(); // 把获取来的数据绑定到页面中
 		},300);

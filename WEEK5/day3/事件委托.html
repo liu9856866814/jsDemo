@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .list{
+            margin: 30px auto;
+            width: 500px;
+            border: 1px solid #000;
+        }
+        .list li{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+        }
+        .list li:nth-child(odd){
+            background-color: #00b38a;
+        }
+        .list li:nth-child(even){
+            background-color: lightblue;
+        }
+        .add{
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+        }
+    </style>
+
 </head>
 <body>
-$END$
+<button id="add" class="add">增加</button>
+<ul id="list" class="list">
+    <li>大白菜真贵 1</li>
+    <li>大白菜真贵 2</li>
+    <li>大白菜真贵 3</li>
+    <li>大白菜真贵 4</li>
+    <li>大白菜真贵 5</li>
+</ul>
+<script src="js/1-事件委托.js"></script>
 </body>
 </html>

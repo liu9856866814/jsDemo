@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>原生拖拽</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .litBox {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+        }
+        .bigBox {
+            position: absolute;
+            top: 150px;
+            left: 500px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #00b38a;
+        }
+        #litBox2{
+            position: absolute;
+            top: 170px;
+
+        }
+    </style>
+
 </head>
 <body>
-$END$
+    <div class="litBox" id="litBox" draggable="true"></div>
+    <div class="litBox" id="litBox2" draggable="true"></div>
+    <div id="bigBox" class="bigBox"></div>
+
+    <script src="js/8-基础版发布订阅.js"></script>
 </body>
 </html>

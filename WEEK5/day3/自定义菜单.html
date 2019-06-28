@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        ul{
+            position: absolute;
+            width: 200px;
+            border: 1px solid deepskyblue;
+            display: none;
+        }
+        ul li{
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-bottom: 1px solid #000;
+            font-size: 20px;
+        }
+        ul li:hover{
+            color: #fff;
+            background-color: #00b38a;
+        }
+    </style>
 </head>
 <body>
-$END$
+<!--需求: 实现一个自定义鼠标右键菜单-->
+<ul id="menu" style = 'left: 0;top: 0;'>
+    <li id ='refresh'>刷新</li>
+    <li id = 'baidu'><a href="http://www.baidu.com" target="_blank">百度</a></li>
+    <li>功能 3</li>
+    <li>功能 4</li>
+    <li>功能 5</li>
+</ul>
+<!--实现一个和原生菜单类似的功能,如果距离底部太小,盒子就要在鼠标上部出现;如果距离页面顶部太小,就要在鼠标下方出现-->
+<script src="js/4-自定义菜单.js"></script>
 </body>
 </html>
