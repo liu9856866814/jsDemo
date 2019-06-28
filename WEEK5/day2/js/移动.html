@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+<!--    <script src="../../WEEK3/day1/shop/js/utils.js"></script>-->
+</head>
+<body>
+<!--按下键盘上的左键 <- box 就要向左移动5px 右键 向右移动5px -->
+<div id="box" class="box" style="left: 0; top: 0;"></div>
+<script>
+    let $ = selector => document.querySelector(selector);
+    let box = $('.box');
+    document.onkeydown = function (e) {
+        let left = parseInt(box.style.left);
+        let top = parseFloat(box.style.top);
+        console.log(top);
+        console.log(box.style.top);
+        if(e.keyCode === 37){
+            left -= 5;
+        }
+        if(e.keyCode === 39) {
+            left += 5;
+        }
+        if(e.keyCode === 38){
+            top -= 5;
+        }
+        if(e.keyCode === 40){
+            top += 5;
+        }
+        box.style.left = left + 'px';
+        box.style.top = top + 'px';
+    }
+</script>
+</body>
+</html>

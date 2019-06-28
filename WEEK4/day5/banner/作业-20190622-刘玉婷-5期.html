@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第四周作业</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 30px auto;
+            padding: 15px;
+            width: 600px;
+            border: 1px solid #000;
+        }
+        .btn {
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+            background: #00b38a;
+            color: #fff;
+            border-radius: 4px;
+            border: none;
+        }
+        div.box {
+            position: relative;
+            margin-top: 15px;
+            height: 110px;
+            padding: 5px;
+            border: 1px solid #00b38a;
+        }
+        div.box p {
+            width: 98px;
+            height: 98px;
+            margin-top: 6px;
+            border: 3px solid skyblue;
+        }
+    </style>
+
+</head>
+<body>
+<p>
+    需求:点击开始,让小盒子开始动画,运动到box右边框的时候停下来,点击重置,让元素回到初始位置;(不限技术栈原生/jq/框架)
+</p>
+<div id="container" class="container">
+    <button class="btn" id="start">开始</button>
+    <button class="btn" id="reset">重置</button>
+    <div class="box">
+        <p class="slide"></p>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+    let $slide = $('.slide');
+    let boxW = $('.box').width();
+    let slideW = $slide.width();
+    $('#start').click(function(){
+        $slide.animate({
+            marginLeft: boxW - slideW - 6
+        }, 1000)
+    });
+    $('#reset').click(function(){
+        $slide.animate({
+            marginLeft: 0
+        }, 1000)
+    })
+</script>
+</body>
+</html>
