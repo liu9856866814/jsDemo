@@ -50,7 +50,7 @@ function dragMove(e) {
     let curL = this.startL + moveX;
     let curT = this.startT + moveY;
     if (curL >= 300 && curL <= 700 && curT >= 200 && curT <= 600){
-        console.log(curL,curT);
+        // console.log(curL,curT);
         block.style.background = 'red';
     }else{
         block.style.background = 'deepskyblue';

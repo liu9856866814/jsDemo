@@ -5,7 +5,7 @@ let bigBox = document.getElementById('bigBox');
 
 // 设置数据
 litBox.ondragstart = function (e) {
-    e.dataTransfer.setData('key', 'value'); // 保存数据
+    // e.dataTransfer.setData('key', 'value'); // 保存数据
     e.dataTransfer.setData('id', this.id); // 把元素的id通过dataTransfer对象的setDate方法保存起来
 };
 

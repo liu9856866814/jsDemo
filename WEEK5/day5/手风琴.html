@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            transition: all .5s linear 0s;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .wrapper {
+            margin: 20px auto;
+            width: 1000px;
+            border: 1px solid #000;
+            color: #ffff;
+        }
+        ul {
+            overflow: hidden;
+        }
+        ul li{
+            float: left;
+        }
+        ul li p {
+            float: left;
+            height: 500px;
+            line-height: 500px;
+            font-size: 30px;
+        }
+        p.first{
+            width: 153px;
+            background-color: #DB192A;
+            border-right: 1px solid #000;
+            text-align: center;
+        }
+        p.second{
+            width: 0;
+            background-color: #aaa;
+        }
+        p.active + p {
+            width: 230px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <ul>
+        <li>
+            <p class="first active">第一1</p>
+            <p class="second"></p>
+        </li>
+        <li>
+            <p class="first">第一2</p>
+            <p class="second"></p>
+        </li>
+        <li>
+            <p class="first">第一3</p>
+            <p class="second"></p>
+        </li>
+        <li>
+            <p class="first">第一4</p>
+            <p class="second"></p>
+        </li>
+        <li>
+            <p class="first">第一5</p>
+            <p class="second"></p>
+        </li>
+    </ul>
+</div>
+<script>
+    // 1.获取东西南北中的p标签
+    let first = document.querySelectorAll('.first');
+    // 2. 给每个p标签绑定点击事件
+    [...first].forEach((item) => {
+        item.onclick = function () {
+            // 2.1 把所有的p.first的active类名全部移除
+            [...first].forEach(f => f.classList.remove('active'));
+            // 2.2 给被点击的p标签加上active类名
+            this.classList.add('active');
+        }
+    })
+</script>
+</body>
+</html>

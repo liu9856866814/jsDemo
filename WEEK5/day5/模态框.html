@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .mask{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            display: none;
+        }
+        .page {
+            margin: 0 auto;
+            width: 1200px;
+            height: 5000px;
+            background: indianred;
+            font-size: 200px;
+        }
+        /*.content{
+            !*水平垂直居中*!
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 300px;
+            height: 200px;
+            background-color: #00b38a;
+        }*/
+        .content{
+            /*水平垂直居中: top: 50% left: 50; margin-left 负的宽度的一半,margin-top 负的高度的一半*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+            width: 300px;
+            height: 300px;
+            background-color: #00b38a;
+            border-radius: 15px;
+        }
+        .content i.before{
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            display: block;
+            content: '';
+            width: 40px;
+            height: 40px;
+            background: url("./img/close.jpg") no-repeat center;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    kdfkjad kdjfkdj lkjsdfkljdl lkj kdjfldj jdklf dlsjfdjfo ef ej df kj lf dkfjdk dkjdkljf lkjdfklje ;fkjwel;kjf we;ljr
+    ;wejr  ej df kj lf dkfjdk dkjdkljf lkjdfklje ;fkjwel;kjf we;ljr ;wejr
+</div>
+<div class="mask">
+    <div class="content">
+        <i id="close" class="before"></i>
+    </div>
+</div>
+<script>
+    // 1. 要求遮罩层在时,页面不能滚动: 先让页面的overflow: hidden;
+    // document.documentElement.style.overflow = 'hidden';
+    let mask = document.querySelector('.mask');
+    let close = document.querySelector('#close');
+    // 2. 点击close关闭遮罩层
+    close.onclick = function(){
+        mask.style.display = 'none';
+        // 遮罩层关闭后,让页面可以滚动
+        document.documentElement.style.overflow = 'auto';
+    };
+    // 3. 页面滚动时,当页面滚出去的距离大于等于300时,让模态框弹出来;
+    // 第一次打开后,以后再滑动就不会再打开了;
+    let hasBeenOpen = false;
+    window.onscroll = function () {
+        if (hasBeenOpen) return;
+        if(document.documentElement.scrollTop || document.body.scrollTop >= 300){
+            mask.style.display = 'block';
+            hasBeenOpen = true;
+        }
+    }
+</script>
+</body>
+</html>

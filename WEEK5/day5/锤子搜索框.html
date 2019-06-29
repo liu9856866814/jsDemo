@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>锤子搜索框</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        input, button{
+            outline: none;
+            border: none;
+        }
+        .container{
+            position: relative;
+            margin: 30px auto;
+            width: 330px;
+            height: 36px;
+        }
+        .input {
+            border: 1px solid #aaa;
+            width: 290px;
+            border-radius: 18px;
+            height: 36px;
+            padding-left: 40px;
+            font-size: 18px;
+            font-family: 微软雅黑;
+        }
+        .search-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            background: url('./img/search.png') no-repeat center;
+        }
+        .aTag {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            width: 42px;
+            height: 20px;
+            border: 1px solid skyblue;
+            border-radius: 10px;
+            background-color: rgba(0,0,0,0.4);
+            color: #fff;
+            line-height: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .slide-list{
+            display: none;
+            position: absolute;
+            top: 50px;
+            width: 310px;
+            border: 1px solid deeppink;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .slide-list li{
+            line-height: 30px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .slide-list li:hover{
+            color: skyblue;
+        }
+        .slide-list:before{
+            position: absolute;
+            top: -9px;
+            left: 60px;
+            display: block;
+            content: '';
+            width: 15px;
+            height: 15px;
+            border-left: 1px solid deeppink;
+            border-top: 1px solid deeppink;
+            background-color: #fff;
+            transform: rotate(45deg);
+        }
+        ::-webkit-input-placeholder { /* WebKit browsers */
+            color: #999;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container" id="container">
+    <input type="text" class="input" id="input">
+    <button class="search-btn" id="search-btn"></button>
+    <a class="aTag" id="aTag" href="javascript:;">T恤</a>
+    <ul class="slide-list" id="slide-list">
+        <li>T恤</li>
+        <li>移动电源</li>
+        <li>卫衣</li>
+        <li>帆布鞋</li>
+        <li>保护套</li>
+    </ul>
+</div>
+<script>
+    let $ = selector => document.querySelector(selector);
+    let input = $('#input');
+    let searchBtn = $('#search-btn');
+    let slideList = $('#slide-list');
+    let slideLi = slideList.getElementsByTagName('li');
+    let aTag = $('#aTag');
+    input.onfocus = function () {
+        input.placeholder = '请输入商品名称';
+        slideList.style.display = 'block';
+        aTag.style.display = 'none';
+    };
+    input.onblur = function () {
+        slideList.style.display = 'none';
+        aTag.style.display = 'block';
+        input.placeholder = '';
+    };
+
+    // 在input中输入内容时去请求一个接口,并且把输入的数据传给服务器,把请求到的数据绑定到页面的ul中;
+    let ulList = slideList.innerHTML;
+    input.oninput = function () {
+        let val = this.value;
+        let data = null;
+        let p = new Promise(function (resolve, reject) {
+            let xhr = new XMLHttpRequest();
+            xhr.open('get', `./json/data.json?value=${val}`, false);
+            xhr.onreadystatechange = function () {
+                if(xhr.readyState === 4 && xhr.status){
+                    data = JSON.parse(xhr.responseText);
+                    resolve(data);
+                }
+            };
+            xhr.send();
+        });
+        p.then((result) =>{
+            let str =``;
+            let {data} = result;
+            let reg = new RegExp(val,'ig');
+            data.forEach((item, index) => {
+                item = item.replace(reg, function (a,b,c) {
+                    // console.log(a, b, c);
+                    return `<span style="color: red">${a}</span>`
+                });
+                str += `<li>${item}</li>`
+            });
+            slideList.innerHTML = str;
+        },(err) => {
+
+        })
+    };
+
+</script>
+</body>
+</html>
