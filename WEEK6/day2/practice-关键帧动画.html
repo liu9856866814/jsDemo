@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            margin: 30px auto;
+            background: url("img/zhengyi.gif") no-repeat;
+            transform-origin: center top;
+            animation: shake 2s linear 0s infinite;
+        }
+        @keyframes shake {
+            0%{
+                transform: rotate(45deg) scale(0,4);
+            }
+            25%{
+                transform: rotate(0deg) scale(4,2);
+
+            }
+            50%{
+                transform: rotate(-45deg) scale(2,4);
+            }
+            75%{
+                transform: rotate(0deg) scale(4, 2);
+            }
+            100%{
+                transform: rotate(45deg) scale(0,4);
+            }
+        }
+        .box2{
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .box2 img{
+            transition: all 1s linear 0s;
+        }
+        .box2 img:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box2">
+    <img src="img/12.jpg" alt="">
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* less中的函数*/
+/*在less中声明一个函数*/
+.transition(@property: all, @duration: .5s, @timing-function: linear, @delay: 0s){
+  transition: @arguments;
+}
+.bgimg(@url: '../img/1.jpg', @repeat: no-repeat, @x: center, @y: center){
+  background: @arguments;
+}
+
+@size: 200px;
+@m-bg: deeppink;
+@size-h: 300px;
+.box3{
+  .transition;/*调用.transition函数，并且使用参数默认值，使用默认值时可以不写小括号*/
+  .transition(@duration: 1s); /*传递实参调用.transition函数，要改那个参数就传哪个参数*/
+  width: @size;
+  height: @size;
+  background: @m-bg;
+  &:hover{
+    width: @size-h;
+    height: @size-h;
+  }
+}
+
+
+
+

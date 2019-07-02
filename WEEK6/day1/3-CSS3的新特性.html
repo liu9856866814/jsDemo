@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 500px;
+            /*height: 400px;!*如果是长方形,50%就会变成椭圆*!*/
+/*            background-color: #ccc;*/
+            border-radius: 10px; /*50% 如果是正方形就是正圆, 大于50%还是50%*/
+            box-shadow: 10px 10px 5px 5px #999;
+            font-size: 20px;
+            text-shadow: 5px 5px 5px #000;
+            background: url("img/12.jpg") no-repeat;
+            /*background-size: 100px 100px;!*具体值,把背景图设置成100宽100高*!*/
+            /*background-size: 100% 100%; !*百分比是相对于北齐填充的盒子*!*/
+            /*background-size: cover; !*保持图片的比例把盒子充满，不保证图片都能露出*!*/
+            background-size: contain; /*保持图片的比例填充盒子较小尺寸的一边，大的一边不保证能填充；*/
+         }
+        .box2{
+            width: 400px;
+            height: 300px;
+            padding: 20px;
+            border: 20px solid royalblue;
+            background:url("img/12.jpg") no-repeat;
+            /*background-clip: content-box;*/ /*裁切到内容*/
+            /*background-clip: padding-box;!*裁切到padding*!*/
+            background-clip: border-box;/*裁切到border*/
+            -webkit-background-clip: text; /*做艺术字效果 图片只填充文字（如果图片后面会动，背景需要一个gif图）*/
+            font-size: 80px;
+            color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    G20峰会
+</div>
+<div class="box2">
+    哈喽，你好啊
+</div>
+<script>
+    // C3的新特性
+    // border-radius: 圆角属性
+    // box-shadow: 盒子阴影
+    // box-shadow: 阴影水平偏移值 垂直方向偏移值 blur模糊范围 spread阴影大小 color阴影颜色 inset内侧阴影/outset外侧阴影;
+    // text-shadow: h-shadow水平偏移值 v-shadow垂直方向偏移值 blur模糊半径 color阴影颜色
+    // background-size:
+    // background-clip:
+</script>
+</body>
+</html>

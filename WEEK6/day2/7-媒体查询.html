@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background: #000;
+        }
+        /*媒体查询：根据不同媒体类型（如电视、阅读器、打印机、pc等），使不同的样式生效*/
+   /*     @media screen and (max-width: 400px){ !*屏幕宽度小于等于400样式生效*!
+            .box{
+                background: #ccc;
+            }
+        }
+        @media screen and (min-width: 800px){ !*屏幕宽度大于等于800样式生效*!
+            .box{
+                background: #00b38a;
+            }
+        }*/
+        /*更常用的是all,是所有的媒体类型，包含screen*/
+        @media all and (max-width: 400px) {
+            .box{
+                background: #00b38a;
+            }
+        }
+        @media all and (min-width: 800px){
+            .box{
+                background: red;
+            }
+        }
+        /* 媒体查询常用于处理pc端不同尺寸显示器设置不同样式*/
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

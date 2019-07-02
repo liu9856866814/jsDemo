@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            margin: 30px auto;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            background: rgba(0, 0, 0, .3);
+            perspective: 2000px; /*视距,观察点到元素的距离,如果要3d的效果,必须设置这个属性;设置视距以后元素在z轴方向上移动的时候,
+            会有近大远小*/
+            transform-style: preserve-3d;
+        }
+        .box .inner{
+            width: 300px;
+            height: 300px;
+            background: #00b38a;
+            /*transform: translateZ(-100px);*/
+            /*3d变换同样依赖设置transform属性，除了transform还要设置视距和transform-style*/
+            /*
+            translate3d(x,y,z) 设置元素在x,y,z轴上的偏移值
+            translateZ(z) 设置元素在z轴上的偏移值
+            rotateX(deg) 绕着x轴旋转, 角度为正值元素的上边缘进入屏幕内
+            rotateY(deg) 绕着y轴旋转，角度为正值元素的右边进入屏幕内
+            rotateZ(deg) 在平面内转到deg,
+            */
+            transform: rotateZ(30deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="inner"></div>
+</div>
+</body>
+</html>

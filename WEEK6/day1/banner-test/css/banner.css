@@ -1,0 +1,64 @@
+.container{
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+    margin: 30px auto;
+    position: relative;
+}
+.container .wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4000px;/*一会js动态设置宽*/
+
+}
+.wrapper .slide {
+    float: left;
+}
+
+.container .focus {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 18px;
+    background: rgba(0,0,0, .5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.focus li{
+    float: left;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 4px 8px;
+}
+.focus li:hover{
+    cursor: pointer;
+}
+.focus li.active{
+    background-color: red;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 28px;
+    height: 45px;
+    background: url("../img/pre.png") no-repeat;
+    opacity: 0.5;
+    display: none;
+}
+.arrowLeft{
+    left: 0;
+    background-position: 0 0;
+}
+.arrowRight{
+    right: 0;
+    background-position: -50px 0;
+}
+.arrow:hover{
+    opacity: 1;
+}

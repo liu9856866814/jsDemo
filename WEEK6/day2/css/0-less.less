@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@size: 300px; /*声明变量*/
+@m-color: #00b38a;
+.transition(@property:all, @duration: .5s, @timing-function: linear, @delay: 0s){
+  transition: @arguments;
+  /*
+  transition-property: 过渡属性,默认all
+  transition-duration: 过渡时间,在固定时间内从初始值运动到终点值
+  transition-timing-function: 过渡效果, 默认linear, 贝塞尔曲线,ease-in ease-out ease-in-out...
+  transition-delay: 延迟多久执行过渡动画;
+  */
+}
+.box{
+  width: @size;
+  height: @size;
+  background-color: @m-color;
+  //.transition; // 调用transition函数,使用默认值
+  .transition(@duration: 1s); // 修改transition的duration为1s,改那个传哪个
+  & > P { /*子级选择器 .box>p*/
+    color: #ffff00;
+  }
+  article > p{
+    color: skyblue;
+  }
+  &:hover{
+    width: 500px;
+    height: 500px;
+  }
+}

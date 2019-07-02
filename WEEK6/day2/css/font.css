@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url("../fonts/iconfont.eot"),/*IE9*/
+    url("../fonts/iconfont.woff") format('woff'),
+    url("../fonts/iconfont.ttf") format('truetype'),/*chrome ,firefox, opera, safari, android ios 4.2+*/
+    url("../fonts/iconfont.svg") format('svg');
+}
+/*使用图标字体的意义: 图标可以被随意缩放,不会模糊; 而且不用切图,开发效率高,易于维护*/

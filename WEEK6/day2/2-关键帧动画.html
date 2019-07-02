@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 120px;
+            height: 300px;
+            margin: 30px auto;
+            background: url("img/clock.png") no-repeat;
+            transform-origin: center top;  /*设置旋转元素的基点位置*/
+            /*水平方向: left center right*/
+            /*垂直方向: top center bottom*/
+            animation: shake2 2s linear 0s infinite;
+            /*
+            animation: 动画属性, 是一个合成属性;
+            animation-name: 动画名称, @keyframes定义一个动画
+            animation-duration: 动画时长
+            animation-timing-function: 动画效果, 默认值linear
+            animation-delay: 动画延迟多少秒执行
+            animation-iteration-count: 动画执行次数,默认1次,infinite 无限次
+            */
+        }
+        /*关键帧动画语法: @keyframes 动画名 { 关键帧元素所处的样式}*/
+        /*关键帧声明: from to*/
+        /*关键帧声明: 百分比(0% - 100% 的一个数字)*/
+        @keyframes shake{
+            from{
+                /*起始的样式 from 相当于0%*/
+            }
+            to{
+                /*终点的样式 to 相当于100%*/
+            }
+        }
+        @keyframes shake2 {
+            0% {
+                transform: rotate(45deg);
+            }
+            25%{
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(-45deg);
+            }
+            75% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+<!--    <img src="img/12.jpg" alt="">-->
+</div>
+<div class="box">
+<!--    <img src="img/12.jpg" alt="">-->
+</div>
+</body>
+</html>

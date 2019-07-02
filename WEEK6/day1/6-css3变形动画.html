@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*css3的变量动画需要设置transform的属性*/
+        .box{
+            margin: 20px auto;
+            width: 300px;
+            height: 300px;
+            background: #00b38a;
+            transition: all 1s linear 0s;
+        }
+
+        .box:hover{
+            /*transform: scale(2, 0.5); !*缩放*!*/
+            /*transform: translate(0px, 50px);*/
+            /*transform: rotate(-360deg);*/
+            transform: skew(0deg,60deg);
+        }
+        /*
+        transform: 常用以下属性
+        scale(水平方向尺寸缩放位数,竖直方向缩放的倍数)
+        translate(水平方向平移的距离，竖直方向平稳的距离) 水平方向的值越大越向右边走，竖直方向的值越大越往下面走；
+        rotate(旋转角度deg) 角度为正向顺时针方向旋转，角度为负向逆时针方向旋转
+        skew(x-轴的旋转角度，y轴的旋转角度) skew的xy轴和普通的坐标系不同；
+        */
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+/*需要box在页面中水平居中，上边距离页面顶部30px；box宽高300px,box下面的a标签中文字是红色*/
+.box{
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    background: #00b38a;
+}
+.box a {
+    color: red;
+}
+.box:hover{
+    background: skyblue;
+}
+
+/*CSS 不是编程语言，是标记语言，没有变量、函数等。代码的可维护性和复用性都很差*/
+
+/*预处理CSS语言，如less、sass、stylus 等*/
+/*less 就是一门面向对象的编程语言；less中是有变量、函数、判断等一些编程语言特性；浏览器不能识别less代码，所以写在less中的
+样式是不能生效的，需要使用工具把它转成css*/
+
+
+
+

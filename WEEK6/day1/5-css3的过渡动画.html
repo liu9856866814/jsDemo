@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 30px auto;
+            width: 200px;
+            height: 200px;
+            background: #00b38a;
+            transition: all 1s linear 0.5s; /*过渡效果: 当属性发生变化时,不是突然间到终点值,而是一点点的到达终点值,给人一种
+            平滑的感觉*/
+            /*transition 是合成属性
+                transition-property: 过渡属性,默认值是all,可以单独设置某个属性;
+                transition-duration: 过渡时间,在这个时间内从初始值过渡到终点值
+                transition-timing-function: 过渡效果,默认linear, ease-in ease-out ease-in-out 贝塞尔曲线cubic-bezier()
+                 cubic-bezier(.06,.89,.83,.67) 里面四个值; https://cubic-bezier.com/
+                transition-delay: 等待时间;
+            */
+        }
+        .box:hover{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+</div>
+</body>
+</html>
