@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米移动端响应式练习</title>
+    <script>
+        (function (designWidth) {
+            function computedWidth() {
+                let winW = document.documentElement.clientWidth || document.body.clientWidth;
+                document.documentElement.style.fontSize = winW / designWidth * 100 + 'px';
+            }
+            computedWidth();
+            window.addEventListener('resize',computedWidth);
+            window.addEventListener('orientationchange', computedWidth)
+        })(750)
+    </script>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <style>
+        html,body{
+            font-size: 100px;
+        }
+        .wrap{
+            width: 7.5rem;
+            height: .84rem;
+        }
+        .active{
+            color: rgb(237, 91, 0);
+        }
+        /*header style start*/
+        .wrap .header{
+            width: 100%;
+            height: .84rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: .84rem;
+        }
+        .wrap .header div{
+            display: flex;
+        }
+        .wrap .header div:nth-child(1){
+            width: 1rem;
+            height: .62rem;
+        }
+        .wrap .header img{
+            width: .6rem;
+            height: .4rem;
+            align-self: center;
+            margin-left: .1rem;
+        }
+        .wrap .header div:nth-child(2){
+            position: relative;
+            width: 5.5rem;
+            height: .62rem;
+            line-height: .62rem;
+        }
+        .wrap .header .search{
+            display: block;
+            font-size: .5rem;
+            position: absolute;
+            top: .05rem;
+            left: .05rem;
+            color: #aaa;
+            z-index: 111;
+        }
+        .wrap .header input {
+            font-size: .18rem;
+            padding-left: 10%;
+            width: 90%;
+            height: .62rem;
+        }
+        .wrap .header div:nth-child(3){
+            width: 1rem;
+            height: .62rem;
+            line-height: .62rem;
+            margin-left: 0.1rem;
+        }
+        .wrap .header .user{
+            align-self: center;
+            font-size: .6rem;
+            color: #999;
+        }
+        /* header style end*/
+
+        /* nav style start*/
+        .wrap .nav ul{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            height: .57rem;
+        }
+        .wrap .nav li {
+            display: flex;
+            margin: .1rem auto;
+            line-height: .57rem;
+        }
+        .wrap .nav li a{
+            display: inline-flex;
+            font-size: .2rem;
+            color: rgb(116, 116, 116);
+        }
+        .wrap .nav li.active{
+            border-bottom: 1px solid rgb(237, 91, 0);
+        }
+
+        .wrap .nav .banner {
+            width: 7.2rem;
+            height: 3.6rem;
+            margin: 0 auto;
+        }
+        .wrap .nav .banner img{
+            width: 100%;
+        }
+
+        .wrap .nav .hot-goods{
+            display: flex;
+            width: 7.2rem;
+            height: 3.04rem;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .wrap .nav .hot-goods li{
+            width: 1.44rem;
+        }
+        .wrap .nav .hot-goods img{
+            width: 1.44rem;
+            height: 1.52rem;
+        }
+
+        .nav .hot-price {
+            display: flex;
+            width: 7.2rem;
+            height: 5.08rem;
+            margin: .1rem auto;
+
+        }
+        .nav .hot-price div{
+            width: 3.58rem;
+            height: 5.08rem;
+        }
+        .nav .hot-price div figure{
+            margin: .05rem 0 0 0;
+            width: 3.58rem;
+        }
+        .nav .hot-price div:nth-child(2) figure{
+            height: 2.52rem;
+            margin-left: .05rem;
+        }
+        .nav .hot-price div figure img{
+            width: 3.58rem;
+        }
+        /* nav style end*/
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div><img src="img/header-logo.png" alt=""></div>
+        <div>
+            <i class="search icon-font i-search-bold"></i>
+            <input type="text" value="" placeholder="搜索商品名称">
+        </div>
+        <div>
+            <i class="user icon-font i-user-border"></i>
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li class="active"><a href="">推荐</a></li>
+            <li><a href="">手机</a></li>
+            <li><a href="">智能</a></li>
+            <li><a href="">电视</a></li>
+            <li><a href="">笔记本</a></li>
+            <li><a href="">家电</a></li>
+            <li><a href="">生活</a></li>
+        </ul>
+        <div class="banner">
+            <img src="img/banner1.webp" alt="">
+        </div>
+        <ul class="hot-goods">
+            <li><img src="img/img1.webp" alt=""></li>
+            <li><img src="img/img2.webp" alt=""></li>
+            <li><img src="img/img3.webp" alt=""></li>
+            <li><img src="img/img4.webp" alt=""></li>
+            <li><img src="img/img5.webp" alt=""></li>
+            <li><img src="img/img1.webp" alt=""></li>
+            <li><img src="img/img2.webp" alt=""></li>
+            <li><img src="img/img3.webp" alt=""></li>
+            <li><img src="img/img4.webp" alt=""></li>
+            <li><img src="img/img5.webp" alt=""></li>
+        </ul>
+        <div class="hot-price">
+            <div>
+                <figure><img src="img/price1.webp" alt=""></figure>
+            </div>
+            <div>
+                <figure><img src="img/price2.jpg" alt=""></figure>
+                <figure><img src="img/price3.webp" alt=""></figure>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

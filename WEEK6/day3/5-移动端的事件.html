@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--写rem要写视口-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        (function (desinWidth) {
+            function computedFont() {
+                let winW = document.documentElement.clientWidth || document.body.clientWidth;
+                document.documentElement.style.fontSize = winW / desinWidth * 100 + 'px';
+            }
+            computedFont();
+            window.addEventListener('resize', computedFont);
+            window.addEventListener('orientationchange', computedFont)
+        })(750)
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 100px;
+        }
+        .box{
+            width: 2rem;
+            height: 2rem;
+            background: lightcoral;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<script>
+    // 移动端的常用事件：
+    // 移动端很少用click,因为在移动端有300ms延迟
+    let box = document.querySelector('.box'); // querySelector和querySelectorAll 在移动端随意用，但是注意没有DOM映射，如果
+    // 元素是动态绑定的，在绑定后需要重新获取；
+    // 1. touchstart 触摸元素时触发
+    box.addEventListener('touchstart', function (e) {
+        console.log(e); // TouchEvent 触摸事件对象
+        console.log(e.touches[0]); // e.touches 中包含了触发事件时的信息，touches是类数组，有长度有索引，所以需要[索引的方式获取]，
+        // 这个里面仍然包含了触摸的一点的坐标信息clienX,clientY,pageX,pageY;
+        console.log(this); // DOM2级事件函数中的this仍然是绑定当前事件的元素对象；
+    });
+
+    // 2. touchmove 手指在元素上滑动
+    box.addEventListener('touchmove', function (e) {
+        // 只要手指在元素上滑动，就会触发touchmove事件，并且触摸的点的坐标信息也会实时改变
+        console.log(e);
+        console.log('move');
+    });
+    // 3. touchend 当手指从元素上离开时触发
+    box.addEventListener('touchend', function (e) {
+        // 在touchedn事件中，e.touches 里面没有东西了。这些事件信息都去哪了？
+        // touchend 时事件信息存在e.changedTouches
+        console.log(e.touches); // 空的类数组
+        console.log(e.changedTouches[0]);// changedTouches是一个类数组
+        console.log('end');
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function (designWidth) {
+            function computedFont() {
+                let winW = document.documentElement.clientWidth || document.body.clientWidth;
+                document.documentElement.style.fontSize = winW / designWidth * 100 + 'px';
+                computedFont();
+                window.addEventListener('resize',computedFont);
+                window.addEventListener('orientationchange', computedFont);
+            }
+        })(750)
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 100px;
+        }
+        .box{
+            margin: .2rem auto;
+            width: 3rem;
+            height: 3rem;
+            background: lightcoral;
+            opacity: .3;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<div class="box"></div>
+
+<script>
+    // 如果在盒子的x或者y方向上手指滑动的距离超过30px,就把这个盒子的opacity的值设为1，否则就让盒子旋转540度；
+    let box = document.querySelector('.box');
+    // 思路：在触摸元素时，记录下触摸点的初始位置坐标；监听元素touchmove事件，在移动时会不断的触发touchmove事件，并且可以
+    // 通过事件对象获得当前手指所处的位置坐标，用当前的位置减去起始位置判断手指移动距离是否超过30px，并且把是否超过30的结
+    // 果保存起来;当手指离开元素时，即touchend触发时，要根据是否移动了30px，做不同的操作
+    box.addEventListener('touchstart',function (e) {
+        // e.touches[0].clientX;
+        // e.touches[0].clientY;
+        let {touches: {0: {clientX, clientY}}} = e;
+        // 通过自定义属性
+        this.startX = clientX;
+        this.startY = clientY;
+        this.greaterThan30 = false;
+        this.style.transition = 'all 0s';
+        this.style.transform = 'rotate(0)';
+        this.style.opacity = .3;
+    });
+    box.addEventListener('touchmove',function (e) {
+        console.log('move');
+        // 获取滑动后手指的当前位置
+        let {touches: {0: {clientX, clientY}}} = e;
+        // 计算移动的距离是否超过30px
+        let moveX = Math.abs(clientX - this.startX) > 30;
+        let moveY = Math.abs(clientY - this.startY) > 30;
+        // 保存是否大于30的结果
+        this.greaterThan30 = moveX || moveY; // 只要一个方向大于30就可以
+        // 直接触摸元素然后手指离开并不会触发touchmove事件，导致greaterThan30是上一次的结果，所以我们每次在触摸开始时，把
+        // 该属性置为false;
+    });
+    box.addEventListener('touchend', function (e) {
+        this.style.transition = 'all .5s';
+        // this.transition= 'all .5s linear 0s';
+        if (this.greaterThan30){
+            this.style.opacity = 1;
+        } else{
+            this.style.transform = 'rotate(540deg)';
+        }
+    })
+</script>
+</body>
+</html>

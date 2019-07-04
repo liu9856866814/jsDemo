@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            display: flex;
+            /*flex-direction: row;*/
+            /*flex-wrap: wrap-reverse;*/
+            flex-flow: row nowrap; /*合成属性,flex-direction 和 flex-wrap的简写*/
+            /*justify-content: flex-end;*/
+            /*justify-content: flex-start;*/
+            /*justify-content: center;*/
+            /*justify-content: space-around;*/
+            /*align-items: flex-start;*/
+            /*align-items: flex-end;*/
+            /*align-items: center;*/
+            /*align-items: baseline;*/
+            margin: 30px auto;
+            width: 800px;
+            height: 500px;
+            background: #eeeeee;
+            color: #ccc;
+            font-size: 40px;
+        }
+        .box p{
+            background: #fff;
+            width: 85px;
+            height: 85px;
+
+            border: 1px solid #fff;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .box p:nth-child(2){
+            /*flex-grow: 2;*/
+            flex-shrink: 0;
+            align-self: center;
+            /*order: -1;*/
+
+        }
+        .box p:nth-child(odd){
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <p class="item">1</p>
+    <p class="item">2</p>
+    <p class="item">3</p>
+    <p class="item">04</p>
+    <p class="item">05</p>
+    <p class="item">06</p>
+    <p class="item">07</p>
+    <p class="item">08</p>
+    <p class="item">09</p>
+    <p class="item">10</p>
+</div>
+<script>
+    // flex: flex box 的缩写; 是弹性盒模型, 为盒模型提供最大的灵活性;
+
+    // 使用flex布局需要指定一个容器为flex容器；给容器元素设置display: flex;
+    // 行内元素也可以使用flex布局，设置 display: inline-flex;
+    // 使用flex布局后，子元素的float, clear, vertical-align属性自动失效
+
+    // flex 布局的基本概念
+    // 1 容器：采用flex布局的元素称为flex容器（被设置了display:flex的元素）；所有的子元素自动成为容器的成员，叫做项目（flex item）
+
+    // 主轴和交叉轴: 默认情况下水平方向是主轴（main axis），垂直于主轴的方向是交叉轴(cross axis)
+    // 主轴和元素的左边缘交点称为main start, 和右边缘的交点称为main end
+    // 交叉轴和上边缘的交点称为cross start 和下边缘的交点称为 cross end
+
+    // 项目（子元素）默认沿着主轴方向排列，项目占据主轴的尺寸称为main size,占据交叉轴的尺寸称为cross size;
+
+    // 容器的属性
+    // flex-direction: 设置主轴方向的，可选值；
+    // row(默认值)： 主轴为水平方向，起点在左边
+    // row-reverse: 主轴为水平方向，起点在右边
+    // column: 主轴为垂直方向,起点在上沿
+    // column: 主轴为垂直方向,起点在下沿
+
+    // flex-wrap: 设置元素在一行排不下时如何换行
+    // nowrap(默认值): 不换行,靠压缩项目的尺寸来放下
+    // wrap: 换行,第一行在上面
+    // wrap-reverse: 换行,第一行在下面
+
+    // flex-flow: flex-direction 和 flex-wrap的简写
+
+    // justify-content: 设置项目在主轴方向上的对齐方式,可选值
+    // flex-start(默认值):左对齐
+    // flex-end: 右对齐
+    // center: 居中
+    // space-between: 两端对齐,项目之间的距离相等
+    // space-around: 每个项目两侧的间距相同,所以项目间的距离是项目和边框的距离的2倍;
+
+    // align-items: 设置项目在交叉轴上的对齐方式
+    // stretch: 默认值，项目未设置高度或者高度auto,项目高度自动充满整个容器
+    // flex-start: 交叉轴起点
+    // flex-end: 交叉轴终点
+    // center: 居中
+    // baseline: 基线对齐
+
+    // 项目的属性
+    // order：定义项目的排列顺序，默认值是0，越小越靠前；
+    // flex-grow: 定义项目的放大的比例，默认值是0，表示有剩余空间也不放大；如果所有的项目的flex-grow都为1，如果有剩余空间，
+    // 则项目平分这些空间；如果有一个项目的flex-grow为2；其余的都为1，为2的这个比其他分得的剩余空间更大
+    // flex-shrink: 定义项目缩小的比例，默认是1，表示空间不足时，按比例缩小; 如果有一个项目的flex-shrink为0，其余的都为1，
+    // 那么空间不足时为0的不缩小；
+
+    // align-self: 允许单个项目与其他项目的对齐方式不同，可以覆盖容器的align-items属性；默认值auto，表示继承父元素的
+    // align-item属性.
+
+
+</script>
+</body>
+</html>
