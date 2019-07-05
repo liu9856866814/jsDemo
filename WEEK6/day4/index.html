@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>珠峰-qq音乐</title>
+	<link rel="stylesheet" href="css/reset.min.css">
+	<link rel="stylesheet/less" href="css/index.less">
+	<script>
+		(function (designWidth) {
+			function computedFont() {
+				let winW = document.documentElement.clientWidth || document.body.clientWidth;
+				document.documentElement.style.fontSize = winW / designWidth * 100 + 'px';
+			}
+			computedFont();
+			window.addEventListener('resize', computedFont);
+			window.addEventListener('orientationchage', computedFont);
+		})(750)
+	</script>
+	<script src="js/less-2.5.3.min.js"></script>
+</head>
+<body>
+<section class="container">
+	<audio src="img/myDream.m4a" class="musicAudio" id="musicAudio"></audio>
+	<div class="backgroundImg"></div>
+	<div class="bg"></div>
+	<header class="header">
+		<img src="img/myDream.jpg" alt="">
+		<div class="song">
+			<p>我的梦</p>
+			<p>张靓颖</p>
+		</div>
+		<a href="javascript:;" class="musicBtn" id="musicBtn"></a>
+	</header>
+	<main class="main">
+		<div class="wrapper">
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+			<p>我的未来不是梦</p>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="progress">
+			<span class="current">00:00</span>
+			<span class="duration">00:00</span>
+			<div class="probg">
+				<div class="already"></div>
+			</div>
+		</div>
+		<a href="javascript:;" class="down" id="down">下载这首音乐</a>
+	</footer>
+</section>
+
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

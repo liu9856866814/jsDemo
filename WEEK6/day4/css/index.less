@@ -1,0 +1,165 @@
+@color: #31c27c;
+.keyframes (@name: move, @xxx) {
+	@keyframes @name {
+		@xxx();
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 100px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+	position: relative;
+
+	/*background-like*/
+	.backgroundImg, .bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: -2;
+	}
+	.backgroundImg {
+		background: url("../img/myDream.jpg") no-repeat;
+		background-size: cover;
+		filter: blur(7px);
+	}
+	.bg {
+		background: rgba(0, 0, 0, .3);
+	}
+
+	/*header*/
+	.header {
+		position: relative;
+		padding: .3rem;
+		background: rgba(0, 0, 0, .2);
+		& > img {
+			width: 1.2rem;
+			height: 1.2rem;
+		}
+		.song {
+			display: inline-block;
+			color: #fff;
+			vertical-align: top;
+			p {
+				height: .6rem;
+				&:nth-child(1) {
+					font-size: .45rem;
+				}
+			}
+		}
+		#musicBtn {
+			.keyframes(move, {
+				from {
+					transform: rotate(0deg)
+				}
+				to {
+					transform: rotate(360deg)
+				}
+			});
+			display: block;
+			width: .6rem;
+			height: .6rem;
+			background: url("../img/music.svg") no-repeat;
+			background-size: 100% 100%;
+			position: absolute;
+			top: 50%;
+			right: .3rem;
+			margin-top: -.3rem;
+
+			&.select {
+				animation: move 1s linear 0s infinite;
+			}
+		}
+	}
+
+	/*main */
+	.main {
+		position: relative;
+		padding: .3rem;
+		height: 8rem;
+		overflow: hidden;
+		/*wrapper*/
+		.wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+
+			p {
+				height: .84rem;
+				color: rgba(255, 255, 255, .5);
+				font-size: .4rem;
+				text-align: center;
+				line-height: .84rem;
+				letter-spacing: .04rem;
+
+				/*高亮样式*/
+				&.select {
+					color: @color;
+				}
+			}
+		}
+	}
+
+	/*footer*/
+	.footer {
+
+		/*progress*/
+		.progress {
+			position: relative;
+			width:100%;
+			height: .8rem;
+			overflow: hidden;
+			span {
+				position: absolute;
+				color: #fff;
+				&:nth-child(1) {
+					left: .3rem;
+				}
+				&:nth-child(2) {
+					right: .3rem;
+				}
+			}
+			.probg {
+				width: 65%;
+				margin: .15rem auto;
+				height: .04rem;
+				background: rgba(255, 255, 255, .5);
+
+				.already {
+					width: 45%;
+					height: 100%;
+					background: @color;
+				}
+			}
+		}
+
+		/*download*/
+		.down {
+			display: block;
+			width: 60%;
+			height: 1rem;
+			border-radius: .5rem;
+			text-align: center;
+			line-height: 1rem;
+			font-size: .4rem;
+			color: #fff;
+			background: url("../img/sprite_play.png") no-repeat .2rem -5.86rem @color;
+			background-size: .8rem 7rem;
+			margin: auto;
+		}
+	}
+}

@@ -1,0 +1,156 @@
+@color-white: #fff;
+@color-green: #31c27c;
+/*less 中使用关键帧动画@keyframes,需要使用函数的方式声明*/
+.keyframes(@name: move, @content){
+  /*@name 是动画的名字，需要在定义关键帧动画时传入*/
+  /**/
+  @keyframes @name{
+    @content();
+  }
+}
+
+html{
+  font-size: 100px;
+  height: 100%;
+}
+body{
+  height: 100%;
+  font-size: .16rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .backgroundImg,.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  /*background*/
+  .backgroundImg{
+    background: url("../img/myDream.jpg") no-repeat top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    filter: blur(5px); /*filter滤镜属性，blur是模糊程度*/
+  }
+  .bg{
+    background: rgba(0, 0, 0, .3);
+  }
+
+  /*header*/
+  .header{
+/*    box-sizing: border-box;
+    width: 100%;*/
+    position: relative;
+    padding: .3rem;
+    background: rgba(0, 0, 0, .4);
+    img{
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+    .song{
+      display: inline-block;
+      p {
+        font-size: .3rem;
+        height: .6rem;
+        line-height: .6rem;
+        color: @color-white;
+        &:nth-child(1){
+          font-size: .45rem;
+        }
+      }
+
+    }
+    .musicBtn{
+      .keyframes(move,{from{ transform: rotate(0deg)} to {transform: rotate(360deg)}});/**/
+      display: block;
+      width: .6rem;
+      height: .6rem;
+      position: absolute;
+      right: .3rem;
+      top: 50%;
+      margin-top: -0.3rem;
+      background: url("../img/music.svg") no-repeat center;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      &.select{
+        animation: move 1s linear 0s infinite;/*调用上面创建的关键帧动画*/
+      }
+    }
+  }
+
+  /*main*/
+  .main{
+    position: relative;
+    padding: .3rem;
+    height: 8rem; /*因为播放器是要充满整个页面的， 所以main的height不是死的，需要根据设备的高度动态设置*/
+    overflow: hidden;
+    .wrapper{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: all .5s linear 0s;
+      p{
+        height: .84rem;
+        line-height: .84rem;
+        text-align: center;
+        font-size: .4rem;
+        color: rgba(255,255,255, .5);
+        &.select{
+          color: @color-green;
+        }
+      }
+    }
+  }
+
+  /*footer*/
+  .footer{
+    .progress{
+      position: relative;
+      /*父元素没有padding-top，子元素的margin-top 会传递；解决方案：给父元素设置padding-top或者父元素设置overflow:hidden*/
+      overflow: hidden;
+      width: 100%;
+      //height: .8rem;
+      span{
+        position: absolute;
+        color: @color-white;
+        z-index: 2;
+        &.current{
+          left: .3rem;
+        }
+        &.duration{
+          right: .3rem;
+        }
+      }
+      .probg{
+        width: 65%;
+        margin: .15rem auto;
+        background: rgba(255, 255, 255, .5);
+        height: .04rem;
+        .already{
+          width: 0%;/*宽度不是固定的,根据播放进度占总时长的比例来设置的*/
+          height: 100%;
+          background: @color-green;
+        }
+      }
+    }
+    .down{
+      display: block;
+      width: 60%;
+      height: 1rem;
+      line-height: 1rem;
+      font-size: .4rem;
+      color: @color-white;
+      text-align: center;
+      background: url("../img/sprite_play.png") no-repeat .2rem -5.86rem @color-green;
+      background-size: .8rem .7rem;
+      border-radius: .5rem;
+      margin: .2rem auto;
+    }
+  }
+}

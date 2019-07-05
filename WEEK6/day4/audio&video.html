@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+audio 是h5新增的标签，用来播放音频；
+mp3
+ogg
+wav
+(不支持amr格式的音频，npm上有一个库可以播放amr格式的音频)
+以后接需求，要确认格式，最好是mp3；不是mp3谁来转格式（app或者服务端来转），如果前端转，体验会降级；
+-->
+<audio id="audio" src="img/myDream.m4a" controls autoplay preload="auto"></audio>
+<!--
+controls 启用audio的控制界面，如果不写，页面中将什么也不展示；
+autoplay 自动播放（iphone中不能用）
+preload 提前加载 auto 自动加载； none 不提前加载，播放时才加载；metadata 只加载音频的基本信息
+loop: 循环播放
+-->
+
+<!--video的属性和audio基本相似-->
+<!--
+poster: 视频封面图片
+-->
+<video src="http://www.w3school.com.cn/i/movie.ogg" controls poster="img/myDream.jpg"></video>
+
+<!--
+视频流、音频流：不是一个具体的文件
+如果是播放流，一般服务端会提供一个 类似rtmp://....的地址，把地址赋给audio和video的src属性；
+如果遇到不能用的情况，需要借助第三方的插件：video.js
+-->
+<script>
+</script>
+</body>
+</html>
