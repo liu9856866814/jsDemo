@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 30px auto;
+            width: 100px;
+        }
+        ul,li{
+            list-style: none;
+        }
+        div.val{
+            width: 95px;
+            border: 1px solid #000;
+            padding-left: 5px;
+        }
+        ul{
+            width: 100px;
+            border: 1px solid #000;
+            display: none;
+        }
+        li{
+            padding: 5px;
+            transition: all .3s linear 0s;
+        }
+        li:last-child{
+            border-bottom: none;
+        }
+        .show{
+            display: block;
+        }
+        .active{
+            background: rgba(0, 0, 0, .3);
+        }
+        li:hover{
+            background: rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--<select name="" id="" value="0">
+        <option value="0">水果</option>
+        <option value="1">小面</option>
+        <option value="2">炒饭</option>
+        <option value="3">土豆粉</option>
+    </select>-->
+    <div class="val">水果</div>
+    <ul class="list">
+        <li class="active">水果</li>
+        <li>小面</li>
+        <li>炒饭</li>
+        <li>土豆粉</li>
+    </ul>
+</div>
+
+<!--
+作业：模拟select框，用ul等其他元素模拟
+-->
+<!--点击其他地方，关闭下拉列表：给document绑定DOM二级事件 在事件函数中 判断e.target 不是当前列表中的元素，就让列表收起来
+ clickOutside-->
+
+<script>
+    let val = document.getElementsByClassName('val')[0];
+    let list = document.getElementsByClassName('list')[0];
+    console.log(list);
+    let li = list.getElementsByTagName('li');
+    val.onclick = function (e) {
+        console.log('1');
+        e.stopPropagation();
+        list.style.display = 'block';
+        for (let i = 0; i < li.length; i++) {
+            let liElement = li[i];
+            liElement.onclick = function (e) {
+                e.stopPropagation();
+                val.innerText = this.innerText;
+                liElement.index = i;
+                val.index = i;
+                for (let j = 0; j < li.length; j++) {
+                    if(li[j].index === val.index){
+                        li[j].classList.add('active');
+                        list.style.display="none";
+                    }else{
+                        li[j].classList.remove('active');
+                    }
+                }
+            }
+        }
+    };
+    document.documentElement.addEventListener('click',function (e) {
+        list.style.display = 'none';
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1. 响应式布局，rem解决方案
+2. 音符按钮可以控制播放暂停，对应这两种状态，按钮的样式不同，播放时是转动的，不播放时是停滞的；
+3. 自动播放
+4. 播放器的高度是充满一屏幕的；
+5. 歌词对应播放进度高亮当前的歌词
+6. 播放进度和当前的播放时间会随着音频的播放进度改变；
+-->
+
+<!--
+1. rem响应式布局需要什么：
+rem的原理：1rem是一个html的fontSize大小，我们根据视口的宽动态设置html的font-size,就能达到页面整体缩放的目的；
+meta name = viewport
+html {font-size:100px}
+rem.js(根据屏幕（视口）的宽动态的设置html的fontSize)
+2. 关于播放和暂停
+2.1 给按钮绑定一个触摸事件（zepto的tap方法）
+2.2 在事件函数中根据音频的播放状态采取不同的操作：
+    2.2.1 audio元素自带paused属性，true表示处于暂停，false表示处于播放状态
+    2.2.2 audio 元素play 方法是播放， pause方法是暂停；
+
+3. 绑定歌词的注意点：
+    3.1 replace 可以使用回调函数的返回值进行替换操作
+    3.2 replace 结合正则替换时，正则能够匹配多少次，回调函数就会执行多少次；
+    3.3 replace 配合正则使用时,正则能够捕获多少次,回调函数就会执行多少次,我们常利用这种特性遍历字符串;
+
+4. 播放器的高度如何充满一屏
+   html、body设置height为100%，歌词部分的高度是不固定的，用js来动态计算这一部分的高度；
+
+5. 更新播放进度和高亮的歌词：更新这些都是依赖于当前的音频播放进度；
+    5.1 获取音频的播放进度： audio的currentTime属性，这个属性是一个以秒为单位的小数，这个属性的值随着播放会不断的改变，它的
+    改变会触发ontimeupdate事件；
+    5.2 获取音频的总时长：audio的duration属性，是一个以秒为单位的数值；
+
+    5.3 把currentTime和duration换算成 xx:xx秒，
+
+    5.4 高亮歌词，就是从一堆的p标签中找到data-min和data-sec同当前播放时间相同的p标签，给它加上select类名，其余的移除类名；
+
+
+-->
+<script>
+    let str = 'zhufeng2018 珠峰2019 珠峰2020 珠峰9102';
+    let ary = [];
+    str.replace(/(\d+)/g,function (res, a) {
+        ary.push(a);
+    });
+    console.log(str);
+    console.log(ary);
+</script>
+</body>
+</html>

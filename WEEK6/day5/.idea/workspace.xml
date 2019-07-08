@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d27954c7-b935-464e-9690-3ed01b679f3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../day4/qq音乐/js/less-2.5.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-vw和vh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/banner5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/1-补充数组方法.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/作业.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/复习qq音乐.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/js/rem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/1-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/1-banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/2-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/2-banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/3-banner-单例.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/3-banner-单例.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/js/less-2.5.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/js/less-2.5.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day2/js/less-2.5.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day2/js/less-2.5.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/audio&amp;video.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/audio&amp;video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/css/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/css/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/css/myindex.less" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/css/myindex.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/css/reset.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/css/reset.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/img/music.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/img/music.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/img/myDream.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/img/myDream.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/img/myDream.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/img/myDream.m4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/img/sprite_play.png" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/img/sprite_play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/js/less-2.5.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/js/myindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/js/myindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/js/rem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/js/rem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/js/zepto.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/js/zepto.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/json/fenxi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/json/fenxi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/json/lyric.json" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/json/lyric.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/myindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/qq音乐/myindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/css/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/css/font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/js/index.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/作业.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/作业.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/day5.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="8" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="day5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day5" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d27954c7-b935-464e-9690-3ed01b679f3b" name="Default Changelist" comment="" />
+      <created>1562551616972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562551616972</updated>
+      <workItem from="1562551618214" duration="1147000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1147000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="8" y="0" width="1366" height="728" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/作业.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

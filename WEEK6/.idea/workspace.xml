@@ -2,39 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f4fed1d-666b-4103-8c91-a1e9a2ca9488" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day4/audio&amp;video.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/css/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/css/myindex.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/css/reset.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/img/music.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/img/myDream.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/img/myDream.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/img/sprite_play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/js/less-2.5.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/js/myindex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/js/rem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/js/zepto.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/json/fenxi.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/json/lyric.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/myindex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/.idea/myproject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/css/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/css/iconfont.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/css/reset.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/fonts/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/fonts/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/fonts/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/fonts/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myproject/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4/qq音乐/js/less-2.5.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/1-vw和vh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/img/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/img/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/img/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/img/banner5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/js/1-补充数组方法.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/作业.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5/复习qq音乐.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEEK4/day5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK4/day5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEEK4/day5/banner/banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK4/day5/banner/banner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEEK4/day5/banner/js/1-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK4/day5/banner/js/1-banner.js" afterDir="false" />
@@ -43,6 +23,30 @@
       <change beforePath="$PROJECT_DIR$/../WEEK4/day5/banner/js/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK4/day5/banner/js/banner.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEEK5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1/js/less-2.5.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/day1/js/less-2.5.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2/js/less-2.5.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/day2/js/less-2.5.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/audio&amp;video.html" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/audio&amp;video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/css/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/css/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/css/myindex.less" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/css/myindex.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/css/reset.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/css/reset.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/img/music.svg" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/img/music.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/img/myDream.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/img/myDream.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/img/myDream.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/img/myDream.m4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/img/sprite_play.png" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/img/sprite_play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/js/less-2.5.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/js/myindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/js/myindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/js/rem.js" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/js/rem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/js/zepto.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/js/zepto.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/json/fenxi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/json/fenxi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/json/lyric.json" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/json/lyric.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/myindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/day4/qq音乐/myindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myproject/css/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/../myproject/css/font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myproject/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../myproject/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myproject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myproject/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../myproject/js/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,32 +60,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day4/myindex.html">
+        <entry file="file://$PROJECT_DIR$/day4/qq音乐/js/myindex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day4/css/myindex.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-              <folding>
-                <element signature="e#2158#2172#0" />
-                <element signature="e#2436#2454#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day4/js/myindex.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+            <state relative-caret-position="-210">
+              <caret line="148" selection-start-line="148" selection-end-line="148" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -90,28 +72,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day4/js/index.js">
+        <entry file="file://$PROJECT_DIR$/day5/复习qq音乐.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="132" column="12" lean-forward="true" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+            <state relative-caret-position="296">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day4/index.html">
+        <entry file="file://$PROJECT_DIR$/day1/js/less-2.5.3.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+            <state relative-caret-position="132">
+              <caret line="13" column="9593" selection-start-line="13" selection-start-column="9593" selection-end-line="13" selection-end-column="9593" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day4/css/index.less">
+        <entry file="file://$PROJECT_DIR$/day5/1-vw和vh.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="362">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day5/作业.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day5/js/1-补充数组方法.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="102" column="52" selection-start-line="102" selection-start-column="52" selection-end-line="102" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day5/js/swiper.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="11" column="115761" selection-start-line="11" selection-start-column="115761" selection-end-line="11" selection-end-column="115761" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day5/css/swiper.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day5/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day4/qq音乐/js/rem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -122,8 +158,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Less File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -134,7 +170,12 @@
       <find>alr</find>
       <find>wr</find>
       <find>console.log</find>
+      <find>swiper-scrollbar</find>
+      <find>lt36\[i\]</find>
     </findStrings>
+    <replaceStrings>
+      <replace>item</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -148,7 +189,6 @@
         <option value="$PROJECT_DIR$/day1/3-CSS3的新特性.html" />
         <option value="$PROJECT_DIR$/day1/css/index.css" />
         <option value="$PROJECT_DIR$/day1/css/test.less" />
-        <option value="$PROJECT_DIR$/day1/js/less-2.5.3.min.js" />
         <option value="$PROJECT_DIR$/day1/css/2-less-vars.less" />
         <option value="$PROJECT_DIR$/day1/css/3-less嵌套语法.less" />
         <option value="$PROJECT_DIR$/day1/index.html" />
@@ -188,12 +228,16 @@
         <option value="$PROJECT_DIR$/day4/myindex.html" />
         <option value="$PROJECT_DIR$/day4/css/myindex.less" />
         <option value="$PROJECT_DIR$/day4/js/myindex.js" />
+        <option value="$PROJECT_DIR$/day1/js/less-2.5.3.min.js" />
+        <option value="$PROJECT_DIR$/day5/1-vw和vh.html" />
+        <option value="$PROJECT_DIR$/day5/作业.html" />
+        <option value="$PROJECT_DIR$/day5/js/1-补充数组方法.js" />
+        <option value="$PROJECT_DIR$/day5/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-12" />
-    <option name="y" value="8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="8" />
     <option name="width" value="1366" />
     <option name="height" value="728" />
   </component>
@@ -205,6 +249,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,34 +257,10 @@
               <item name="WEEK6" type="b2602c69:ProjectViewProjectNode" />
               <item name="WEEK6" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WEEK6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK6" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WEEK6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK6" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WEEK6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK6" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WEEK6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEEK6" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,7 +268,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day5/img" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -259,16 +280,17 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day2\css" />
-      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day1\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day5\img" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day5\css" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day5\js" />
       <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day3\css" />
       <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day2" />
-      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day2\img" />
-      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day2\js" />
-      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day1\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day4\qq音乐" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day2\css" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK6\day1\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -299,17 +321,17 @@
       <workItem from="1562222405008" duration="10000" />
       <workItem from="1562290496595" duration="292000" />
       <workItem from="1562290988779" duration="22162000" />
+      <workItem from="1562377228977" duration="13262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107080000" />
+    <option name="totallyTimeSpent" value="120342000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="8" y="0" width="1366" height="728" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21056548" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21009035" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -332,47 +354,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day1/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day1/css/4-less的函数.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../WEEK5/day3/js/1-事件委托.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../WEEK5/day3/js/0-复习.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="70" column="35" lean-forward="true" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day1/js/0-复习.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="147" column="50" selection-start-line="147" selection-start-column="50" selection-end-line="147" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../WEEK2/day5/shop/js/2-点击价格升降序.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../WEEK2/day5/shop/js/3-商品排序.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../WEEK2/day5/shop/js/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -541,28 +522,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day1/js/less-2.5.3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="8" column="25623" selection-start-line="8" selection-start-column="25623" selection-end-line="8" selection-end-column="25623" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day4/js/rem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day4/css/index.css">
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day4/audio&amp;video.html">
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/audio&amp;video.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
           <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
@@ -604,59 +571,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day4/js/zepto.min.js">
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/js/zepto.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="405" selection-start-column="405" selection-end-column="405" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day4/css/index.less">
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/css/myindex.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2904">
+          <caret line="132" column="12" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day4/index.html">
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/myindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day4/myindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="-408">
           <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day4/css/myindex.less">
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/js/myindex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-          <folding>
-            <element signature="e#2158#2172#0" />
-            <element signature="e#2436#2454#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day4/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="132" column="12" lean-forward="true" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day4/js/myindex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+        <state relative-caret-position="-210">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/复习qq音乐.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/js/less-2.5.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" column="9593" selection-start-line="13" selection-start-column="9593" selection-end-line="13" selection-end-column="9593" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4/qq音乐/js/rem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/1-vw和vh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/作业.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/css/swiper.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/js/1-补充数组方法.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="102" column="52" selection-start-line="102" selection-start-column="52" selection-end-line="102" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/js/swiper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="11" column="115761" selection-start-line="11" selection-start-column="115761" selection-end-line="11" selection-end-column="115761" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
         </state>
       </provider>
     </entry>

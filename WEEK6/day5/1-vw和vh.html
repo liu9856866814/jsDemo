@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <script>
+/*        (function (designWidth) {
+            function computedFont() {
+                let winW = document.documentElement.clientWidth;
+                if(winW >= 750){
+                    // 当设备的宽度超过750时，把html的fontSize设置为100px;
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+                }
+                document.documentElement.style.fontSize = winW / designWidth * 100 + 'px';
+            }
+            computedFont();
+            window.addEventListener('resize', computedFont);
+            window.addEventListener('orientationchange', computedFont);
+        })(750)*/
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+/*        html{
+            font-size: 13.33333vw; !* 100px*!
+        }
+        .box{
+            margin: .3rem auto;
+            width: 3rem;
+            height: 3rem;
+            background: lightgreen;
+        }*/
+        /*html,body{
+            width: 100%;
+            height: 100%;
+        }*/
+        .mask {
+            position: fixed;
+            left: 0;
+            top: 0;
+            /*width: 100%;*/
+            /*height: 100%;*/
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, .3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mask .content {
+            width: 600px;
+            height: 400px;
+            background: #00b38a;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="mask">
+    <div class="content"></div>
+</div>
+<script>
+    // vw 和 vh： 把视口的宽高各分为100份；每一份宽就是1vw,每一份高就是1vh; vw和vh是两个单位；
+    // 所以在不同宽度的设备上1vw代表的px数是不同的；
+    // 在750px的设备上 1px 是多少vw？ 750px = 100vw ,用100vw/750px = 0.1333333... vw / px
+    // 375px 1px是多少vw? 100vw = 375px; 1px是多少 0.26666 vw;
+
+    // vw的用处？
+    // 1. 所有样式的尺寸都可以用vw来写，但是因为算出来的值大概率不是整数，存在四舍五入的情况，最后容易导致样式差一点；所
+    // 以一般情况下用vw结合rem来用；
+
+    // 2. 让一个盒子充满屏幕: 把这个盒子的宽设置100vw 高设置100vh;
+
+
+</script>
+</body>
+</html>
