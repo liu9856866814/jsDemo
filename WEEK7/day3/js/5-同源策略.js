@@ -26,4 +26,4 @@ xhr.send(null);
 // 3. nginx转发; nginx是服务端应用程序,在服务器可以配置某种规则,nginx就会帮我们转发请求到第三方;(需要服务端和运维的支持)
 // 4. CORS: Cross-Origin-Resource-Sharing 跨域资源共享;需要目标源(域)设置Access-Control-Allow-Origin响应头;
 
-
+// AJAX 虽然好用,但是不能跨域;如果一定要跨域需要做特殊处理;
