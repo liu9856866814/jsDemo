@@ -7,4 +7,4 @@
     window.addEventListener('resize', computedFont);
     // orientationchange 事件是手机横屏竖屏切换时触发
     window.addEventListener('orientationchange', computedFont);
-})(750)
+})(750);

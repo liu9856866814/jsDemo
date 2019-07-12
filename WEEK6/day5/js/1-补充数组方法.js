@@ -89,7 +89,7 @@ let isOdd = ary4.every((item) => item % 2 !== 0);
 console.log(isOdd);
 
 // 3. 数组.some(callback) 判断数组中是否有符合条件的项;
-// 判断ary3中是否有未成年人;
+// 判断ary3中是否有未成年人; 有就返回true没有返回false;
 let u18 = ary3.some(function (item) {
     return item.age < 18;
 });

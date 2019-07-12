@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e661bf39-656f-40e2-8c59-180ba9605721" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/0-复习.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/1-ajax基础.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/2-ajax-http-method.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/3-http-status.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/4-ajax同步和异步.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json/banner.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json/banner2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/1-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/1-banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/2-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/2-banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/3-banner-单例.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/3-banner-单例.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK5/day3/放大镜.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK5/day3/放大镜.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/js/rem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/js/rem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day5/js/1-补充数组方法.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day5/js/1-补充数组方法.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/js/1-本地存储.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/js/1-本地存储.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/js/2-发布网站.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/js/2-发布网站.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/js/3-http协议.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/js/3-http协议.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/js/4-http的三次握手和四次挥手.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/js/4-http的三次握手和四次挥手.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/js/5-uri、urn、url.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/js/5-uri、urn、url.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/js/6-http报文.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/js/6-http报文.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/js/rem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/js/rem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day1/放大镜test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/放大镜test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/css/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/css/font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/js/index.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json/banner.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/0-复习.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/1-ajax基础.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="38" selection-start-line="38" selection-end-line="57" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/2-ajax-http-method.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2266">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
+              <folding>
+                <element signature="e#1149#1171#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/3-http-status.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/4-ajax同步和异步.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/0-复习.js" />
+        <option value="$PROJECT_DIR$/js/1-ajax基础.js" />
+        <option value="$PROJECT_DIR$/js/2-ajax-http-method.js" />
+        <option value="$PROJECT_DIR$/js/3-http-status.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/4-ajax同步和异步.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/day2.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="665" />
+    <option name="width" value="709" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="day2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day2" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK7\day2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e661bf39-656f-40e2-8c59-180ba9605721" name="Default Changelist" comment="" />
+      <created>1562636695058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562636695058</updated>
+      <workItem from="1562636697103" duration="21627000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21627000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20461309" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/0-复习.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/banner.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/1-ajax基础.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="38" selection-start-line="38" selection-end-line="57" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/2-ajax-http-method.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2266">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+          <folding>
+            <element signature="e#1149#1171#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/3-http-status.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/4-ajax同步和异步.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

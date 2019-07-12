@@ -120,6 +120,7 @@ function handleArrow(){
     stepIndex--; // stepIndex减到0时,container里面展示的就是第一张图片了,如果再减我们需要展示真实的最后一张图片的内容
     // (因为前面为了实现无缝轮播,我们把第一张图片复制了一份放到了wrapper的末尾,length - 1 展示的还是第一张图片)
     if(stepIndex < 0 ){
+      $wrapper.css(wrapper, 'left', -(slideList.length - 1) * 1000);
       stepIndex = $slideList.length - 2;
     }
     // 让wrapper动画到指定位置

@@ -16,7 +16,7 @@ let interval = 3000; // 轮播图的轮播间隔
 $.ajax({
     url: 'json/banner.json',
     method: 'get',
-    datyType: 'json',
+    dataType: 'json',
     async: false,
     error(err){
         console.log('请求数据失败')
