@@ -9,7 +9,7 @@
 
 let p1 = new Promise((resolve, reject) => {
     $.ajax({
-        url: 'json/login.json',
+        url: 'login.json',
         cache: false,
         dataType: 'json',
         error(err){
