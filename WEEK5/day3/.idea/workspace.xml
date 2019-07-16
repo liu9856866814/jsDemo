@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c0478bdd-656b-4757-a2c0-b743f7ed5e71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/js/less-2.5.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/1-vw和vh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/img/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/img/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/img/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/img/banner5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/js/1-补充数组方法.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK6/day5/复习qq音乐.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/css/1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/js/1-本地存储.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/js/2-发布网站.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/js/3-http协议.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/js/4-http的三次握手和四次挥手.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/js/5-uri、urn、url.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/js/6-http报文.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/js/rem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK7/day1/放大镜test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/1-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/1-banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/2-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/2-banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/3-banner-单例.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/3-banner-单例.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK4/day5/banner/js/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/放大镜.html" beforeDir="false" afterPath="$PROJECT_DIR$/放大镜.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day1/js/less-2.5.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day1/js/less-2.5.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day2/js/less-2.5.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day2/js/less-2.5.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/audio&amp;video.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/audio&amp;video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/css/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/css/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/css/myindex.less" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/css/myindex.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/css/reset.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/css/reset.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/img/music.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/img/music.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/img/myDream.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/img/myDream.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/img/myDream.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/img/myDream.m4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/img/sprite_play.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/img/sprite_play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/js/less-2.5.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/js/myindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/js/myindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/js/rem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/js/rem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/js/zepto.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/js/zepto.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/json/fenxi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/json/fenxi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/json/lyric.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/json/lyric.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK6/day4/myindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK6/day4/qq音乐/myindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/css/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/css/font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/js/index.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../WEEK7/day1/放大镜test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/big-test.js" />
+        <option value="$PROJECT_DIR$/放大镜.html" />
+        <option value="$PROJECT_DIR$/big-test.html" />
+        <option value="$PROJECT_DIR$/../../WEEK7/day1/放大镜test.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/day3.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="8" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="day3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WEEK7/day1/放大镜test.html" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0478bdd-656b-4757-a2c0-b743f7ed5e71" name="Default Changelist" comment="" />
+      <created>1562580583908</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562580583908</updated>
+      <workItem from="1562580585177" duration="5092000" />
+      <workItem from="1562585762061" duration="61000" />
+      <workItem from="1562585846651" duration="138000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5291000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="8" y="0" width="1366" height="728" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/放大镜.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1210">
+          <caret line="55" column="82" selection-start-line="55" selection-start-column="82" selection-end-line="55" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/big-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="84" column="7" lean-forward="true" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/5-放大镜.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../WEEK7/day1/放大镜test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

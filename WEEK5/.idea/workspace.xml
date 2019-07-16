@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a889ea26-e24c-4d1e-844e-29ec8e2a48ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/cookie工作原理.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/js/1-ajax库.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/js/2-URLSearchParams.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/js/3-宏任务和微任务.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/js/4-async和await.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/js/5-练习.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/js/6-cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/js/7-session.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/js/8-token.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/json/banner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEEK7/day4/json/login.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEEK7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WEEK7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../myproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myproject/index.html" afterDir="false" />
     </list>
