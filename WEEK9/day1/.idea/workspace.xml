@@ -2,93 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98892dd9-dd2b-4e5a-aad9-5d9a212038bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../WEEK5/day5/.idea/day5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/0-复习-qiao课件.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/0-复习.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/1-axios.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/2-server-qiao课件.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/2-server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/3-promise.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/4-MyPromise.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/5-MyPromise.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/6-Mypromise.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/banner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/login.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/img/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/img/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/img/banner3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/img/banner4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/1-axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/2-axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/3-login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/接口文档.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/端口占用报错.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/static/js/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/1-server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/static/js/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/PRD.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/custom.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/modify.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/css/modify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/js/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/js/modify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/day1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/vue.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/0-复习.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/1-express-server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/2-express-server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/3-express-middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/custom.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/1-初识vue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/2-使用vue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/3-双向数据绑定.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/4-向data中新增属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/5-vue的常用指令.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/6-v-for.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/7-双向数据绑定的原理.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/8-双向数据绑定2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/static/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-vue/static/js/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/jsDemo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK8/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEEK8/day3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK8/day3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myproject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../myproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-node/0-复习.js" beforeDir="false" afterPath="$PROJECT_DIR$/1-node/0-复习.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -101,15 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2-vue/1-初识vue.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2-vue/2-使用vue.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -173,13 +81,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1-node/0-复习.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="220">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1-node/a.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -207,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1-node/0-复习.js" />
         <option value="$PROJECT_DIR$/1-node/index.html" />
         <option value="$PROJECT_DIR$/1-node/404.html" />
         <option value="$PROJECT_DIR$/1-node/server.js" />
@@ -225,6 +137,7 @@
         <option value="$PROJECT_DIR$/2-vue/6-v-for.html" />
         <option value="$PROJECT_DIR$/2-vue/8-双向数据绑定2.html" />
         <option value="$PROJECT_DIR$/2-vue/7-双向数据绑定的原理.html" />
+        <option value="$PROJECT_DIR$/1-node/0-复习.js" />
       </list>
     </option>
   </component>
@@ -234,7 +147,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="y" value="7" />
     <option name="width" value="1366" />
@@ -282,7 +195,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/2-vue/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/1-node" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -296,8 +209,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK9\day1\2-vue\static\js" />
       <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK9\day1\1-node" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK9\day1\2-vue\static\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -322,16 +235,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563760304643</updated>
-      <workItem from="1563760305918" duration="23194000" />
+      <workItem from="1563760305918" duration="24042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23194000" />
+    <option name="totallyTimeSpent" value="24042000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="7" width="1366" height="728" extended-state="1" />
-    <editor active="true" />
+    <frame x="-7" y="7" width="1366" height="728" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25301206" />
@@ -490,10 +402,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1-node/0-复习.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="220">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-node/a.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

@@ -1,14 +1,14 @@
-// 0-复习和a.js和b.js 敲课件
+// a.js 中要把其他模块需要的方法或者属性导出
+function fn() {}
+function sum() {}
+// module.exports = fn; // 这样导出，直接导出的就是fn这个函数本身，如果导入a.js模块，得到的也是fn函数；
 
+// exports.fn = fn; // 这样导出，直接导出的是一个对象，对象中有一个fn属性，它的值是fn这个函数；如果导入a.js 得到一个对象，
+// 需要 对象.fn 调用fn函数；
 
+module.exports.fn = fn; // 这样导出，导出的也是一个对象
 
-
-
-
-
-
-
-
+// b.js 导入 ： 导入使用require方法
 
 
 // 包管理器: npm / yarn
