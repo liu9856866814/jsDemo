@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 30px auto;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;;
+        }
+        .box .item{
+            margin-left: 40px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    login.html
+</h1>
+<div class="box">
+    <div class="item">
+        <span>用户名</span>
+        <input type="text" placeholder="请输入用户名" id="username">
+    </div>
+    <div class="item">
+        <span>密码</span>
+        <input type="password" placeholder="请输入密码" id="pwd">
+    </div>
+    <div class="item">
+        <button id="loginBtn">登录</button>
+    </div>
+</div>
+<script src="/static/js/axios.js"></script>
+<script src="/static/js/3-login.js"></script>
+</body>
+</html>

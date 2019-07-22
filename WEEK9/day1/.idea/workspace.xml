@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98892dd9-dd2b-4e5a-aad9-5d9a212038bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../WEEK5/day5/.idea/day5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/0-复习-qiao课件.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/0-复习.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/1-axios.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/2-server-qiao课件.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/2-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/3-promise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/4-MyPromise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/5-MyPromise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/6-Mypromise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/banner.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/img/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/img/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/img/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/1-axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/2-axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/3-login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/接口文档.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day4/js/端口占用报错.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/static/js/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/0-review/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/1-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/static/js/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/1-express/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/PRD.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/custom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/css/modify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/js/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WEEK8/day5/CRM/static/js/modify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/day1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/vue.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/0-复习.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/1-express-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/2-express-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/3-express-middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/custom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-node/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/1-初识vue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/2-使用vue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/3-双向数据绑定.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/4-向data中新增属性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/5-vue的常用指令.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/6-v-for.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/7-双向数据绑定的原理.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/8-双向数据绑定2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/static/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/static/js/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/jsDemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK8/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WEEK8/day3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEEK8/day3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../myproject/index.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/1-初识vue.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/2-使用vue.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/3-双向数据绑定.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/4-向data中新增属性.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/5-vue的常用指令.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/6-v-for.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/7-双向数据绑定的原理.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1-node/1-express-server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1-node/0-复习.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/8-双向数据绑定2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/1-node/0-复习.js" />
+        <option value="$PROJECT_DIR$/1-node/index.html" />
+        <option value="$PROJECT_DIR$/1-node/404.html" />
+        <option value="$PROJECT_DIR$/1-node/server.js" />
+        <option value="$PROJECT_DIR$/1-node/custom.json" />
+        <option value="$PROJECT_DIR$/1-node/1-express-server.js" />
+        <option value="$PROJECT_DIR$/1-node/2-express-server.js" />
+        <option value="$PROJECT_DIR$/1-node/3-express-middleware.js" />
+        <option value="$PROJECT_DIR$/2-vue/index.html" />
+        <option value="$PROJECT_DIR$/2-vue/1-初识vue.html" />
+        <option value="$PROJECT_DIR$/2-vue/2-使用vue.html" />
+        <option value="$PROJECT_DIR$/2-vue/3-双向数据绑定.html" />
+        <option value="$PROJECT_DIR$/2-vue/4-向data中新增.html" />
+        <option value="$PROJECT_DIR$/2-vue/4-向data中新增属性.html" />
+        <option value="$PROJECT_DIR$/2-vue/5-vue的常用指令.html" />
+        <option value="$PROJECT_DIR$/2-vue/6-v-for.html" />
+        <option value="$PROJECT_DIR$/2-vue/8-双向数据绑定2.html" />
+        <option value="$PROJECT_DIR$/2-vue/7-双向数据绑定的原理.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-7" />
+    <option name="y" value="7" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="day1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day1" type="462c0819:PsiDirectoryNode" />
+              <item name="1-node" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day1" type="462c0819:PsiDirectoryNode" />
+              <item name="2-vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day1" type="462c0819:PsiDirectoryNode" />
+              <item name="2-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2-vue/static/js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK9\day1\2-vue\static\js" />
+      <recent name="D:\Webspace\web_p1\JS-zf\jsDemo\WEEK9\day1\1-node" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98892dd9-dd2b-4e5a-aad9-5d9a212038bd" name="Default Changelist" comment="" />
+      <created>1563760304643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563760304643</updated>
+      <workItem from="1563760305918" duration="23194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="23194000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="7" width="1366" height="728" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25301206" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/1-node/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="246" column="7" selection-start-line="246" selection-start-column="7" selection-end-line="246" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#li#5;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9249#9255#0" expanded="true" />
+            <element signature="e#9274#9280#0" expanded="true" />
+            <element signature="e#9280#9286#0" expanded="true" />
+            <element signature="e#9286#9292#0" expanded="true" />
+            <element signature="e#9365#9371#0" expanded="true" />
+            <element signature="e#9371#9377#0" expanded="true" />
+            <element signature="e#9440#9446#0" expanded="true" />
+            <element signature="e#9446#9452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-node/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-node/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="69" column="22" selection-start-line="65" selection-start-column="16" selection-end-line="69" selection-end-column="22" />
+          <folding>
+            <element signature="e#1352#1522#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../WEEK8/day5/CRM/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-node/custom.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="267" selection-start-column="267" selection-end-column="339" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-node/2-express-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="56" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-node/3-express-middleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/static/js/vue.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/1-初识vue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/2-使用vue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/3-双向数据绑定.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/4-向data中新增属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/8-双向数据绑定2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/6-v-for.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/5-vue的常用指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/7-双向数据绑定的原理.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-node/1-express-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-node/0-复习.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

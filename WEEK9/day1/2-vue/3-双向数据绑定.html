@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div id="app">
+    <div>{{phone}}</div>
+    <div>
+        <input type="text" v-model="phone">
+    </div>
+    <div>
+        {{phone}}
+    </div>
+</div>
+
+<script src="static/js/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            phone: '1293434'
+        }
+    })
+    // 双向数据绑定:
+    // 第一个方向: 通过vue的模板语法和v-model的指令把 data数据绑定到页面的html中;
+    // 第二个方向: 在视图(页面)中修改data中的属性的值,页面中所有依赖这个属性的地方都会自动更新;
+
+    // 通过v-model把phone绑定到input上, v-model是双向数据绑定的指令; 当在页面中的input输入内容时,phone属性的值会跟着改变,
+    // vue发现phone改变, vue会把页面中所有用到phone的地方都更新成最新的值;
+
+    //
+</script>
+</body>
+</html>

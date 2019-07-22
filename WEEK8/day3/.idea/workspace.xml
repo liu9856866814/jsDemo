@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="040778cf-d08e-4476-910c-de05cfb7533d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/reset.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/0-复习.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/1-fs模块.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/2-yarn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/3-http模块.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/4-url模块.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/5-根据请求路径不同返回不同内容.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/6-响应与content-type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/7-MIME类型.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/8-server-with-status.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/a.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/b.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/less-2.5.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/rem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/test-根据请求路径不同返回不同内容.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day2/js/8-第三方模块.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day2/js/8-第三方模块.js" afterDir="false" />
-    </list>
+    <list default="true" id="040778cf-d08e-4476-910c-de05cfb7533d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -49,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="53" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="53" />
+            <state relative-caret-position="186">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -167,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="8" />
     <option name="width" value="1366" />
     <option name="height" value="728" />
@@ -185,16 +161,6 @@
               <item name="day3" type="b2602c69:ProjectViewProjectNode" />
               <item name="day3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="day3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -205,6 +171,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="list.type.of.created.stylesheet" value="Less" />
@@ -251,16 +218,15 @@
       <option name="presentableId" value="Default" />
       <updated>1563327483660</updated>
       <workItem from="1563327486175" duration="24357000" />
-      <workItem from="1563365229742" duration="4006000" />
+      <workItem from="1563365229742" duration="5026000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28363000" />
+    <option name="totallyTimeSpent" value="29383000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -487,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="53" />
+        <state relative-caret-position="186">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
         </state>
       </provider>
     </entry>

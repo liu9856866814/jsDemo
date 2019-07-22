@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<!--vue应用需要一个根DOM节点, 所有用vue写的东西,要放到这个元素内-->
+    {{msg}} <!--vue的模板语法,是小胡子(moustache) 语法--> <br>
+    {{ 1 + 2 }} <br> <!--小胡子语法中可以写表达式,直接可以得出结果的表达式; 不能写语句 -->
+    {{ 1 && 2}} <br>
+    {{ 1 || 2}} <br>
+    {{ true ? 'a' : 'b' }} <br>
+    {{ [1, 2, 3].toString() }}
+    <!--{{if(1) {alert('aaa')}}--><!--不能写语句,写语句会报错--> <br>
+    {{msg}} <!--声明在data对象中的数据可以直接使用--> <br>
+    {{user.name}} <br> <!--如果是对象,直接对象.属性名 就能取得对应的值-->
+    {{user.age}} <br>
+    {{user.title}} <br> <!--用这种方式绑定数据,都是响应式的,即data里面的数据发生变更时,页面中绑定的值会自动发生变化-->
+
+</div>
+
+<!--引入vue.js-->
+<script src="static/js/vue.js"></script>
+<script>
+    /*创建vue实例传入了一个配置对象,这个对象的属性名el,data,methods...不可以修改*/
+    let vm = new Vue({
+        el: '#app', /*el属性指定vue应用挂载的DOM节点*/
+        data: { /*data 属性对应的一个对象,这个对象中的数据都可以映射到视图中*/
+            msg: 'hello world!',
+            user: {
+                name: 'mabin',
+                age: 18,
+                title: '宇宙集团军总司令'
+            }
+        }
+    })
+
+    // vm 是vue的实例,在创建Vue的实例时,会把data里面的数据代理到vue实例上
+
+    // 1. 引入vue
+    // 2. 准备根DOM节点
+    // 3. 创建Vue实例
+    // 4. 通过Vue的模板语法,把数据绑定到页面中;
+</script>
+</body>
+</html>

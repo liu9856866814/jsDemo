@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <!--生成多个li,就把v-for写在li身上; 要生成多个谁,就把v-for写谁身上-->
+        <!--v-for 数组-->
+        <li v-for="(item, index) in ary" :key="index">
+            <!--item 是数组项 index是当前项的索引-->
+            <!--在整个li标签和li子元素中都可以访问item和index的值-->
+            <span>{{index}}</span>
+            <span>{{item.name}}</span>
+            <span>{{item.age}}</span>
+        </li>
+    </ul>
+    <div>
+        <!--v-for 对象 对象有多少键值对,就会生成多少个元素-->
+        <p v-for="(val, key) in obj" :key="key">
+            <!--val 是属性值, key是属性名 obj是data中的对象-->
+            <span>{{key}}</span>
+            <span>:</span>
+            <span>{{val}}</span>
+        </p>
+    </div>
+    <div>
+        <!--v-for 一个数字 a是从1开始的一个数字, b相当于索引从0开始-->
+        <input type="text"
+               v-for="(a, b) in num"
+               :key="b"
+               :data="b"
+               :value="a">
+    </div>
+    <ul>
+        <!--v-for 一个字符串, a是字符串中的每个字符,b是字符对应的索引-->
+        <li v-for="(a, b) in str" :key="b">{{b}} : {{a}}</li>
+    </ul>
+</div>
+<script src="static/js/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            ary: [
+                {
+                    name: '马宾',
+                    age: 18
+                },
+                {
+                    name: '马宾22',
+                    age: 19
+                },
+            ],
+            obj: {
+                name: 'zfpx',
+                teach: 'FE',
+                age: '10'
+            },
+            num: 5,
+            str: 'zfpx'
+        }
+    })
+    // v-for 是一个指令,根据给定值生成多个相同元素
+    //
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="msg">
+    <div v-text="title"></div>
+    <div v-html="title"></div>
+<!--    <div v-if="flag">A</div>-->
+<!--    <div v-else>B</div>-->
+    <div v-show="flag">C</div>
+    <div>
+        <img :src="imgSrc" alt="">
+    </div>
+</div>
+
+<script src="static/js/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            msg: 'hello world',
+            flag: true,
+            title: '<h2>这是一个title</h2>',
+            imgSrc: './static/img.png'
+        }
+    })
+
+    // 指令: 以v-开头特殊的行内属性,vue赋予了这些属性特殊的能力;
+    // 1. v-model 把表单元素的value和data中的属性绑定到一起; 表单的值发生变化,data中的属性值也会跟着变化;
+    // 2. v-text 把data中的属性值绑定到DOM元素中,会覆盖掉原有的内容;并且不能识别字符串中的html标签;
+    // 3. v-html 把data中的属性绑定到DOM元素中,并且能够识别html标签;
+    // 4. v-if 如果v-if绑定的值为true, 就展示该元素,如果为false展示v-else的元素;
+    // 5. v-show 如果值为true,对应的元素就会展示,如果这false,则隐藏; v-show是控制的元素的display属性,而v-if是删除或者增加
+    // DOM节点实现DOM显示隐藏;
+    // 6. v-bind 绑定动态属性,动态绑定后,就可以使用data中的该属性的值; v-bind: 可以简写成 :
+
+</script>
+</body>
+</html>

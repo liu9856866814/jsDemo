@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.box1{
+    width: 800px;
+    padding: 10px;
+    margin: 30px auto;
+    border: 2px solid lightseagreen;
+    line-height: 35px;
+}
+
+.w50{
+    width: 50px;
+}
+.w150{
+    width: 150px;
+}
+.w200{
+    width: 200px;
+}
+.head{
+    overflow: hidden;
+    background: lightseagreen;
+    color: #fff;
+    text-align: center;
+}
+ul li{
+    overflow: hidden;
+}
+.head span, li span{
+    float: left;
+    text-align: center;
+}
+li:nth-child(even){ /* odd 奇数 even 偶数*/
+    background: #eee;
+}
+li:hover {
+    background: lightseagreen;
+    color: #fff;
+}

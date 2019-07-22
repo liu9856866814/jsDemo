@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <div v-for="(val, key) in user">{{val}}</div>
+</div>
+<script src="static/js/vue.js"></script>
+<script>
+    let data = {
+        el: '#app',
+        data:{
+            user: {
+                name: 'mabin',
+                school: 'zfpx',
+                age: 18
+            }
+        }
+    };
+    // data.data.user.title = 'commander';
+    let vm = new Vue(data);
+    // data.data.user.title = 'commander' // 在vue创建实例完成后，再向配置对象的data属性中添加属性，页面没有效果；
+
+    // 创建实例以后增加属性;
+    // 使用vm.$set() 方法
+    // vm.$set(vm.user, key, val);
+    // key 是要修改或者新增的属性名
+    // val 属性的新值
+    vm.$set(vm.user, 'key', 'aaa');
+
+    // 用$set方法修改完数据,页面会自动更新;
+
+</script>
+</body>
+</html>
