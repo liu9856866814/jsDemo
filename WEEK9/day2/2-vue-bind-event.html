@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <button @click="fn">点我试试</button>
+    <button @click="fn(x, y)">点我试试2</button>
+    <button @click="fn($event, 3, 4)">点我试试3</button>
+    <div class="box" v-if="flag">A</div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+    // Vue 事件绑定, 需要v-on 指令, v-on: 可以简写成@; 后面跟不带on的事件名
+    // v-on:事件名 绑定一个函数名,这个函数名去methods中找;
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: true,
+            x: '0001',
+            y: '0002'
+        },
+        methods: {
+            fn(e, a, b) {
+                // 1. 在绑定事件时不传参, 事件函数第一个参数是事件对象;
+                // 2. 如果在绑定事件时传参了,传了啥,参数接收到的就是啥;
+                // 3. 如果既想用事件对象,又想传参,需要在绑定事件时,第一个参数写$event,后面再写真实的参数; fn($event, 1, 2);
+                // console.log(e);
+                // console.log(a);
+                // console.log(b);
+                // console.log(123);
+                this.flag = !this.flag; // this.flag 访问flag
+            },
+            gn(x, y){
+                this.fn();
+            }
+        }
+    })
+</script>
+</body>
+</html>

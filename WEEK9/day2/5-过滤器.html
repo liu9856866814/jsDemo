@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="(item, index) in products" :key="index">
+            商品 {{item.name}} 价格{{item.price | toDollar}} 国行{{item.price | toRMB | toFixed(3)}}
+            <!--| 叫做管道符, 把它前面的值传递给过滤器函数的第一个参数;然后数据就会展示成过滤器函数的返回值-->
+            <!--过滤器可以连续使用,后面的过滤器的参数,是上一个过滤器的处理结果, 数据会展示成最后一个过滤器的结果-->
+            <!--过滤器可以传参，参数是传给第二个形参的，第一个参数是管道符前面的值-->
+        </li>
+    </ul>
+</div>
+<script src="vue.js"></script>
+<script>
+    // 过滤器: 是一种处理数据但是不会改变原数据的数据处理方式,一般用来格式化数据;
+
+    // 全局过滤器: Vue.filter(过滤器, callback)
+   /* Vue.filter('toDollar', (val) => '$' + val);
+    Vue.filter('toRMB', (val) => val * 6.8541683);
+    Vue.filter('toFixed', (val) => '￥' + val.toFixed(2));*/
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            products: [
+                {
+                    name: 'mac',
+                    price: 2000
+                },
+                {
+                    name: 'iphoneX',
+                    price: 1000
+                }
+            ]
+        },
+        filters: { // 写在filters 里面的过滤器是局部过滤器
+            toDollar (val){
+                return '$' + val
+            },
+            toRMB (val){
+                return val * 6.8541683
+            },
+            toFixed(val, num = 2){
+                return '￥' + val.toFixed(num);
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .row div{
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<!--
+bootstrap 是css框架, 依靠类名控制元素的样式; bootstrap 内置了很多样式,都是有固定类名的,当你需要这个样式时,在元素上加一个
+类名就可以了;
+
+1. bootstrap 采用的栅格布局,会把屏幕的宽分为12份;
+
+2. 常用的类名:
+2.1 .container 会让元素水平居中
+2.2 .row 行
+2.3 .col-lg-x 大屏幕
+2.4 .col-md-x 中等屏幕
+2.5 .col-sm-x 小屏幕
+2.6 .col-xs-x 超小屏幕
+-->
+<div class="container">
+    <div class="row"> <!--一行是12列,超出12列后换行-->
+        <div class="col-md-3">A</div>
+        <div class="col-md-3">B</div>
+        <div class="col-md-3">C</div>
+        <div class="col-md-3">D</div>
+        <div class="col-md-12">E</div>
+    </div>
+</div>
+<table class="table container table-striped table-bordered table-hover">
+    <tr>
+        <td>第一项</td>
+        <td>第二项</td>
+        <td>第三项</td>
+    </tr>
+    <tr>
+        <td>第一项</td>
+        <td>第二项</td>
+        <td>第三项</td>
+    </tr>
+    <tr>
+        <td>第一项</td>
+        <td>第二项</td>
+        <td>第三项</td>
+    </tr>
+    <tr>
+        <td>第一项</td>
+        <td>第二项</td>
+        <td>第三项</td>
+    </tr>
+</table>
+</body>
+</html>

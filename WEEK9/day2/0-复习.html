@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li>{{msg}}</li>
+        <li>{{0 ? 'A' : 'B' }}</li>
+        <li>{{flag}}</li>
+        <li>
+            <input type="text" v-model="msg">
+        </li>
+        <li>
+            <div v-text="title">aa</div>
+        </li>
+        <li>
+            <div v-if="flag">A</div>
+            <div v-else="flag">B</div>
+        </li>
+        <li>
+            <img :src="imgUrl" alt="" :yesterdey="zuotian">
+        </li>
+        <li>
+            <a v-bind:href="bdUrl">百度</a>
+        </li>
+    </ul>
+</div>
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data:{
+            msg: 'hello world!',
+            flag: false,
+            title: '<h2>标题2</h2>',
+            imgUrl: './jietu.png',
+            bdUrl: 'http://www.baidu.com',
+            zuotian: '2019-07-22'
+        },
+        methods: {
+
+        }
+    })
+</script>
+<script>
+    /*
+    * 1. express 是Node.js 的服务端框架，用来快速开发服务端程序；
+    * 2. express 需要安装： npm install express --save
+    * 3. 导入 let express = require('express');
+    * 4. 创建服务： let app = express();
+    * 5. app.listen(8000, ()=>{console.log('port 8000 is on')});
+    * 6. 使用静态资源服务中间件：express.static(__dirname)
+    *   app.use(express.static(__dirname))
+    * 7. 配置路由（写接口）
+    * app.get('/api/testGet', (req, res) => {
+    *   req/res 是经过express包装过的请求对象和响应对象
+    *   req,query get请求的问号传参，是一个对象
+    *   req.path 客户端请求的路径
+    *   req.headers 请求头信息 （cookie就是包含在头信息中）
+    *   req.host 主机域名
+    *
+    *   res.send() 向客户端响应内容， 并结束请求； 可以直接传对象
+    * });
+    *
+    *   app.post('/api/testPost', (req, res) => {
+    *     // 在post请求中，我们需要接收post过来的数据， 怎么接收？
+    *     1. 安装并导入body-parser中间件
+    *     2. 使用中间件: app.use(bodyParser.json())
+    *
+    *     经过上面两步后,在此回调中就可以通过req.body 访问客户端post过来的数据了
+    *
+    *   })
+    *
+    *   // 动态路由: 接口中有一部分是可以变的,不是写死的;
+    *   app.get('/order/details/:orderId', (req, res) => {
+    *
+    *     通过req.params 获取动态路由的具体值; 例如客户端请求: /order/details/124
+    *     req.params -> {orderId: 124}
+    *     console.log(req.params.orderId)
+    *  });
+    *
+    *   // 拦截指定的动态路由
+    *   app.param('orderId', (req,res, next) => {
+    *     在这个函数中,可以实现拦截然后校验;
+    *     如果校验通过,要执行next() 把控制权交出去
+    *     如果校验不通过,可以调用res.send() 提前结束响应
+    *   });
+    *
+    *  // 中间件: 在请求之后响应之前被调用的一个或一组函数,这些函数既可以访问请求对象又可以访问响应对象;
+    *  app.use(function(req, res, next){
+    *    // 这个地方可以拦截请求
+    *    // 拦截之后可以扩展请求对象,可以校验,但是需要在操作结束后执行next()交出控制权;如果校验或者其他操作失败要提前结束
+    * 响应; 如果两个都不做请求就会被挂起;
+    *
+    *  })
+    *
+    * */
+
+    /*
+    * Vue 前端框架: MVVM
+    * 1. 框架的模板语法: 小胡子语法 (moustache); {{表达式}} 执行过一行后可以得到返回结果的才叫表达式;不能写语句 if/else for....
+    *
+    * 2. 小胡子语法中{{}} 如果带引号的是字符串,不带引号的是变量,要去Vue的data/filters/computed/methods 查找
+    * 3. data中的属性将来都会代理到vm身上,小胡子语法变量取值时是从vm上取的; 我们说从data上取是为了直观;
+    *
+    * 4. Vue常用的指令:
+    *   4.1 v-model 双向数据绑定; 把表单元素的value和data中的某个属性绑定到一起
+    *   4.2 v-text 把数据绑定到DOM元素中,不识别标签,还会覆盖标签原有的内容
+    *   4.3 v-html 把数据绑定到DOM元素中,可以识别标签
+    *   4.4 v-if 控制元素显示隐藏; 当v-if绑定的值为true,则展示当前元素,如果为false展示v-else的元素;
+    *   4.5 v-show 控制元素显示隐藏, v-show绑定的值为true,则元素展示,如果为false则元素不展示;v-if靠增加和删除DOM节点来控制
+    * 元素是否展示,而v-show是控制display属性
+    *   4.6 v-bind 绑定动态属性; v-bind:属性, 让属性值变为变量,代表的data中同名属性的值
+    *
+    * */
+
+
+</script>
+</body>
+</html>

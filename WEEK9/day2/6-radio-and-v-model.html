@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    性别:
+    <!--多个radio v-model同一个属性,这些radio就是一组,每次只能有一个选中,v-model的值是被选中的radio的value-->
+    <label for="">男: <input type="radio" v-model="sex" value="1"></label>
+    <label for="">女: <input type="radio" v-model="sex" value="2"></label>
+    <label for="">未知: <input type="radio" v-model="sex" value="3"></label>
+    <br>
+    {{sex}}
+</div>
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data:{
+            sex: 1
+        }
+    })
+</script>
+</body>
+</html>

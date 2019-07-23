@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="(item, index) in result" :key="index">
+            {{item.name}}
+            <ul>
+                <li v-for="(sItem, sIndex) in item.list" :key="sIndex">
+                    {{sItem}}
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script src="axios.js"></script>
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            result: []
+        },
+        filter: {},
+        methods: {
+            getData(){
+                axios.get('list.json').then(({data}) => {
+                    // console.log(data);
+                    this.result = data; // 拿到服务端返回的数据后,直接修改result,然后vue就知道result发生了变更,vue就会按照最新
+                    // 的值渲染页面;
+                })
+            }
+        },
+        created () {
+            // created是Vue生命周期的钩子函数；
+            // Vue里面绝大多数的ajax请求都是在这里发送的
+            // 一般是把请求封装成一个方法放到methods里面,然后再created里面调用;
+            this.getData(); // 要通过this访问methods里面的方法
+        }
+
+    })
+</script>
+</body>
+</html>

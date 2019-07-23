@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todoList</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 300px;
+        }
+        ul li{
+            background-color: lightgreen;
+            border: 2px solid skyblue;
+            border-bottom: none;
+            width: 100%;
+            overflow: hidden;
+            line-height: 35px;
+        }
+        ul li:last-child{
+            border-bottom: 2px solid skyblue;
+        }
+        ul li button{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="text" @keydown.enter="add" v-model="todo">
+    <ul>
+        <li v-for="(item, index) in todoList" :key="index">
+            {{item}} <button @click="remove(index)">删除</button>
+        </li>
+    </ul>
+</div>
+
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            todoList: [],
+            todo: ''
+        },
+        methods: {
+            add () {
+                // methods里面的方法中的this都指向当前vue的实例；
+
+                // 把用户输入的内容添加到数组中
+                // this.todo 和 input双向数据绑定的，我们在input中输入内容，vue会把input中的值保存到this.todo上
+                if(+this.todo !== 0){
+                    this.todoList.push(this.todo);
+                }
+                this.todo = ''; // 添加到todoList后，清空input
+            },
+            remove(index) {
+                this.todoList.splice(index, 1);
+            }
+        }
+    })
+
+    // vue是数据驱动的，不需要操作DOM, 只需要操作数据, 当Vue发现数据变化了,它会把页面中用到这个数据的所有地方按照数据的最新值重新渲染
+    // 视图(HTML)是数据的映射,所谓映射是一个改另一个跟改;当数据发生变化，vue会按照最新的数据映射视图;
+</script>
+</body>
+</html>

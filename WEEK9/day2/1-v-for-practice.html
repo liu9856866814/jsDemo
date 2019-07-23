@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<ul>
+    <li v-for="(item, index) in fruits" :key="index">
+        {{item.name}}
+        <ul>
+            <li v-for="(color, cIndex) in item.color" :key="cIndex">{{color}}颜色的{{item.name}}</li>
+        </ul>
+    </li>
+</ul>
+</div>
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data:{
+            fruits: [
+                {
+                    name: '苹果',
+                    color: ['green', 'yellow', 'red']
+                },
+                {
+                    name: '香蕉',
+                    color: ['green', 'yellow']
+                },
+                {
+                    name: '芒果',
+                    color: ['green', 'yellow']
+                }
+            ]
+        }
+    });
+    // 在vue中视图(html)是数据的映射,需要一个什么样的html结构,就需要有一个什么样子的数据结构
+</script>
+</body>
+</html>

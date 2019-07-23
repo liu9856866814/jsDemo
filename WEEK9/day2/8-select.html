@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--select下面的option都有一个value属性,select v-model的值和option的value相同时,option会被选中;当option切换时会触发
+    select的onchange事件-->
+    <select  v-model="lunch" @change="lunchChange">
+        <option value="1">孟记粥铺</option>
+        <option value="2">张亮麻辣烫</option>
+        <option value="3">田老师</option>
+    </select>
+    {{lunch}}
+    <br>
+    <!--textarea 通过v-model和某个属性双向数据绑定-->
+    <button @click="bigText = ''">清空</button>
+    <button @click="clear">清空2</button>
+    <textarea name="" id="" cols="30" rows="10" v-model="bigText"></textarea>
+    <p>{{bigText}}</p>
+</div>
+<script src="vue.js"></script>
+<script>
+let vm = new Vue({
+    el: '#app',
+    data: {
+        lunch: 3,
+        bigText: '这是一段超长文本'
+    },
+    methods: {
+        lunchChange(){
+            console.log(this.lunch);
+        },
+        clear(){
+            this.bigText = ''
+        }
+    }
+})
+</script>
+</body>
+</html>

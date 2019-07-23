@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <a href="http://www.baidu.com" @click.prevent="fn">百度</a>
+    <div @click="parent">
+        parent
+        <div @click="child">
+            child
+            <div @click.stop="grandchild">
+                grandchild
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="text" v-model="num" @keydown.up="add">
+    </div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data:{
+            num: 1
+        },
+        methods: {
+            fn(){
+                console.log(1);
+            },
+            parent() {
+                console.log('parent');
+            },
+            child(){
+                console.log('child');
+            },
+            grandchild(){
+                console.log('grandchild');
+            },
+            add(){
+                this.num++; // 通过this.num 来访问 vm里面的num
+            },
+
+        }
+    })
+
+    // 事件修饰符是为了方便Vue中的事件处理,特有的一种修饰符号;
+    // 用法: @事件名.修饰符
+
+    // 常见的事件修饰符
+    // .prevent 阻止元素的默认行为
+    // .stop 阻止事件冒泡
+    // .capture 事件在捕获阶段触发
+    // .once 事件只会执行一次
+    // .self 自身的事件触发时才执行事件函数
+
+    // 键盘事件修饰符
+    // .enter 回车
+    // .esc 退出
+    // .delete 删除键
+    // .space 空格
+    // .tab tab键
+    // .up 上键
+    // .down 下
+    // .left 左
+    // .right 右
+
+    // 事件修饰符可以连用: @click.prevent.stop
+</script>
+
+</body>
+</html>
