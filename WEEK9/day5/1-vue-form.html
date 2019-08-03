@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <div class="forms">
+        <div>姓名: <input type="text" v-model="user.name"></div>
+        <div>电话: <input type="text" v-model="user.phone"></div>
+    </div>
+    <div>
+        性别:
+        <label>男: <input type="radio" value="1" v-model="user.sex"></label>
+        <label>女: <input type="radio" value="2" v-model="user.sex"></label>
+        <label>未知: <input type="radio" value="3" v-model="user.sex"></label>
+    </div>
+    <div>
+        爱好:
+        <label>唱: <input type="checkbox" value="1" v-model="user.hobby"></label>
+        <label>跳: <input type="checkbox" value="2" v-model="user.hobby"></label>
+        <label>RAP: <input type="checkbox" value="3" v-model="user.hobby"></label>
+        <label>篮球: <input type="checkbox" value="4" v-model="user.hobby"></label>
+    </div>
+    <div>
+        年级:
+        <select v-model="user.grade">
+            <option value="">请选择</option>
+            <option value="1">初一</option>
+            <option value="2">初二</option>
+            <option value="3">初三</option>
+        </select>
+    </div>
+    <div>
+        <label>备注: <textarea cols="30" rows="10" v-model="user.tips"></textarea></label>
+    </div>
+    <div>
+        <button @click="submit">提交</button>
+    </div>
+</div>
+
+<script src="axios.js"></script>
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            user: {
+                name: '',
+                phone: '',
+                sex: 1,
+                hobby: [],
+                grade: '',
+                tips: ''
+            }
+        },
+        methods: {
+            submit(){
+                axios.post('/api/addUser', this.user).then(({data}) =>{
+                    if (data.code === 0){
+                        window.location.href = '/'; // / 是首页
+                    } else{
+                        alert(data.msg);
+                    }
+                } )
+            }
+        }
+    })
+</script>
 </body>
 </html>

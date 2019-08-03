@@ -2,9 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        button:disabled{
+            cursor: not-allowed;
+            background: red;
+            color: #000
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <button v-on:click="fn(1, 2)">点我</button>
+    <a href="http://www.baidu.com" @click.prevent="fn" ></a>
+    <input type="text" v-model="title" @keydown.enter="add">
+    <input type="number" v-model="num" min="1">
+    <br>
+    {{price | toFixed | toRMB }}
+    <!-- | 管道符,把管道符前面的值传给后面的过滤器-->
+    <!--过滤器可以连续使用,后面过滤器的函数第一个参数收到的是前面的过滤器的处理结果-->
+    <div>
+        <input type="text"  v-model="msg"> {{msg}} <br>
+    </div>
+    <div>
+        <!--多个radio同时v-model同一个属性,这些radio就成为一组了,在这一组中每次只能有一个选中-->
+        性别:
+        <label>男: <input type="radio" v-model="sex" value="1" @change="radioChange"></label>
+        <label>女: <input type="radio" v-model="sex" value="2" @change="radioChange"></label>
+        <label>未知: <input type="radio" v-model="sex" value="3" @change="radioChange"></label>
+    </div>
+    <div v-show="sex == 1">
+        发型: <span>光头</span>
+    </div>
+    <div v-show="sex == 2">
+        发型: <span>大波浪</span>
+    </div>
+    <div>
+        同意: <input type="checkbox" v-model="isAgree">
+        <button :disabled="!isAgree" @click="next">下一步</button>
+        <!--disabled 属性: 为true时按钮会被禁用; 为false是可用状态-->
+        <!--disabled 属性是特殊的属性,存在 就是true; v-bind以后,vue发现它绑定值是false 时,会移除这个属性-->
+    </div>
+    <div>
+        爱好:
+        <label> Node.js <input type="checkbox" v-model="hobby" value="1" @change="checkboxChange"></label>
+        <label> Vue.js <input type="checkbox" v-model="hobby" value="2" @change="checkboxChange"></label>
+        <label> React.js <input type="checkbox" v-model="hobby" value="3" @change="checkboxChange"></label>
+        <br>
+        {{hobby}}
+    </div>
+    <div>
+        今天学什么?
+        <select v-model="learn" @change="selectChange">
+            <option value="1">node</option>
+            <option value="2">JS</option>
+            <option value="3">React</option>
+        </select>
+    </div>
+</div>
+<script src="vue.js"></script>
+<script>
+    // 1. Vue 绑定事件: v-on: 不带on的事件名="方法名"; v-on: 可以简写成@
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            title:'kwkwk',
+            num: 2,
+            price: 12.23456,
+            msg: '123',
+            sex: 1,
+            hobby: [],
+            isAgree: true,
+            learn: 2
+        },
+        methods: {
+            getData(){
+                // 发送函数
+            },
+            fn(e, a, b){
+                // 1. 绑定事件时不传参,事件函数的第一个参数是事件对象
+                // 2. 如果传参,事件函数收到的参数就是绑定事件小括号中传入的参数
+                // 3. 如果既需要传参又需要事件对象,就需要在小括号里面写一个$event
+            },
+            add(){
+
+            },
+            radioChange(){
+                console.log(this.sex);
+            },
+            checkboxChange(){
+                console.log(this.hobby);
+            },
+            next(){
+                console.log('next');
+            },
+            selectChange(){
+                console.log(this.learn);
+            }
+        },
+        filters: {
+            toFixed(val, num = 2){
+                return val.toFixed(num)
+            },
+            toRMB(val){
+                return "￥" + val
+            }
+        },
+        created(){
+            // 在Vue的实例创建后,会执行这个钩子
+            // 一般在这个函数中发请求
+            this.getData(); // 在这里面调用请求数据的方法
+        }
+    });
+
+    // 2. 事件修饰符
+    // 2.1 .prevent 阻止元素的默认行为
+    // 2.2 .stop 阻止冒泡
+    // 2.3 .capture 在捕获阶段触发
+    // 2.4 .once 只触发一次
+    // 2.5 .self 当自身事件触发时才执行事件函数
+
+    // 键盘事件修饰符: 指定按下哪个按键时,才触发事件函数
+    // .enter 回车
+    // .esc esc键
+    // .tab tab键
+    // .delete 删除键
+    // .space 空格键
+    // .up 上
+    // .down 下
+    // .left 左
+    // .right 右
+
+    // 简易todoList(事件): 数据驱动, 页面所有的变更都是基于数据的; 视图是数据的映射, 相让视图发生变化,我们要做的就是让数据
+    // 发生变化,数据发生变化以后,vue会自动按照最新的数据渲染视图;
+
+    // Tab (选项卡)
+
+    // 过滤器: 用来格式化数据的,不会改变原数据;
+    // 1. 全局过滤器
+    // Vue.filter(过滤器名, (val) => {})
+    // 2. 局部过滤器: filters
+
+
+</script>
 </body>
 </html>

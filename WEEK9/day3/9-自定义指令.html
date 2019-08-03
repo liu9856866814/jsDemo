@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        #app div{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: lightgreen;
+            line-height: 150px;
+            text-align: center;
+            -webkit-user-select: none;
+        }
+        #app div:nth-child(2){
+            top: 170px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <div v-drag>A</div>
+    <div v-drag>B</div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+    // 指令: 是以v-开头的行内属性,vue赋予它特殊的功能;
+    let vm = new Vue({
+        el: '#app',
+        data: {},
+        filters: {},
+        methods: {},
+        computed: {},
+        watch: {},
+        created(){},
+        directives:{
+            drag: {
+                inserted(el){
+                    // el 是使用指令的元素对象
+                    // console.dir(el);
+                    el.onmousedown = function (e) {
+                        // 1. 记录初始位置
+                        this.startX = e.pageX - this.offsetLeft;
+                        this.startY = e.pageY - this.offsetTop;
+                        // 2. 把鼠标移动事件委托给document,防止鼠标丢失
+                        document.onmousemove = function (e) {
+                            el.style.left = e.pageX - el.startX + 'px';
+                            el.style.top = e.pageY - el.startY + 'px';
+                        };
+                        // 3. 把鼠标左键抬起事件委托给document
+                        document.onmouseup = function () {
+                            document.onmousemove = null;
+                            document.onmouseup = null;
+                        }
+                    }
+                }
+            }
+        }
+    })
+</script>
+
 </body>
 </html>

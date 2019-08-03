@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        .p1{
+            width: 100px;
+            height: 100px;
+            background: orange;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <input type="text" v-model="tel">
+    <h2 v-text="msg">dkfj</h2>
+    <h2 v-text="tag"></h2>
+    <h2 v-html="tag">aaa</h2>
+    <div>
+<!--        <button @click="flag = !flag">点击我p标签{{flag ? show : hide}}</button>-->
+        <button @click="showHide">{{content}}</button>
+        <p class="p1" v-show="flag">这是一段文本</p>
+        <a :href="link">百度</a>
+    </div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+    // 指令：以v-开头的行内属性，vue赋予了这些属性特殊的功能；
+    // 常用的指令:
+    // 1. v-model 双向数据绑定
+    // 2. v-text 把数据绑定到dom元素中,会覆盖元素原有的内容,同时不识别字符串中的html标签,如果数据中有html标签,会原样输出到页面中;
+    // 3. v-html 把数据绑定到dom元素中,可以识别字符串中的html标签;
+    // 4. v-if 控制元素的显示和隐藏,v-if绑定的值为true,元素展示,如果为false,元素隐藏; v-if依靠删除和增加元素节点实现元素的
+    // 隐藏和显示;
+    // 5. v-else 配合v-if使用,如果v-if的值是false,展示v-else的元素;
+    // 6. v-show 控制元素的显示和隐藏; 为true元素显示,为false元素隐藏; v-show依靠控制display属性来实现元素的显示和隐藏;
+    // 7. v-bind 绑定动态属性,属性被v-bind后就可以识别变量了;
+    // 8. v-for 列表渲染
+    // 9. v-on 事件绑定
+
+    let flag = true;
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            tel: '18293940003',
+            msg: 'hello world',
+            tag: '<a href="https://www.baidu.com">百度</a>',
+            flag: true,
+            show: '显示',
+            hide: '隐藏',
+            content: '点击隐藏',
+            link: 'https://www.baidu.com'
+        },
+        methods: {
+            showHide(e){
+                // flag = !flag; flag 是全局变量,和实例无关, 修改全局变量并不会有数据映射视图;
+                // Vue 是数据映射视图,这些数据必须是实例vm身上的; data/methods/computed中的属性都会代理到vm上;如果想让数据
+                // 映射视图,只能修改
+                this.flag = !this.flag;
+                if(this.flag){
+                    this.content = '点击隐藏';
+                }else{
+                    this.content = '点击显示';
+                }
+            }
+        }
+    })
+</script>
 </body>
 </html>

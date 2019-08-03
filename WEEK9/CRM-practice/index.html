@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/static/css/index.css">
 </head>
 <body>
+<div class="container">
+    <a href="/modify.html">新增客户</a>
+    <table>
+        <thead>
+          <tr>
+              <th>id</th>
+              <th>姓名</th>
+              <th>年龄</th>
+              <th>手机号</th>
+              <th>地址</th>
+              <th>操作</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</div>
 
+<script src="/static/js/axios.js"></script>
+<script src="/static/js/index.js"></script>
 </body>
 </html>

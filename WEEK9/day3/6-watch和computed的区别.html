@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <input type="text" v-model="firstName"> <br>
+    <input type="text" v-model="lastName"> <br>
+    {{fullName}}
+</div>
+
+<!--
+computed:
+1. 页面加载时就求值,当依赖的数据发生改变时会重新求值;
+2, 不支持异步
+3, computed可以依赖多个属性,如果被依赖的属性有一个发生变化,就会重新求值;(相当于监控多个属性)
+
+watch:
+1. 页面加载时,watch不执行,只有被监控的数据发生变化时才会执行对应的函数;
+2. 支持异步
+3. 一个函数对应一个被监控的属性,只有当这个属性的值发生变化时才会执行这个函数;
+-->
+
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            firstName: '宾',
+            lastName: '马',
+            fullName: ''
+        },
+        /*computed:{
+            fullName(){
+                return this.lastName + this. firstName;
+            }
+        }*/
+        watch: {
+            firstName(newVal, oldVal){
+                this.fullName = newVal + this.lastName;
+            },
+            lastName(newVal, oldVal){
+                this.fullName = newVal + this.firstName;
+            }
+        }
+
+    })
+</script>
 </body>
 </html>

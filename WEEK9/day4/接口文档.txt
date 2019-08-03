@@ -1,0 +1,18 @@
+接口： /api/addUser
+请求方式: POST
+参数:
+{
+    name: '',
+    phone: '',
+    sex: '1' 男 '2' 女 '3' 未知
+    hobby: [1, 2, 3, 4], // 1 唱 2 跳 3 RAP 4 篮球
+    grade: 1, // 1-6 表示 初一~高三,
+    tips: ''
+}
+
+返回值:
+{
+    code: 0, // 0 成功, 其他失败
+    data: null,
+    msg: 'ok'
+}

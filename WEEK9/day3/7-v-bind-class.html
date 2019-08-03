@@ -2,9 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        .x{
+            background: red;
+            height: 20px;
+        }
+        .y{
+            float: left;
+        }
+        .z{
+            font-size: 30px;
+        }
+        .a{
+            color: greenyellow;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <div :ok="flag">{{notFlag}}</div>
+    <div :class="{x: flag, a: flag}">
+        <!--元素浮动以后会脱离文档流,父级元素无法识别子元素的宽高;解决方案: 清浮动/给父元素一个高度-->
+        <div class="y">A</div>
+    </div>
+    <div :class="0 ? 'x' : z">B</div> <!-- 如果要使用的类名就叫做x,要用引号包裹'x', 因为v-bind:class以后,等号右侧变成了
+    js表达式, 不带引号的都是变量 -->
+    <div :class="getClass()">C</div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: true,
+            z: 'zig-zag'
+        },
+        computed: {
+            notFlag(){
+                return !this.flag
+            }
+        },
+        methods: {
+            getClass(){
+                return 'x';
+            }
+        }
+    });
+
+    // v-bind 绑定动态属性
+    // v-bind:class 动态绑定类名,实现动态操作样式;
+
+    // v-bind:class 常见的形式:
+    // 1. 对象, {className1: 属性值1, className2: 属性值2,...} 当属性值为true时,className生效;
+    // 2. 三元运算符,三元运算符的返回值是生效的类名;条件为true 返回条件成立的值,融返回条件不成立的值;
+    // 3. 还可以是一个方法调用,最终生效的类名是方法的返回值;
+</script>
 </body>
 </html>

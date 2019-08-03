@@ -2,9 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .wrapper{
+            width: 800px;
+            margin: 30px auto;
+            border: 1px solid #0f0f0f;
+        }
+        .header {
+            overflow: hidden;
+            border-bottom: 1px solid #000;
+        }
+        .header li{
+            float: left;
+            width: 200px;
+            box-sizing: border-box;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            border-right: 1px solid #000;
+            cursor: pointer;
+            -webkit-user-select: none;
+        }
+        .header li:last-child{
+            border-right: none;
+        }
+        .header li.active{
+            background: yellow;
+        }
+        .card{
+            height: 400px;
+            line-height: 400px;
+            font-size: 40px;
+            text-align: center;
+            text-decoration: underline;
+            display: none;
+        }
+        div.card.active{
+            display: block;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <div class="wrapper">
+        <ul class="header">
+            <li v-for="(item, index) in headers"
+                :key="index"
+                :class="{active: selected == index}"
+                @click="headerClick(index)">
+                {{item}}
+            </li>
+            <!--<li :class="{active: selected == 0}" @click="headerClick(0)">唱</li>
+            <li :class="{active: selected == 1}" @click="headerClick(1)">跳</li>
+            <li :class="{active: selected == 2}" @click="headerClick(2)">rap</li>
+            <li :class="{active: selected == 3}" @click="headerClick(3)">篮球</li>-->
+        </ul>
+<!--        <div :class="{active: selected == 0}" class="card">《鸡你太美》</div>
+        <div :class="{active: selected == 1}" class="card">钢管</div>
+        <div :class="{active: selected == 2}" class="card">RAP-鸡你太美</div>
+        <div :class="{active: selected == 3}" class="card">NBA-鸡你太美</div>-->
+        <div v-for="(item, index) in cards" :class="{active: selected == index}" class="card">{{item}}</div>
+    </div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+    let headers = ['唱', '跳', 'RAP', '篮球'];
+    let cards = ['唱唱', '跳跳', 'RAPRAP', '篮球篮球'];
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            selected: 0,
+            headers,
+            cards
+        },
+        methods: {
+            headerClick(index){
+                this.selected = index;
+            }
+        }
+    })
+</script>
 </body>
 </html>

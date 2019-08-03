@@ -2,9 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
-$END$
+<div id="app">
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered">
+                <tr>
+                    <th>全选: <input type="checkbox" v-model="checkAll"></th>
+                    <th>商品</th>
+                    <th>数量</th>
+                    <th>单价</th>
+                    <th>小计</th>
+                </tr>
+                <tr v-for="(product, index) in carts" :key="index">
+                    <td>
+                        <input type="checkbox" v-model="product.isSelected" @change="changeOne">
+                    </td>
+                    <td>{{product.name}}</td>
+                    <td><input type="number" min="1" v-model="product.count"></td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.count * product.price | toRMB}}</td>
+                </tr>
+                <tr>
+                    <td colspan=5>
+                        总价: {{ total | toRMB}}
+                    </td>
+                </tr>
+            </table>
+            <input type="text" v-model="total">
+        </div>
+    </div>
+</div>
+<script src="vue.js"></script>
+<script>
+    // npm install 依赖包@版本号 指定版本号安装; 如果不指定,就会按照最新版本安装
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            carts: [
+                {
+                    isSelected: true,
+                    count: 3,
+                    price: 57.86,
+                    name: '车厘子'
+                },
+                {
+                    isSelected: true,
+                    count: 1,
+                    price: 8888,
+                    name: 'iphoneX'
+                }
+            ],
+        },
+        methods: {
+            changeAll(){
+
+            },
+            changeOne(){
+
+            }
+        },
+        filters: {
+            toRMB(val){
+                return '￥' + val.toFixed(2)
+            }
+        },
+        computed: {
+            // computed里面的属性最终也会被vm代理,这些属性都会在vm身上也有一份;
+            total: function(){ // 计算属性的getter形式,这样声明的total只能读,不能写;这个属性不能修改
+                // 首先把打钩的商品筛选出来
+                let selected = this.carts.filter(item => item.isSelected);
+                return selected.reduce((prev, next) => {
+                    // next 是数据项,现在是对象
+                    return prev + next.count * next.price;
+                }, 0)
+            },
+            // 计算属性的setter
+            checkAll: {
+                get(){
+                    // 当获取checkAll时就会执行get方法,并且取到的值是get方法的返回值
+                    return this.carts.every((item) => item.isSelected)
+                },
+                set(val){
+                    // 当修改checkAll属性时,会触发set方法, 并且val会接收到checkAll的新值;
+                    // console.log(val); // val就是修改checkAll时传过来的值
+                    this.carts.forEach(item => item.isSelected = val)
+                }
+            }
+        }
+    })
+    // 什么时候使用计算属性?
+    // 1. 数据用来展示;
+    // 2. 需要展示的数据依赖其他数据,通过其他数据计算出来的;
+    // 3. 当它依赖的数据发生变化时,会重新计算;
+
+    // computed 注意事项:
+    // 1. computed里面的属性会被vm所代理;
+    // 2. computed里面的属性和data/methods/fillters/都不能同名;
+    // 3. computed的计算属性可以是一个函数还可以是一个对象;对象中有get和set方法,取值时执行get,设置时执行set; 而函数形式的
+    // 计算属性,只有get的情况,只能获取不能设置,如果设置会报错;
+    // 4. 如果一个属性需要依赖于其他属性计算而来，那么这个属性最好用computed
+</script>
 </body>
 </html>

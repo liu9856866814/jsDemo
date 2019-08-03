@@ -2,9 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 400px;
+            margin: 30px auto;
+            border: 2px solid lightgreen;
+            padding: 15px
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <div class="box">
+        <h2>用户信息登记</h2>
+        <div>
+            <label>姓名: </label><input type="text" v-model="fields.name">
+        </div>
+        <div>
+            <label>电话: </label><input type="text" v-model="fields.phone">
+        </div>
+        <div>性别：
+            <label>男：<input type="radio" value="1" v-model="fields.sex"></label>
+            <label>女：<input type="radio" value="2" v-model="fields.sex"></label>
+            <label>未知：<input type="radio" value="3" v-model="fields.sex"></label>
+        </div>
+        <div>
+            爱好：
+            <label>唱 <input type="checkbox" value="1" v-model="fields.hobby"></label>
+            <label>跳 <input type="checkbox" value="2" v-model="fields.hobby"></label>
+            <label>rap <input type="checkbox" value="3" v-model="fields.hobby"></label>
+            <label>篮球 <input type="checkbox" value="4" v-model="fields.hobby"></label>
+        </div>
+        <div>
+            年级：
+            <select v-model="fields.grade">
+                <option value="">请选择</option>
+                <option value="1">初一</option>
+                <option value="2">初二</option>
+                <option value="3">初三</option>
+                <option value="4">高一</option>
+                <option value="5">高二</option>
+                <option value="6">高三</option>
+            </select>
+        </div>
+        <div>
+            备注：
+            <textarea cols="30" rows="10" v-model="fields.tips"></textarea>
+        </div>
+        <div>
+            <button @click="submit" :disabled="flag">提交</button>
+        </div>
+    </div>
+</div>
+<script src="axios.js"></script>
+<script src="vue.js"></script>
+<!--有src的script标签不能写内嵌式js-->
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            fields: {
+                name: '',
+                phone: '',
+                sex: '1',
+                hobby: [],
+                grade: '',
+                tips: '',
+            },
+            flag: false
+        },
+        methods: {
+            submit(){
+                // 在这里把数据post给服务端
+                // 双向数组绑定,上面的表单已经v-model了data中的属性;现在需要获取这些表单的值,不需要再获取表单元素, 当页面中表单值发生变化时,
+                // 自动绑定到data中的值, 所以直接拿data里面的属性就可以了;
+                this.flag = true;
+                axios.post('/api/addUser',this.fields).then(({data}) => {
+                    this.flag = false;
+                    console.log(data);
+                    if(data.code === 0){
+                        alert('保存成功');
+                    }else{
+                        alert(data.msg);
+                    }
+                });
+            }
+        },
+
+    })
+
+    // input
+    // radio
+    // checkbox
+    // select
+    // textarea
+    // 把表单的值都获取到,然后在按钮
+</script>
 </body>
 </html>

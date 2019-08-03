@@ -2,9 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .panel-footer a{
+            margin-left: 15px;
+        }
+        .del{
+            text-decoration: line-through;
+            color: #ccc;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-success">
+                    <div class="panel-heading bg-warning">
+                        <h2>{{undone}}</h2>
+                        <input type="text" class="form-control"
+                               v-model="title"
+                               v-focus
+                               @keydown.enter="add">
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"
+                                v-for="(item, index) in filterTodo"
+                                :key="index">
+                                <span>
+                                    <input type="checkbox" v-model="item.isSelected">
+                                </span>
+                                <span :class="{del: item.isSelected}">{{item.title}}</span>
+                                <button class="btn btn-danger btn-xs pull-right" @click="remove(index)">删除</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <a v-for="(item, index) in config" :key="index" :href="item.hash">{{item.name}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+    let config = [
+        {
+            name: '全部任务',
+            hash: '#all'
+        },
+        {
+            name: '已完成',
+            hash: '#finish'
+        },
+        {
+            name: '未完成',
+            hash: '#unfinish'
+        }
+    ];
+    let vm = new Vue({
+        el: '#app',
+        data:{
+            title: '',
+            todoList: [
+                {
+                    isSelected: false,
+                    title: '吃饭'
+                },
+                {
+                    isSelected: false,
+                    title: '睡觉'
+                },
+            ],
+            config,
+            hash: '#all'
+        },
+        methods: {
+            add(){
+                // 添加任务
+                this.todoList.push({
+                    title: this.title,
+                    isSelected: false
+                });
+                this.title = ''; // 添加到列表后,清空input
+            },
+            remove(index){
+                this.todoList.splice(index, 1);
+            }
+        },
+        created(){
+            window.addEventListener('hashchange', () => {
+                this.hash = location.hash;
+            })
+        },
+        computed:{
+            undone(){
+                let num = this.todoList.filter(i => !i.isSelected).length;
+                let msg = '';
+                if (num){
+                    msg = `亲, ^_^ 你还有${num}件事没干`;
+                }else{
+                    msg = `亲,你好棒啊! 今天的事情做完了,赶紧休息一下吧~`
+                }
+                return msg;
+            },
+            filterTodo(){
+                console.log(this.hash);
+                switch (this.hash) {
+                    case '#all':
+                        return this.todoList;
+                    case '#finish':
+                        return this.todoList.filter(item => item.isSelected);
+                    case '#unfinish':
+                        return this.todoList.filter(item => !item.isSelected);
+                }
+            }
+        },
+        directives: {
+            focus:{
+                inserted(el){
+                  el.focus();
+                }
+            }
+        }
+    })
+</script>
 </body>
 </html>

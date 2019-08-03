@@ -2,9 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <select v-model="fontColor">
+        <option value="#ff0000">红色</option>
+        <option value="#fff">白色</option>
+        <option value="green">绿色</option>
+    </select>
+    <div :style="{color: fontColor, background: '#0f0f0f', paddingLeft: '100px'}">A</div>
+    <div :style="[s1, s2]">BcdefG</div>
+    <div :style="ary">BcdefG</div>
+    <div :style="getStyle()">aaaa</div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            s1: {
+                fontSize: '20px',
+                background: '#00b38a'
+            },
+            s2: {
+                fontStyle: 'italic',
+                fontWeight: 'bold'
+            },
+            ary: [
+                {
+                    fontSize: '20px',
+                    background: '#00b38a'
+                },
+                {
+                    fontStyle: 'italic',
+                    fontWeight: '500'
+                }
+            ],
+            fontColor: '#ff0000'
+        },
+        methods: {
+            getStyle(){
+                return {color: 'pink', background: '#000'}
+            }
+        }
+    });
+    // v-bind:style 动态绑定行内样式;
+    // 常见的情况:
+    // 1. 一个对象,对象中都是样式 例如 {color: '#000', backgroundColor: #fff}
+    // 2. 一个数组, 数组项是样式对象,最终会把这些对象中的样式合并到一起;
+    // 3. 方法调用,在方法中返回一个样式对象
+</script>
 </body>
 </html>

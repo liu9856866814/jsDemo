@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    let ary = [1, 2, 3, 4];
+
+    // 专门用来求和的
+    // ary.reduce((prev, next) => {}, 初始值);
+    let total = ary.reduce((prev, next) => {
+        // 第一次执行时: prev是初始值0; 初始值不传时prev是第一项;
+        // 后面每一次执行时,prev是上一次回调函数的返回值
+        console.log(prev, next);
+        return prev + next;
+    }, 0);
+    console.log(total); // reduce最后的返回结果是最后一次回调执行的结果
+</script>
 </body>
 </html>

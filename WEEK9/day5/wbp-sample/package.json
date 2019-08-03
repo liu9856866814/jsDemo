@@ -2,12 +2,18 @@
   "name": "wbp-sample",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cmdBuild": "webpack-cli --entry ./app/main.js --output ./public/bundle.js"
+    "myBuild": "webpack-cli --entry ./app/main.js --output ./public/bundle.js",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
 }

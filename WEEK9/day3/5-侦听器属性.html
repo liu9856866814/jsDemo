@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <input type="text" v-model="text" @input="fn"> <br>
+    {{msg}}
+</div>
+<script src="vue.js"></script>
+<script>
+    // 侦听器属性: watch
+    // 当需要监听一个属性的改变, 当它改变时我们要做某些事,此时我们就需要使用侦听器属性;
+    //
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            text: '',
+            msg: ''
+        },
+        watch: {
+            // watch就是侦听器属性; 写在这个对象中的属性都是要被监控的;
+            // 当被监控的属性的值发生变化时,就会触发对应的函数;
+
+            // 属性名: 被监控的属性名, 例如 text; 属性值是一个函数
+            text(newVal, oldVal) {
+                // console.log(newVal, oldVal);
+                // newVal 是被监控属性的新值
+                // oldVal 是被监控的属性的旧值
+                /*if(newVal.length > 5){
+                    this.msg = 'too long';
+                }else if(newVal.length < 3){
+                    this.msg = 'too short';
+                }else{
+                    this.msg = '';
+                }*/
+
+                // 侦听器属性可以使用异步;
+                setTimeout(() => {
+                    if(newVal.length > 5){
+                        this.msg = 'too long';
+                    }else if(newVal.length < 3){
+                        this.msg = 'too short';
+                    }else{
+                        this.msg = '';
+                    }
+                },0)
+            }
+
+            // 能用表单的事件就用事件或者使用计算属性; 这两种都不行时再用watch;
+        },
+        methods: {
+            fn(){
+                console.log(this.text);
+            }
+        }
+    })
+</script>
 </body>
 </html>

@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <ul>
+        <li v-for="(item, index) in result" :key="index">
+            <p @click="showHide(index)">
+                {{item.title}}
+            </p>
+<!--            <div v-html="item.content" v-show="item.flag"></div>-->
+            <div v-html="item.content" v-show="flags[index]"></div>
+        </li>
+    </ul>
+    <button @click="add">增加</button>
+    <ul>
+        <li v-for="(item, index) in flags">{{item}}</li>
+    </ul>
+</div>
+<script src="axios.js"></script>
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            result: [],
+            flags: [false, false, false, false, false, false, false, false, false, false]
+        },
+        methods: {
+            queryData(){
+                axios.get('./itz.json').then((res) => {
+                    let info = res.data.data.listInfo;
+                    // this.result = info; // 在这里赋值,Vue收到的数据并没有flag这个属性,所以可观测对象中没有flag;所以导致
+                    // 页面中点击标题,答案并不会显示/隐藏;
+                    info.forEach(i => i.flag = false); // 扩展从服务端拿到的数据，给每条数据增加一个控制该条数据中的答案显示隐藏的开关
+                    this.result = info; // 要把赋值放在所有的对原数据的修改之后;
+                    // Vue 是响应式(视图发生变化,数据会跟着变化,同理数据发生变化,视图也跟着变化);
+                    // 这里面有一个核心关键点,Vue需要知道数据被修改了,才能按照修改后的数据渲染页面;
+                    // 它怎么知道的?? Vue 收到新的数据(或者初始化传的数据), Vue会把这个数据以及数据下面的子孙都变成 可观测对象
+                    // (Observable Object) (其实就是getter 和 setter), 只有变成可观测对象的数据发生变化时,Vue才能知道数据发生变化,
+                    // 进而触发按照最新的数据渲染;
+
+                    // 为什么数组原来没有,但是push之后,页面就会重新渲染呢?
+                    // Vue重写了数组原型上的方法,如 push,pop,splice.... 在这些改写后的方法中,加入了触发数据改变以后行为的逻辑;
+                    // Vue中操作数组
+                })
+            },
+            showHide(index){
+                // this.result[index].flag = !this.result[index].flag;
+                /*this.flags[index] = !this.flags[index]; flags 里面都是基本数据类型的值，通过索引修改这个数据中的值，Vue并不知
+                道这个值发生了改变，所以也不会触发按照这个最新值渲染；
+                console.log(this.flags[index]);*/
+            },
+            add(){
+                // this.flags[this.flags.length] = false;
+                // this.flag.length--;
+                // 以上两种方式操作数组不允许在Vue里面使用；
+
+                // 可以用数组的方法，可以把原数组替换成一个新的数组
+
+                this.flags.pop();
+                // this.flags.push('false');
+                // console.log(this.flags.length);
+                this.flags = [false, false, false, false, false, false, false, false, false, false, false]; // 替换成新数组
+            }
+        },
+        created(){
+            this.queryData();
+        }
+    })
+</script>
 </body>
 </html>

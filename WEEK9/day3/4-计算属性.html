@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <input type="text" v-model="text"> <br>
+    {{msg}}
+</div>
+<script src="vue.js"></script>
+<script>
+    // 当input中输入的内容长度大于5时提示'太长了', 当输入的内容小于3时提示'太短了'
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            text: ''
+        },
+        computed: {
+            msg(){
+                // 计算属性不能写在异步处理程序: ajax/ 定时器/ Promise的then
+                /*setTimeout(() => {
+                    if(this.text.length > 5){
+                        return '太长了'
+                    }
+                    if (this.text.length < 3) {
+                        return '太短了'
+                    }
+                })*/
+
+                if(this.text.length > 5){
+                    return '太长了'
+                }
+                if (this.text.length < 3) {
+                    return '太短了'
+                }
+            }
+        }
+    })
+</script>
 </body>
 </html>
