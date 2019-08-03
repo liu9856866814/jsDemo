@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        ul{
+            width: 500px;
+            margin: 20px auto;
+            border: 2px solid khaki;
+            padding: 5px;
+        }
+        li{
+            width: 100%;
+            line-height: 35px;
+        }
+        ul li:hover{
+            color: orange;
+        }
+        li>span{
+            border: 1px solid red;
+            width: 15px;
+            display: inline-block;
+            line-height: 15px;
+            text-align: center;
+            border-radius: 10px;
+            background: red;
+            margin-right: 10px;
+            color: #fff;
+            font-size: 15px;
+        }
+        li div{
+            margin-left: 30px;
+            background: #f6f9fd;
+            color: #666;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="keywords" @keydown.enter="search()">
+    <ul id="list" v-if="listAry.length !== 0">
+        <li v-for="(item, index) in listAry"
+            :key="index" @click="showHide(index)">
+            <span>{{item.add}} </span> {{item.title}}
+            <div v-show="item.flag" v-html="item.content"></div>
+        </li>
+    </ul>
+    <div v-else>
+        <p>你搜索的内容不存在</p>
+    </div>
+</div>
+<script src="axios.js"></script>
+<script src="vue.js"></script>
+<script>
+    let list = document.getElementById('list');
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            listAry: [],
+            keywords: ''
+        },
+        methods: {
+            getData(){
+                if(!this.keywords.trim()) return;
+                axios.get('itz.json?keywords=' + this.keywords).then(({data: {data: { listInfo}}}) => {
+                    // 为了实现点击当前的问题，只让当前的答案展示出来，其他不受影响，我们扩展listInfo
+                    listInfo.forEach(item => {item.flag = false; item.add = '+'});
+                    this.listAry = listInfo;
+                })
+            },
+            showHide(index){
+                this.listAry[index].flag = !this.listAry[index].flag;
+                if(this.listAry[index].add === '+'){
+                    this.listAry[index].add = '-';
+                }else{
+                    this.listAry[index].add = '+';
+                }
+            },
+            search(){
+                this.getData();
+            }
+        },
+        created(){
+            // this.getData();
+        }
+    })
+</script>
+</body>
+</html>

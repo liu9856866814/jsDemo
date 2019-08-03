@@ -1,0 +1,13 @@
+{
+  "name": "wbp-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cmdBuild": "webpack-cli --entry ./app/main.js --output ./public/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

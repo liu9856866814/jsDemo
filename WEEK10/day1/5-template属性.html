@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+</div>
+<template id="tpl"> <!--模板渲染后,根DOM元素被替换掉了, template标签本身不会被渲染到应用中-->
+    <div>
+        <button>{{msg}}</button>
+    </div>
+</template>
+
+<script src="vue.js"></script>
+<script>
+    let vm = new Vue({
+        // template: '#tpl',
+        template: `<div>{{msg}}</div>`,
+        el: '#app',
+        data: {
+            msg: 'hello world',
+        }
+    });
+    // Vue 创建实例或者组件时,可以配置template属性,指定vue要渲染的模板; 有两种使用方式
+    // 1. 在html中写一个template标签, 把模板内容写在template标签中, 绑定数据的语法和指定不变;然后在创建实例时添加template属性,
+    // 值是#template标签的id
+    // 2. 指定一个字符串作为模板,字符串中要写绑定数据的html结构; 在创建实例时,指定template属性,值就是模板字符串;
+
+    // 注意:
+    // 1. template 属性会把根DOM节点替换掉
+    // 2. template 属性只能有一个根节点(template 标签只能有一个子元素, 如果是模样字符串,所有的内容要包裹在一个标签中);
+
+</script>
+</body>
+</html>
