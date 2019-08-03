@@ -2,9 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>修改/新增</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <div class="container">
+        <div>
+            <label>姓名: <input type="text" v-model="ary.name"></label>
+        </div>
+        <div>
+            <label>年龄: <input type="text" v-model="ary.age"></label>
+        </div>
+        <div>
+            <label>电话: <input type="text" v-model="ary.phone"></label>
+        </div>
+        <div>
+            <label>地址: <input type="text" v-model="ary.address"></label>
+        </div>
+        <div>
+            <button @click="submit">保存</button>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/vue.js"></script>
+<script src="/static/js/axios.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            ary: {
+                name: '',
+                age: '',
+                phone: '',
+                address: ''
+            },
+            isReg: '',
+            api: ''
+        },
+        created(){
+            // this.modifyInfo();
+        },
+        methods:{
+            modifyInfo(){
+                this.isReg = /id=(\d+)/.exec(location.search);
+                console.log(this.ary.name);
+                // console.log(this.isReg);
+                if(this.isReg){
+                    let [, id] = this.isReg;
+
+                    axios.get('/api/getInfo?id=' + id).then(({data}) => {
+                        console.log(data);
+                        if (data.code === 0){
+                            this.ary = data.data[0];
+                            console.log(this.ary);
+                        }else{
+                            alert(data.msg)
+                        }
+                    });
+                    this.api = '/api/modifyInfo'
+                }else{
+                    this.api = '/api/addInfo'
+                }
+            },
+            submit(){
+                if(this.isReg) this.ary.id = id;
+                axios.post(this.api, this.ary).then(({data}) => {
+                    console.log(data);
+                    if(data.code === 0){
+                        location.href = '/';
+                    }else{
+                        alert(data.msg);
+                    }
+                })
+            },
+            aaa(){
+                console.log(this.ary.name);
+            }
+
+        },
+        mounted (){
+            this.modifyInfo();
+        }
+    })
+</script>
 </body>
 </html>

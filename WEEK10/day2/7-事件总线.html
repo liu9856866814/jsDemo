@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <prev></prev>
+    <hr>
+    <next></next>
+</div>
+
+<script src="vue.js"></script>
+<script type="module">
+    import E from './7-eventBus.js';  // 暂时不能导, 会报错
+
+    // 事件总线(EventBus) 用来解决兄弟组件之间通信的问题;
+    // 1. 创建一个事件总线(一个空的Vue实例)
+    // 2. 谁的数据被修改,谁监听事件; 在created 钩子中 监听事件: eventBus.$on(事件名, 事件函数)
+    // 3. 谁发起修改,谁触发事件; eventBus.$emit(事件名, 数据)
+
+    let eventBus = new Vue();
+    let prev = {
+        template: `<div :style="{background: color}">哥哥 {{color}}</div>`,
+        data(){
+            return {
+                color: 'lightgreen'
+            }
+        },
+        created(){
+            // 一般在created 钩子中监听
+            // eventBus.$on('change-red', this.toRed);
+        },
+        mounted() {
+            eventBus.$on('change-red', this.toRed)
+        },
+        methods: {
+            toRed(val){
+                this.color = val;
+                console.log(val); // val可以收到事件触发时传递的数据
+            }
+        }
+    };
+    let next = {
+        template: `<div>弟弟 <button @click="fn">修改</button></div>`,
+        data(){
+            return {}
+        },
+        methods: {
+            fn(){
+                // 弟弟是发起修改的一方, 所以弟弟触发事件;
+                eventBus.$emit('change-red', 'pink')
+            }
+        }
+    };
+    let vm = new Vue({
+        el: '#app',
+        components: {
+            prev,
+            next
+        }
+    })
+</script>
 </body>
 </html>

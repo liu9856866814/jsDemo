@@ -11,17 +11,11 @@
         <label>LIST: <input type="radio" v-model="title" value="list"></label>
     </div>
 
-    <!--条件渲染-->
-    <!--<home v-show="title == 'home'"></home>
-    <list v-show="title == 'list'"></list>-->
-
-    <!--动态组件-->
-    <component :is="title"></component>
-    <!--动态组件是实现在多个组件间来回切换, 用法:
-      1. 写一个内置的component组件
-      2. 给component动态绑定is属性, 当is属性绑定的值发生变化时,Vue会按照is绑定的最新的值自动渲染对应的组件
-    -->
-    <!--失活的组件会被销毁, 存在实例中的数据都被销毁了-->
+    <keep-alive>
+        <component :is="title"></component>
+    </keep-alive>
+    <!--keep-alive 也是内置的组件, 它可以让失活组件不销毁, 所以保存在组件实例中的数据也不会销毁-->
+    <!--动态组件常和keep-alive 一起使用-->
 </div>
 
 <script src="vue.js"></script>

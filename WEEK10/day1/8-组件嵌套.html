@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+
+</div>
+
+<script src="vue.js"></script>
+<script type="module">
+    import son from './son.js';
+
+    let vm = new Vue({
+        template: `<div>{{gen}} <son></son></div>`,
+        data: {
+            gen: 'Parent'
+        },
+        components: {
+            son,
+        }
+    });
+    vm.$mount('#app');
+</script>
 </body>
 </html>

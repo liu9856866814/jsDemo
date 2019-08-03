@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>modify</title>
+    <link rel="stylesheet" href="/static/css/modify.css">
 </head>
 <body>
-$END$
+<div id="app">
+    <div class="container">
+        <div>
+            <label>姓名: <input type="text" v-model="ary.name"></label>
+        </div>
+        <div>
+            <label>年龄: <input type="text" v-model="ary.age"></label>
+        </div>
+        <div>
+            <label>电话: <input type="text" v-model="ary.phone"></label>
+        </div>
+        <div>
+            <label>地址: <input type="text" v-model="ary.address"></label>
+        </div>
+        <div>
+            <button @click="submit">保存</button>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/vue.js"></script>
+<script src="/static/js/axios.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data(){
+            return{
+                ary: {
+                    name: '',
+                    age: '',
+                    phone: '',
+                    address: ''
+                },
+                isReg: '',
+                api: ''
+            }
+        },
+        methods: {
+            /*modifyInfo(){
+                this.isReg = /id=(\d+)/g.exec(location.search);
+                if(this.isReg){
+                    let [, id] = this.isReg;
+                    axios.get('/api/getInfo?id=' + id).then(({data}) => {
+                        console.log(data);
+                        this.ary = data.data;
+                    });
+                    this.api = '/api/modifyInfo';
+                }else{
+                    this.api = '/api/addInfo'
+                }
+            },*/
+            submit(){
+                axios.post(this.api, this.ary).then(({data}) => {
+                    if(data.code === 0){
+                        location.href = '/'
+                    }else{
+                        alert( data.msg);
+                    }
+                })
+            }
+        },
+        created(){
+            // this.modifyInfo();
+        }
+    })
+</script>
 </body>
 </html>

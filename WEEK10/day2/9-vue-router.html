@@ -2,9 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <router-link to="/" tag="button">HOME</router-link>
+    <!--router-link 是用来切换路由的,
+     to 指定点击router-link 时要跳转到的路由
+     tag 指定 router-link 以什么标签渲染到页面中-->
+    <router-link to="/home" tag="button">主页</router-link>
+    <router-link to="/list" tag="button">LIST</router-link>
+
+    <router-view></router-view>
+</div>
+
+<script src="vue.js"></script>
+<script src="vue-router.js"></script>
+<script>
+    // 路由: 根据不同的请求pathname , 执行不同的操作;
+    // 前端路由: 单页面应用中由前端控制路由, 根据不同的路由显示不同的页面(其实是不没的组件); 单页面应用(SPA)只有一个 html
+    // 文件, 切换路由时是切换组件,而不会请求其他的 html 文件;
+
+    // vue-router
+    // vue 的单页面应用路由需要使用vue-router; vue-router 监听页面的路由发生变化(页面的url就是前端路由), 渲染对应的组件;
+
+    // 使用vue-router 需要使用以下组件:
+    // <router-link></router-link> 是一个vue-router定义的标签, 通过它可以切换到to属性指向的路由, 如果有这个路由对应的组件,
+    // 就会把这个组件展示到router-view
+    // <router-view></router-view> 用来展示路由对应的组件
+
+    let home = {
+        template: `<div>HOME</div>`
+    };
+    let list = {
+        template: `<div>LIST</div>`
+    };
+    let notFound = {
+        template:  `<div>Not Found</div>`
+    };
+
+    // 使用vue-router 需要配置路由映射表
+    let routes = [
+        {
+            path: '/', // path是路由
+            component: home // 路由对应的组件
+        },
+        {
+            path:'/home',
+            component: home
+        },
+        {
+            path: '/list',
+            component: list
+        },
+        {
+            path: '*', // 除了路由映射表中配置的路由以外的路由, 页面渲染成home
+            component: notFound
+        }
+    ];
+
+    // 创建一个VueRouter 的实例
+    let router = new VueRouter({
+        routes: routes // 创建VueRouter实例时, 要传入路由映射表
+    });
+
+    // 创建Vue实例时,配置router属性
+    let vm = new Vue({
+        el: '#app',
+        components: {
+            home,
+            list
+        },
+        router: router // 配置router属性
+    });
+
+    // VueRouter 默认使用的hash模式, hash改变不会引起页面的刷新, 但是会生成历史记录
+
+    // vue-router 用法:
+    // 1. 安装并引入vue-router.js 依赖
+    // 2. 设置路由映射表
+    // 3. 创建 VueRouter 的实例, 创建VueRouter 实例时需要传入路由映射表;
+    // 4. 创建Vue实例时,配置router属性, router属性的值是VueRouter的实例;
+
+
+</script>
+
 </body>
 </html>

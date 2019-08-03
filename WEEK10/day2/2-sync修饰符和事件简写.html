@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+<!--    <child :msg="pmsg" @change-msg="changePmsg"></child>-->
+    <!--使用sync修饰符可以简化子组件向父组件传递数据的过程；-->
+    <!--1. 在父组件使用子组件时，prop后面跟一个.sync, 然后取消显示声明的事件监听-->
+    <!--2. 子组件触发事件： this.$emit('update:prop名字'， 新数据)-->
+    <child :msg.sync="pmsg"></child>
+</div>
+
+<script src="vue.js"></script>
+<script type="module">
+    import child from './2-child.js';
+    let vm = new Vue({
+        el: '#app',
+        data(){
+            return {
+                pmsg: 'hello from parent'
+            }
+        },
+        components: {
+            child
+        },
+        methods: {
+           /* changePmsg(val){
+                this.pmsg = val;
+            }*/
+        }
+    })
+</script>
 </body>
 </html>

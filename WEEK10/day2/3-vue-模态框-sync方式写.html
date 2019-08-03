@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .modal{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .3);
+        }
+        .modal .content{
+            width: 400px;
+            height: 300px;
+            padding: 15px;
+            background: #00b38a;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <button @click="openModal">打开</button>
+    <modal :open.sync="flag"></modal>
+</div>
+<template id="modalTpl">
+    <div class="modal" v-show="open">
+        <div class="content">
+            <button @click="closeModal">关闭</button>
+        </div>
+    </div>
+</template>
+<script src="vue.js"></script>
+<script>
+    let modal = {
+        template: '#modalTpl',
+        methods: {
+            closeModal(){
+                this.$emit('update:open', false);
+            }
+        },
+        props: ['open'],
+    };
+
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: false
+        },
+        methods: {
+            openModal(){
+                this.flag = true;
+            },
+           /* shut(val){
+                this.flag = val;
+            }*/
+        },
+        components: {
+            modal
+        }
+    })
+</script>
 </body>
 </html>

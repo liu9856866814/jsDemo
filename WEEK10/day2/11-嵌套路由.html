@@ -2,9 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<div id="app">
+    <router-link to="/detail">详情</router-link>
+    <router-view></router-view>
+</div>
+
+<template id="detail">
+    <div>DETAIL
+        <router-link to="/detail/profile">个人中心</router-link>
+        <router-link to="/detail/about">关于我们</router-link>
+        <router-view></router-view> <!--嵌套路由需要在子组件模板中添加router-view-->
+    </div>
+</template>
+<script src="vue.js"></script>
+<script src="vue-router.js"></script>
+<script>
+    // 从当前页面可以进入到当前页面的子页面中,例如
+    // 当前页面的路由: /detail
+    // profile 页面路由: /detail/profile
+    // about 页面路由: /detail/about
+
+    // profile 和 about 是 /detail 的子路由;
+    // 如何实现子路由 (路由嵌套), 在/detail 下面配置 children 属性
+
+    let home = {
+        template: `<div>HOME</div>`
+    };
+    let detail = {
+        template: `#detail`
+    };
+    let profile = {
+        template: `<div>profile</div>`
+    };
+    let about = {
+        template: `<div>about</div>`
+    };
+
+    // 使用vue-router 需要配置路由映射表
+    let routes = [
+        {
+            path: '/', // path是路由
+            component: home // 路由对应的组件
+        },
+        {
+            path:'/home',
+            component: home
+        },
+        {
+            name: 'detail',
+            path: '/detail', // 一级路由前面要写 /
+            component: detail,
+            children: [
+                {
+                    path: 'profile', // 二级路由前面不需要写 /
+                    component: profile
+                },
+                {
+                    path: 'about', // 二级路由前面不需要写 /
+                    component: about
+                },
+            ]
+        }
+    ];
+
+    // 创建一个VueRouter 的实例
+    let router = new VueRouter({
+        routes: routes // 创建VueRouter实例时, 要传入路由映射表
+    });
+
+    // 创建Vue实例时,配置router属性
+    let vm = new Vue({
+        el: '#app',
+        /*components: {
+            home,
+            detail,
+            profile,
+            about
+        },*/ // 不用写注册
+        router: router // 配置router属性
+    });
+</script>
 </body>
 </html>

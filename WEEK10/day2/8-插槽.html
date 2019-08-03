@@ -2,9 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .modal{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .3);
+        }
+        .modal .content{
+            border-radius: 10px;
+            width: 400px;
+            height: 300px;
+            padding: 15px;
+            background: #ccc;
+        }
+        .content .header{
+            height: 80px;
+            line-height: 80px;
+            font-size: 20px;
+            color: yellow;
+            padding: 15px;
+            border-bottom: 2px solid #000;
+        }
+        .content .body{
+            height: 100px;
+            padding-left: 15px;
+            font-size: 30px;
+            border-bottom: 2px solid #000;
+        }
+
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <button @click="open">打开</button>
+    <modal :open.sync="flag">
+        <div slot="before">提示: 您确定要删除吗?</div>
+        <div>提示: 您确定要新增吗?</div>
+        <div slot="before">这一段内容是具名slot的</div> <!--写了slot='before' 之后,这一段模板会添加到子组件的name属性为
+         before的 slot 上 -->
+        <div>只要不写slot属性的模板,都会插入到匿名slot的位置</div>
+    </modal>
+    <button @click="open2">打开2</button>
+    <modal :open.sync="flag2">
+        <div slot="header" class="header">
+            <span>! !</span>
+            警告
+        </div>
+        <div slot="body" class="body">
+            不许偷看~~
+        </div>
+        <div slot="footer" class="footer">
+            <button @click="cancel">取消</button>
+            <button @click="confirm">确定</button>
+        </div>
+    </modal>
+</div>
+<script src="vue.js"></script>
+<script type="module">
+    import modal from './8-modal.js';
+
+    // 插槽: 当引用组件时, 我们可以向组件的自定义标签中嵌入内容, 这些内容可以嵌入到子组件中, 但是需要使用插槽,即slot;
+
+    // 如何使用slot?
+    // 1. 在子组件中提前定义插槽, 在需要的地方写一个<slot></slot>标签;
+    // 2. 把想要嵌入子组件的内容,写在子组件标签的里面;
+
+    // 匿名 slot 和 具名 slot
+    // 子组件中的slot标签可以设置一个name属性, 设置了name属性的slot叫做具名slot, 没有设置name属性的叫做匿名slot;
+    // 如果子组件标签中的内容要添加到指定的slot, 需要给这段模板指定slot属性;
+
+    let vm = new Vue({
+        el: '#app',
+        data(){
+            return {
+                flag: false,
+                flag2: false
+            }
+        },
+        methods: {
+            open(){
+                this.flag = true;
+            },
+            open2(){
+                this.flag2 = true;
+            },
+            cancel(){
+                this.flag2 = false;
+            },
+            confirm(){
+                this.flag2 = false;
+                console.log('确认');
+            }
+        },
+        components: {
+            modal
+        }
+
+    });
+</script>
+
 </body>
 </html>

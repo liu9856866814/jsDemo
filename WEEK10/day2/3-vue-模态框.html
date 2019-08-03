@@ -2,9 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .modal{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .3);
+        }
+        .modal .content{
+            width: 400px;
+            height: 300px;
+            padding: 15px;
+            background: #00b38a;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <button @click="openModal">打开</button>
+    <modal :open="flag" @shutdown="shut"></modal>
+</div>
+<!--<template id="modalTpl">
+    <div class="modal" v-show="open">
+        <div class="content">
+            <button @click="closeModal">关闭</button>
+        </div>
+    </div>
+</template>-->
+<script src="vue.js"></script>
+<script type="module">
+
+    import modal from './3-modal.js';
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag: false
+        },
+        methods: {
+            openModal(){
+                this.flag = true;
+            },
+            shut(val){
+                this.flag = val;
+            }
+        },
+        components: {
+            modal
+        }
+    })
+    // 注意: 用.sync的值不能是表达式 :open.sync='flag'对   错 :open.sync='fl'+'ag'
+
+    // 模态框练习的是父子组件的通信；
+    // 为什么控制模态框显示隐藏的标识符 要通过props 从父组件获取?
+    // 因为父组件中有一个按钮, 是控制让modal框打开的; 如果我们把这个控制模态框的显示隐藏的标识符写在子组件中, 父组件就无
+    // 法控制了.所以把这个数据通过prop从父组件获取;
+</script>
 </body>
 </html>

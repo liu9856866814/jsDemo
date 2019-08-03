@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    width:100%;
+    text-align:center;/*文本居中*/
+    border:0;
+    table-layout: auto;
+    border-collapse:collapse; /*表格的边框合并，如果相邻，则共用一个边框*/
+    border-spacing:0; /*设置行与单元格边框的间距。当表格边框独立（即border-collapse:separate;）此属性才起作用*/
+}
+table th,td{
+    word-break: break-all; /*允许在字内换行,即单词可分*/
+    word-wrap:break-word;/*允许长单词或URL地址换行*/
+    /*border-right:1px solid #939598;*/
+    /*border-bottom:1px solid #939598;*/
+    font:500 14px Arial;
+}
+
+table th,td{
+    /*border: 1px solid #000;*/
+    padding: 5px;
+}
+
+.container{
+    width: 800px;
+    margin: 20px auto;
+    padding: 5px;
+    border: 2px solid #cccccc;
+}
+
+table thead tr{
+    background: lightgreen;
+}
+tbody tr:nth-child(even){
+    background: #ccc;
+}
+tbody tr:hover{
+    background: lightblue;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: lightseagreen;
+}
+a:hover{
+    color: indianred;
+}

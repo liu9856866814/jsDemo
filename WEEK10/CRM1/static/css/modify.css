@@ -31,3 +31,13 @@ input#phone, input#address{
 .container div #save-btn:hover{
     background: lightpink;
 }
+button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: lightseagreen;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+}

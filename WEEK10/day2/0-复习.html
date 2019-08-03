@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <p ref="p1"></p>
+    <ul>
+        <li v-for="(item, index) in ary" :key="index" ref="listItem">{{item}}</li>
+    </ul>
+    <cxk :outerary="ary" @change-ary="changeAry"></cxk>
+    <lh></lh>
+</div>
+<script src="vue.js"></script>
+<script>
+    // 1. Vue 实例的生命周期
+    /*
+    * beforeCreate 数据观测尚未完成，不能通过this访问数据
+    * created 数据观测完成，可以通过this访问数据，但是尚未开启挂载，this.$el 不可见；在created中可以发送ajax请求数据
+    * beforeMount 把模板编译成虚拟DOM，在挂载之前调用该钩子；this.$el 可见， 但里面老师模板，并没有数据；
+    * mounted 把虚拟DOM挂载到真实DOM元素上，此时访问 this.$el是绑定数据以后DOM元素；在mounted中也可以发ajax请求数据；在这
+    * 里可以获取DOM元素和操作DOM;
+    * beforeUpdate 数据发生改变时才会触发这个钩子，在视图更新之前调用；
+    * updated 数据更新导致视图更新，在视图更新后调用该钩子
+    * beforeDestroy 在实例销毁前调用，此时实例中的所有的数据都可用；如果页面中有定时器，在这个钩子清除；
+    * destroyed 在实例销毁后调用，此时实例中的数据不再是响应式的，再修改数据，视图不会更新了。
+    *
+    * */
+
+    // 2. ref 和 DOM 操作
+    /*
+    * vue 是数据驱动, 不提倡操作DOM; 但是有些场景必须操作DOM, Vue为我们提倡了获取DOM的方式; (在mounted钩子中操作DOM)
+    * this.$refs.p1
+    * this.$refs.listItem 数组
+    * */
+
+    // 3. 当数据发生改变时,Vue 是异步更新视图; 如果想获取数据更新后的DOM, 需要使用$nextTick() 方法
+    // this.$nextTick(callback) callback 会在 DOM 更新以后执行 (如果想要在DOM更新后操作DOM, 或者在DOM更新后有其他的事情,
+    // 要用nextTick);
+
+    // 4. 组件
+    /*
+    * Vue.component('componentName', config); 创建全局组件， 全局组件不需要注册，只要创建，在任何实例中都可以使用；
+    * config 是创建Vue 实例的配置对象；
+    * 每个组件都是一个 Vue 的实例，data/computed/methods/filters/watch/template/生命周期的钩子 这些属性每个组件都可以有
+    *
+    * */
+
+    // 5. 局部组件
+    /*
+    * 创建组件 => 注册组件 => 使用组件
+    * 组件是一个完整的功能单元, 它可以有自己的html,组件的template属性就是组件私有的html;
+    * */
+    let cxk = {
+        template: `<div @click="fn">CXK:
+        <span v-for="(item, index) in ary" :key="index">{{item}}; </span>
+        <span>| | | {{outerary}}</span></div>`,
+        data(){
+            return {
+                ary: [
+                    'SING',
+                    'DANCE',
+                    'RAP',
+                    'BASKETBALL'
+                ]
+            }
+        },
+        props: ['outerary'],
+        methods: {
+            fn(){
+                // console.log(this.outerary);
+                this.$emit('change-ary', 9);
+            }
+        }
+    };
+
+    let lh = {
+        template: `<div>傻狍子 vs LSX</div>`
+    };
+
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            ary: [1, 3, 5, 7],
+        },
+        components: { // 使用局部组件要注册
+            cxk, // cxk 是子组件
+            lh
+        },
+        methods: {
+            changeAry(val){
+                this.ary.push(val);
+            }
+        }
+    });
+
+    // 组件通信: (组件间传递数据就叫组件通信)
+    // 父传子: props
+
+    // 单向数据流: 数据只能从父组件流向子组件, 子组件不能直接修改父组件的数据;
+
+    // 子传父: 通过事件机制,当子组件想要修改数据时,通知父组件,让父组件修改,父组件修改后, 子组件就拿到了最新的数据;
+
+</script>
+
 </body>
 </html>

@@ -2,9 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <router-link to="/" tag="button">HOME</router-link>
+    <!--router-link 是用来切换路由的,
+     to 指定点击router-link 时要跳转到的路由
+     tag 指定 router-link 以什么标签渲染到页面中-->
+    <router-link to="/home" tag="button">主页</router-link>
+    <router-link to="/list" tag="button">LIST</router-link>
+
+    <router-view></router-view>
+</div>
+
+<script src="vue.js"></script>
+<script src="vue-router.js"></script>
+<script>
+    let home = {
+        template: `<div>HOME <button @click="goTo">去列表</button></div>`,
+        methods: {
+            goTo(){
+                // this.$router.push('/list');
+                this.$router.push({name: 'list', query: {name: 'mabin', age: 18}});
+                // 对象中的query 是路由后面的问号传参
+                // #/list?name=mabin&age=18
+            }
+        }
+    };
+    let list = {
+        template: `<div>LIST <button @click="back">回首页</button></div>`,
+        methods: {
+            back(){
+                // this.$router.go(-1); 返回上一页(也就是上一个组件)
+                this.$router.go(-1);
+            }
+        }
+    };
+    let notFound = {
+        template:  `<div>Not Found</div>`
+    };
+
+    // 使用vue-router 需要配置路由映射表
+    let routes = [
+        {
+            path: '/', // path是路由
+            component: home // 路由对应的组件
+        },
+        {
+            path:'/home',
+            component: home
+        },
+        {
+            name: 'list', /* 路由映射表中配置了name属性, 使用$router.push() 时可以传入一个对象{name: 'list'}*/
+            path: '/list',
+            component: list
+        },
+        {
+            path: '*', // 除了路由映射表中配置的路由以外的路由, 页面渲染成home
+            component: notFound
+        }
+    ];
+
+    // 创建一个VueRouter 的实例
+    let router = new VueRouter({
+        routes: routes // 创建VueRouter实例时, 要传入路由映射表
+    });
+
+    // 创建Vue实例时,配置router属性
+    let vm = new Vue({
+        el: '#app',
+        components: {
+            home,
+            list
+        },
+        router: router // 配置router属性
+    });
+
+
+    // vue-router 给我们提供了方法用于切换路由:
+    // 配置router以后,才能使用$router 对象
+    // 1. this.$router.go(-1) 返回上一页(其实是组件)
+    // 2. this.$router.push('/list'); 切换到指定的路由
+</script>
+
 </body>
 </html>

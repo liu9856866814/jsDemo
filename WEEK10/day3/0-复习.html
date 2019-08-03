@@ -2,9 +2,169 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <router-link to="/list">去列表</router-link>
+    <router-view></router-view>
+</div>
+
+<template id="listTpl">
+    <div>
+        <div>LIST <button @click="goBack">返回</button></div>
+        <div>
+            <router-link to="/list/view">查看</router-link>
+            <router-link to="/articles/1/x?name=mabin&age=18/">修改</router-link>
+        </div>
+        <router-view></router-view>
+    </div>
+</template>
+
+<script src="vue.js"></script>
+<script src="vue-router.js"></script>
+<script>
+    // 1. sync修饰符事件简写； 用于简化子组件向父组件传递数据的过程；
+    // 1.1 在父组件使用子组件时 prop 后面跟一个 .sync , 例如 :open.sync='flag' 取消显式监听事件
+    // 1.2 子组件触发事件时, 事件名改成 update:prop名 例如: this.$emit('update:open', false);
+
+    // 2, props 验证, props除了用数据注册,还可以用对角注册,用对象注册可以实现props验证
+    // props: ['open']
+/*    props: {
+        open: {
+            type: Boolean, // type 校验类型需要写对应的构造函数Array Date Object Function Number..
+            required: true, // 必传, 要求父组件使用子组件时必须配置这个prop
+            default: false, // 当前prop的默认值,父组件不传时生效
+            default(){ // 如果默认值是一个对象或者数组, default 需要设置成一个函数,return一个数组或者对象
+                return []
+            },
+            validator(val){
+                // val 就是prop收到的值
+                // 如果验证失败可以抛出异常或者return false
+                // 如果验证通过需要return true
+            }
+        }
+    }*/
+
+    // 3. 父子组件mounted: 子组件的mounted先执行, 方便父组件获取子组件的实例(通过 ref), ref 写在原生HTML标签上, 获取到的
+    // 原生dom对象, 如果写在组件标签上, 获取到的是对组件实例的一个引用;
+
+    // 4. 动态组件: <component :is='title'></component> component 组件会动态渲染 is 属性绑定的值所代表的组件; 被切走的组件,
+    // 其 实例会被销毁, 存在里面的数据随之销毁, 被切走的组件称为失活组件, 而当前被渲染的组件称为激活组件
+
+    // 5. keep-alive 可以保持失活的组件不销毁;
+
+    // 6. 事件总线 EventBus : 用来解决非父子组件通信
+    // 6.1 创建一个空的 vue 实例: let eventBus = new Vue();
+    // 6.2 谁的数据被修改, 谁监听事件, 一般在 created 中监听事件, eventBus.$on(自定义事件名, 事件函数)
+    // 6.3 谁发起修改, 谁触发事件: eventBus.$emit(事件名, 数据)
+    // vuex 可以解决这个问题
+
+    // 7. 插槽 slot
+    // 向子组件中嵌入内容的;
+    // 在子组件的模板中 写好 slot 标签, <slot></slot>
+    // 具名slot <slot name='header'></slot>
+    // <modal><div></div> <div slot='header' @click='fn'></div></modal 事件函数fn 写在父组件
+
+    // 8. 路由: vue-router
+    // router-link 用于切换路由, 切换到 to 属性指向的路由;
+    // router-view 展示路由对应的组件
+
+    // 8.1 使用路由的步骤:
+    // 1. 安装并引入vue-router
+    // 2. 配置路由映射表, 单页面应用不会切换html, 而是切换组件;
+    // 3. 创建 vue-router 实例, 传入路由映射表
+    // 4. 创建 vue 实例时配置 router 属性
+
+    let home = {
+        template: `<div>HOME <button @click="toList">去列表</button></div>`,
+        methods: {
+            toList(){
+                // 用
+                this.$router.push('/list');
+            }
+        }
+    };
+    let list = {
+        template: `#listTpl`,
+        methods:{
+            goBack(){
+                // 返回上一页(上一个组件)
+                this.$router.go(-1)
+            }
+        }
+    };
+
+    let view = {
+        template: `<div>查看</div>`
+    };
+    let modify = {
+        template: `<div>修改</div>`
+    };
+    let articles = {
+        template: `<div>第{{$route.params.id}}篇文章</div>`,
+        created(){
+
+        }
+    };
+
+
+    let routes = [
+        {
+            name: 'articles',
+            path: '/articles/:id/:text',
+            component: articles
+        },
+        {
+            path: '/',
+            component: home
+        },
+        {
+            path: '/home',
+            component: home
+        },
+        {
+            path: '/list',
+            component: list,
+            children: [
+                {
+                    path: 'view',
+                    component: view
+                },
+                {
+                    path: 'modify',
+                    component: modify
+                }
+            ]
+        },
+        {
+            path: '*', // 当 url 中的路由在路由映射表中没有时, 渲染home组件 (可以处理404)
+            component: home
+        }
+    ];
+
+    let router = new VueRouter({
+        routes
+    });
+
+    let vm = new Vue({
+        el: '#app',
+        router,
+        methods: {
+            toArticle(){
+                // 点击
+                this.$router.push({
+                    name: 'articles',
+                    parmas: {id: 1, text: 'x'},
+                    query: {
+                        name: 'mabin',
+                        age: 18
+                    }
+                })
+            }
+        }
+    })
+</script>
+
 </body>
 </html>

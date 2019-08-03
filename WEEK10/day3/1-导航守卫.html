@@ -2,9 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+<!--    <router-link to="/list">去列表</router-link>-->
+    <router-link to="/articles">文章1<button>去文章1</button></router-link>
+    <router-view></router-view>
+</div>
+
+<template id="listTpl">
+    <div>
+        <div>LIST <button @click="goBack">返回</button></div>
+        <div>
+            <router-link to="/list/view">查看</router-link>
+            <router-link to="/articles/1/x?name=mabin&age=18/">文章1</router-link>
+        </div>
+        <router-view></router-view>
+    </div>
+</template>
+
+<script src="vue.js"></script>
+<script src="vue-router.js"></script>
+
+<script>
+
+    let home = {
+        template: `<div>HOME <button @click="toList">去列表</button></div>`,
+        methods: {
+            toList(){
+                // 用
+                this.$router.push('/list');
+            }
+        }
+    };
+    let list = {
+        template: `#listTpl`,
+        methods:{
+            goBack(){
+                // 返回上一页(上一个组件)
+                this.$router.go(-1)
+            }
+        }
+    };
+
+    let view = {
+        template: `<div>查看</div>`
+    };
+    let modify = {
+        template: `<div>修改</div>`
+    };
+    let articles = {
+        template: `<div>第{{$route.params.id}}篇文章</div>`,
+        created(){
+
+        }
+    };
+
+
+    let routes = [
+        {
+            name: 'articles',
+            path: '/articles/:id/:text',
+            component: articles
+        },
+        {
+            path: '/',
+            component: home
+        },
+        {
+            path: '/home',
+            component: home
+        },
+        {
+            path: '/list',
+            component: list,
+            children: [
+                {
+                    path: 'view',
+                    component: view
+                },
+                {
+                    path: 'modify',
+                    component: modify
+                }
+            ]
+        }
+    ];
+
+    let router = new VueRouter({
+        routes
+    });
+
+    // 全局前置导航守卫
+    router.beforeEach((to, from, next) => {
+        // to 路由对象, 包含将要去往的路由的信息
+        // from 路由对象, 包含了正要离开的路由的信息
+        // next 控制权函数, 如果通过验证执行 next() 交出控制权;
+        // console.log(to);
+        // console.log(from);
+        // console.log(next);
+        // 在这个函数中就可以做拦截, 例如从 cookie 中获取登录状态, 如果登录了, 执行 next() 交出控制权;
+        // next() 没有任何问题,交出控制权;
+        // next(false) 中断当前导航, 如果url发生变化, 会回退到当前页面的路由
+        // next(路由或路由对象) 直接重定向到指定的路由
+
+        // 无论哪种情况都要执行对应的next, 如果不执行就会处于挂起状态;
+
+        let isLogin = document.cookie.includes('isLogin=true');
+        if(to.fullPath === '/list/view'){
+            // view 假设现在不需要验证权限
+            next()
+        }else{
+            if (isLogin){
+                next();
+            }else{
+                next('/list/view') // 重定向到view
+            }
+        }
+
+
+    });
+
+    let vm = new Vue({
+        el: '#app',
+        router,
+        methods: {
+            toArticle(){
+                // 点击
+                this.$router.push({
+                    name: 'articles',
+                    params: {id: 1, text: 'x'},
+                    query: {
+                        name: 'mabin',
+                        age: 18
+                    }
+                })
+            }
+        }
+    })
+
+
+
+
+    // 导航守卫:
+    // 导航是正在发生变化的路由; 从当前的组件离开准备去往下一个组件;
+
+    // 为什么需要导航守卫?
+    // 真实项目中,我们需要根据用户权限、登录状态来决定用户可以看到的页面；但是路由就在浏览器地址栏里面，如果不加心拦截，
+    // 用户通过地址栏中输入，就可以看到他本不该看到的页面；所以我们使用导航守卫拦截它；
+
+    // 学习导航守卫就是学习几个钩子函数；
+
+    // 1. 全局前置导航守卫
+    //
+</script>
 </body>
 </html>

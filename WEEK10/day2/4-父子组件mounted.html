@@ -2,9 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .modal{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .3);
+        }
+        .modal .content{
+            width: 400px;
+            height: 300px;
+            padding: 15px;
+            background: #00b38a;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="app">
+    <button @click="openModal">打开</button>
+    <modal :open.sync='flag' ref="theModal"></modal>
+</div>
+
+<script src="vue.js"></script>
+<script type="module">
+    import modal from './3-modal.js';
+
+    let vm = new Vue({
+        el: '#app',
+        data(){
+            return {
+                flag: false
+            }
+        },
+        methods: {
+            openModal(){
+                this.flag = true;
+            },
+            closeModal() {
+                this.flag = false;
+            }
+        },
+        components: {
+            modal
+        },
+        mounted(){
+            console.log('y');
+            // 当父子组件都有mounted时,子组件的mounted先执行;
+            // 每个组件都是一个Vue的实例, 子组件的mounted 先执行, 方便父组件获取子组件的实例
+
+            console.log(this.$refs.theModal); // ref 如果加在原生的DOM元素上,通过ref获取的是原生的DOM对象; 如果加在组件上,
+            // 获取的是这个组件实例的引用; 拿到这个实例后,可以访问上面的数据,调用组件的方法
+            this.$refs.theModal.closeModal(); // 调用子组件上的closeModal
+        }
+    })
+</script>
 </body>
 </html>

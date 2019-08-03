@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <!--使用组件: 把驼峰命名法变成连字符的形式; 使用组件就需要写一个自定义标签;-->
+    <handsome-man></handsome-man>
+</div>
+
+<div id="app2">
+    <handsome-man></handsome-man>
+    <handsome-man />
+</div>
+
+<script src="vue.js"></script>
+<script>
+    // 组件: 把页面中相同的功能封装成一个组件,以后再有这样的功能,使用这个组件就会有对应的功能;
+    // 用组件的思想开发可以大幅度提升开发效率,提高代码的可复用度和可维护性;
+
+    // 在Vue中创建组件, 有两种:
+    // 1. 全局组件, 创建之后 ,所有 Vue 的实例都能够使用这个组件;
+    // 2. 局部组件, 只能在注册的实例中使用局部组件
+
+    // 创建全局组件:
+    // Vue.component(componentName, config);
+    // 1. componentName 组件名字, 可以是驼峰命名,也可以是连字符;
+    // 2. config 是一个对象, 和创建Vue 实例的配置对象一样;
+    // 3. 在html或者模板中使用组件时,只能写连字符 component-name 的形式
+
+    // 创建一个全局组件
+    Vue.component('handsomeMan', {
+        template: `<div @click="fn">{{msg}}</div>`,
+        data(){ // 组件化的data需要写一个函数,在函数中return一个对象,把数据写在return后面的对象中
+            return {
+                msg: 'small fly'
+            }
+        },
+        methods: {
+            fn(){
+                console.log('Muscle');
+            }
+        }
+    });
+
+    // 使用全局组件
+    let vm1 = new Vue({
+        el: '#app',
+        data: {}
+    });
+    let vm2 = new Vue({
+        el: '#app2',
+        data: {}
+    })
+
+    // 每个组件都是一个Vue的实例, 创建Vue实例时 使用的属性,创建组件时,这些属性都可以有; template data filter computed
+    // methods watch 生命周期的钩子函数 组件都可以有;
+</script>
 </body>
 </html>

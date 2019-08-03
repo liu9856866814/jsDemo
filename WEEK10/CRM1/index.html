@@ -2,9 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>index</title>
+    <link rel="stylesheet" href="/static/css/index.css">
 </head>
 <body>
-$END$
+<div id="app">
+    <div class="container">
+        <a href="/modify.html">新增</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>电话</th>
+                    <th>地址</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(item, index) in ary" :key="index">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.age}}</td>
+                    <td>{{item.phone}}</td>
+                    <td>{{item.address}}</td>
+                    <td><a :href=`/modify.html?id=${item.id}`>修改</a>
+                        <a href="javascript:;" :del-index="item.id" @click="delIndex">删除</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="/static/js/vue.js"></script>
+<script src="/static/js/axios.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data(){
+            return {
+                ary: []
+            }
+        },
+        methods: {
+            queryData(){
+                axios.get('/api/getList').then(({data}) => {
+                    console.log(data);
+                    if(data.code === 0){
+                        this.ary = data.data;
+                        console.log(data.data);
+                    }else{
+                        alert(data.msg);
+                    }
+                })
+            },
+            delIndex(e){
+                let rId = e.target.getAttribute('del-index');
+                if(rId && e.target.nodeName.toUpperCase() === 'A'){
+                    let isSure = confirm(`确认删除id为${rId}的数据吗?`);
+                    if(isSure){
+                        axios.get('/api/removeInfo?id=' + rId).then(({data}) => {
+                            console.log(data);
+                            if(data.code === 0){
+                                this.queryData();
+                            }else{
+                                alert(data.msg);
+                            }
+                        })
+                    }
+                }
+            }
+        },
+        created(){
+            this.queryData()
+        }
+
+    })
+
+</script>
 </body>
 </html>

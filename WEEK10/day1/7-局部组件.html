@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <mabin></mabin>
+    <hr>
+    <cxk></cxk>
+</div>
+<div id="app2">
+    <mabin></mabin>
+    <hr>
+    <cxk></cxk>
+</div>
+<script src="vue.js"></script>
+<script type="module">
+    // 局部组件使用步骤
+    // 1. 创建组件
+    // 2. 注册组件
+    // 3. 使用组件
+
+    // 创建组件: 写一个创建Vue实例的配置对象
+/*    let mabin = {
+        template: `<div>mabin {{msg}}</div>`,
+        data(){
+            return {
+                msg: 'Hello Everyone'
+            }
+        },
+        methods: {
+            fn(){
+                console.log('mabin 来了');
+            }
+        }
+    }*/
+    import mabin from './mabin.js';
+    import cxk from './cxk.js';
+
+    let vm = new Vue({
+        el: '#app',
+        data: {},
+        components: { // 把局部 组件写在components 就完成了注册;
+            mabin, // 局部组件在哪个实例中注册,就只能在哪个实例中使用
+            cxk
+        }
+    });
+
+    let vm2 = new Vue({
+        el: '#app2',
+        data: {},
+        components: { // 在vm2中要使用cxk和mabin, 需要再次注册; 不注册不能用;
+            mabin, // 被注册的组件如cxk/mabin 叫做子组件; 注册时所在的实例(或组件) 叫做父组件
+            cxk
+        }
+    })
+
+</script>
 </body>
 </html>
